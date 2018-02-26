@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.1.1"
+    "react-scripts": "1.1.1",
+    "styled-components": "^3.1.6"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -15,11 +16,13 @@
     "eslint-check": "eslint --print-config .eslintrc.js | eslint-config-prettier-check"
   },
   "devDependencies": {
+    "concurrently": "^3.5.1",
     "eslint": "^4.18.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-config-react": "^1.1.7",
     "eslint-plugin-prettier": "^2.6.0",
     "eslint-plugin-react": "^7.7.0",
+    "js-yaml": "^3.10.0",
     "prettier": "^1.10.2"
   }
 }

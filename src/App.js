@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import styled from 'styled-components';
 import Header from './sections/Header';
 import Splash from './sections/Splash';
 import Details from './sections/Details';
@@ -8,10 +9,15 @@ import Sponsors from './sections/Sponsors';
 import Information from './sections/Information';
 import Footer from './sections/Footer';
 
+const AppLayout = styled.div`
+  display: grid;
+  grid-template-rows: 100vh auto;
+`;
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
+      <AppLayout>
         <Header />
         <Splash />
         <Details />
@@ -20,7 +26,7 @@ class App extends Component {
         <Sponsors />
         <Information />
         <Footer />
-      </div>
+      </AppLayout>
     );
   }
 }
