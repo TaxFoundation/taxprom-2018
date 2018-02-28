@@ -24,6 +24,9 @@ sponsorships:
         - Opportunity to Give a Toast at the VIP Reception
         - Recognition by name from the podium during dinner
       sponsors: []
+      previousSponsors:
+        - name: Business Roundtable
+          link: http://businessroundtable.org/
     - name: General Reception
       price: 40000
       benefits:
@@ -33,6 +36,9 @@ sponsorships:
         - Full page customized company recognition spot in the event program provided to all guests
         - Recognition by name from the podium during dinner
       sponsors: []
+      previousSponsors:
+        - name: Anheuser-Busch Companies
+          link: http://www.anheuser-busch.com/
     - name: Dessert Receiption
       price: 35000
       benefits:
@@ -42,6 +48,7 @@ sponsorships:
         - Full page customized company recognition spot in the event program provided to all guests
         - Recognition by name from the podium during dinner
       sponsors: []
+      previousSponsors: []
   tables:
     earlyPriceEnds: 2018-05-25
     regularPriceEnds: 2018-10-15

@@ -21,7 +21,13 @@
           "Opportunity to Give a Toast at the VIP Reception",
           "Recognition by name from the podium during dinner"
         ],
-        "sponsors": []
+        "sponsors": [],
+        "previousSponsors": [
+          {
+            "name": "Business Roundtable",
+            "link": "http://businessroundtable.org/"
+          }
+        ]
       },
       {
         "name": "General Reception",
@@ -33,7 +39,13 @@
           "Full page customized company recognition spot in the event program provided to all guests",
           "Recognition by name from the podium during dinner"
         ],
-        "sponsors": []
+        "sponsors": [],
+        "previousSponsors": [
+          {
+            "name": "Anheuser-Busch Companies",
+            "link": "http://www.anheuser-busch.com/"
+          }
+        ]
       },
       {
         "name": "Dessert Receiption",
@@ -45,7 +57,8 @@
           "Full page customized company recognition spot in the event program provided to all guests",
           "Recognition by name from the podium during dinner"
         ],
-        "sponsors": []
+        "sponsors": [],
+        "previousSponsors": []
       }
     ],
     "tables": {
