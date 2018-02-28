@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const SplashContainer = styled.div`
+const SplashContainer = styled.section`
   align-content: center;
   align-items: center;
   bottom: 0;

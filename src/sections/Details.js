@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const DetailsContainer = styled.div``;
+const DetailsContainer = styled.section``;
 
-const Details = () => (
+const Details = props => (
   <DetailsContainer>
-    <p>Some details</p>
+    <h2>{props.details.detailsTitle}</h2>
+    <p>{props.details.detailsDescription}</p>
   </DetailsContainer>
 );
 

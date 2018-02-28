@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
+
+import data from './data/taxprom2018.json';
 import Header from './sections/Header';
 import Splash from './sections/Splash';
 import Details from './sections/Details';
@@ -11,6 +13,7 @@ import Footer from './sections/Footer';
 
 const AppLayout = styled.div`
   display: grid;
+  font-family: 'Futura', sans-serif;
   grid-template-rows: 100vh auto;
 `;
 
@@ -20,7 +23,7 @@ class App extends Component {
       <AppLayout>
         <Header />
         <Splash />
-        <Details />
+        <Details details={data.details} />
         <Awards />
         <Sponsorships />
         <Sponsors />
