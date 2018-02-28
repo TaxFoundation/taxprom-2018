@@ -15,12 +15,16 @@ const SplashContainer = styled.section`
   top: 0;
 `;
 
-const Splash = () => (
-  <SplashContainer>
-    <h1>Tax Prom</h1>
-    <p>Date and Time</p>
-    <p>Place</p>
-  </SplashContainer>
-);
+const Splash = props => {
+  let date = new Date(props.date);
+
+  return (
+    <SplashContainer>
+      <h1>{props.title}</h1>
+      <p>{date.toLocaleDateString('en-US')}</p>
+      <p>{props.venueName}</p>
+    </SplashContainer>
+  );
+};
 
 export default Splash;

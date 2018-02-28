@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <AppLayout>
         <Header />
-        <Splash />
+        <Splash title={data.title} date={data.date} venueName={data.venueName} />
         <Details details={data.details} />
         <Awards />
         <Sponsorships />
