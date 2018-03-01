@@ -1,6 +1,8 @@
 title: Tax Prom 2018
 date: 2018-11-15
 time: 6 p.m.
+earlyPriceEnds: 2018-05-25
+regularPriceEnds: 2018-10-15
 venueName: The National Building Museum
 venueAddress: >
   440 G Street NW
@@ -55,85 +57,82 @@ sponsorships:
       sponsors: []
       previousSponsors: []
   tables:
-    earlyPriceEnds: 2018-05-25
-    regularPriceEnds: 2018-10-15
-    levels:
-      - name: Platinum
-        earlyPrice: 25000
-        regularPrice: 30000
-        latePrice: 35000
-        benefits:
-          - One large table (10 tickets) with preferred seating
-          - Namebadge ribbon recognizing sponsorship level
-          - Logo recognition as a Platinum Sponsor in the event program provided to all guests
-          - 10 tickets to the VIP Reception
-          - Half-page customized company recognition spot in the event program provided to all guests
-          - Event Website recognition linked to your website
-          - Listing or logo recognition on posters at VIP, general, and dessert receptions
-          - Opportunity to seat preferred key guests at your table 
-          - Listing or logo in repeating slideshow during event
-          - Opportunity to nominate Tax Prom King & Queen candidates
-          - Recognition by name from the podium during dinner
-        sponsors:
-          - Top Sponsor
-          - Another Top Sponsor
-        previousSponsors:
-          - Top Sponsor
-          - Another Top Sponsor
-      - name: Gold
-        earlyPrice: 15000
-        regularPrice: 20000
-        latePrice: 22000
-        benefits:
-          - One large table (10 tickets) with preferred seating
-          - Namebadge ribbon recognizing sponsorship level
-          - Logo recognition as a Gold Sponsor in the event program provided to all guests
-          - 4 tickets to the VIP Reception
-          - Quarter-page customized company recognition spot in the event program provided to all guests
-          - Event Website recognition linked to your website
-          - Listing or logo recognition on posters at VIP, general, and dessert receptions
-          - Opportunity to seat preferred key guests at your table 
-          - Listing or logo in repeating slideshow during event
-          - Opportunity to nominate Tax Prom King & Queen candidates
-        sponsors:
-          - Top Sponsor
-          - Another Top Sponsor
-        previousSponsors:
-          - Top Sponsor
-          - Another Top Sponsor
-      - name: Silver
-        earlyPrice: 12000
-        regularPrice: 15000
-        latePrice: 18000
-        benefits:
-          - One table (8 tickets)
-          - Namebadge ribbon recognizing sponsorship level
-          - Logo recognition as a Silver Sponsor in the event program provided to all guests
-          - 2 tickets to the VIP Reception
-          - 50% off prices for customized company recognition spots in the event program provided to all guests
-          - Event Website recognition linked to your website
-          - Listing on posters at general and dessert receptions
-          - Opportunity to seat key guests at your table
-        sponsors:
-          - Top Sponsor
-          - Another Top Sponsor
-        previousSponsors:
-          - Top Sponsor
-          - Another Top Sponsor
-      - name: Bronze
-        earlyPrice: 8000
-        regularPrice: 10000
-        latePrice: 10000
-        benefits:
-          - Half-Table (4 tickets)
-          - Namebadge ribbon recognizing sponsorship level
-          - Listing as Bronze Sponsor in the event programs provided to all guests
-        sponsors:
-          - Top Sponsor
-          - Another Top Sponsor
-        previousSponsors:
-          - Top Sponsor
-          - Another Top Sponsor        
+    - name: Platinum
+      earlyPrice: 25000
+      regularPrice: 30000
+      latePrice: 35000
+      benefits:
+        - One large table (10 tickets) with preferred seating
+        - Namebadge ribbon recognizing sponsorship level
+        - Logo recognition as a Platinum Sponsor in the event program provided to all guests
+        - 10 tickets to the VIP Reception
+        - Half-page customized company recognition spot in the event program provided to all guests
+        - Event Website recognition linked to your website
+        - Listing or logo recognition on posters at VIP, general, and dessert receptions
+        - Opportunity to seat preferred key guests at your table 
+        - Listing or logo in repeating slideshow during event
+        - Opportunity to nominate Tax Prom King & Queen candidates
+        - Recognition by name from the podium during dinner
+      sponsors:
+        - Top Sponsor
+        - Another Top Sponsor
+      previousSponsors:
+        - Top Sponsor
+        - Another Top Sponsor
+    - name: Gold
+      earlyPrice: 15000
+      regularPrice: 20000
+      latePrice: 22000
+      benefits:
+        - One large table (10 tickets) with preferred seating
+        - Namebadge ribbon recognizing sponsorship level
+        - Logo recognition as a Gold Sponsor in the event program provided to all guests
+        - 4 tickets to the VIP Reception
+        - Quarter-page customized company recognition spot in the event program provided to all guests
+        - Event Website recognition linked to your website
+        - Listing or logo recognition on posters at VIP, general, and dessert receptions
+        - Opportunity to seat preferred key guests at your table 
+        - Listing or logo in repeating slideshow during event
+        - Opportunity to nominate Tax Prom King & Queen candidates
+      sponsors:
+        - Top Sponsor
+        - Another Top Sponsor
+      previousSponsors:
+        - Top Sponsor
+        - Another Top Sponsor
+    - name: Silver
+      earlyPrice: 12000
+      regularPrice: 15000
+      latePrice: 18000
+      benefits:
+        - One table (8 tickets)
+        - Namebadge ribbon recognizing sponsorship level
+        - Logo recognition as a Silver Sponsor in the event program provided to all guests
+        - 2 tickets to the VIP Reception
+        - 50% off prices for customized company recognition spots in the event program provided to all guests
+        - Event Website recognition linked to your website
+        - Listing on posters at general and dessert receptions
+        - Opportunity to seat key guests at your table
+      sponsors:
+        - Top Sponsor
+        - Another Top Sponsor
+      previousSponsors:
+        - Top Sponsor
+        - Another Top Sponsor
+    - name: Bronze
+      earlyPrice: 8000
+      regularPrice: 10000
+      latePrice: 10000
+      benefits:
+        - Half-Table (4 tickets)
+        - Namebadge ribbon recognizing sponsorship level
+        - Listing as Bronze Sponsor in the event programs provided to all guests
+      sponsors:
+        - Top Sponsor
+        - Another Top Sponsor
+      previousSponsors:
+        - Top Sponsor
+        - Another Top Sponsor        
   tickets:
     - name: VIP Ticket
       price: 2500

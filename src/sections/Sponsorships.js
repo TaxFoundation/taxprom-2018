@@ -23,19 +23,19 @@ const Sponsorships = props => (
     <TypeSection>
       {props.sponsorships.packages.map(t => {
         let id = `package-${t.name.replace(/\s+/g, '-').toLowerCase()}`;
-        return <Package key={id} id={id} package={t} />;
+        return <Package key={id} id={id} package={t} dates={props.dates} />;
       })}
     </TypeSection>
     <TypeSection>
-      {props.sponsorships.tables.levels.map(t => {
+      {props.sponsorships.tables.map(t => {
         let id = `table-${t.name.replace(/\s+/g, '-').toLowerCase()}`;
-        return <Table key={id} id={id} package={t} />;
+        return <Table key={id} id={id} table={t} dates={props.dates} />;
       })}
     </TypeSection>
     <TypeSection>
       {props.sponsorships.tickets.map(t => {
         let id = `ticket-${t.name.replace(/\s+/g, '-').toLowerCase()}`;
-        return <Ticket key={id} id={id} package={t} />;
+        return <Ticket key={id} id={id} ticket={t} dates={props.dates} />;
       })}
     </TypeSection>
   </SponsorshipsSection>
