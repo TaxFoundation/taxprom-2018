@@ -21,19 +21,22 @@ const TypeSection = styled.section`
 const Sponsorships = props => (
   <SponsorshipsSection>
     <TypeSection>
-      {props.sponsorships.packages.map(p => (
-        <Package key={`package-${p.name.replace(/\s+/g, '-').toLowerCase()}`} package={p} />
-      ))}
+      {props.sponsorships.packages.map(t => {
+        let id = `package-${t.name.replace(/\s+/g, '-').toLowerCase()}`;
+        return <Package key={id} id={id} package={t} />;
+      })}
     </TypeSection>
     <TypeSection>
-      {props.sponsorships.tables.levels.map(t => (
-        <Table key={`table-${t.name.replace(/\s+/g, '-').toLowerCase()}`} package={t} />
-      ))}
+      {props.sponsorships.tables.levels.map(t => {
+        let id = `table-${t.name.replace(/\s+/g, '-').toLowerCase()}`;
+        return <Table key={id} id={id} package={t} />;
+      })}
     </TypeSection>
     <TypeSection>
-      {props.sponsorships.tickets.map(t => (
-        <Ticket key={`ticket-${t.name.replace(/\s+/g, '-').toLowerCase()}`} package={t} />
-      ))}
+      {props.sponsorships.tickets.map(t => {
+        let id = `ticket-${t.name.replace(/\s+/g, '-').toLowerCase()}`;
+        return <Ticket key={id} id={id} package={t} />;
+      })}
     </TypeSection>
   </SponsorshipsSection>
 );
