@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { fullDate } from '../utilities/formatters';
 
 const SplashContainer = styled.section`
   align-content: center;
@@ -21,7 +22,7 @@ const Splash = props => {
   return (
     <SplashContainer>
       <h1>{props.title}</h1>
-      <p>{date.toLocaleDateString('en-US')}</p>
+      <p>{fullDate(date)}</p>
       <p>{props.venueName}</p>
     </SplashContainer>
   );
