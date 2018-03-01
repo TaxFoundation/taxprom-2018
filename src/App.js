@@ -25,8 +25,8 @@ class App extends Component {
         <Splash title={data.title} date={data.date} venueName={data.venueName} />
         <Details details={data.details} />
         <Awards />
-        <Sponsorships />
-        <Sponsors />
+        <Sponsorships sponsorships={data.sponsorships} />
+        <Sponsors sponsorships={data.sponsorships} />
         <Information />
         <Footer />
       </AppLayout>
