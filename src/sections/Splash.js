@@ -5,15 +5,11 @@ import { fullDate } from '../utilities/formatters';
 const SplashContainer = styled.section`
   align-content: center;
   align-items: center;
-  bottom: 0;
   display: grid;
   grid-gap: 1rem;
+  height: 100vh;
   justify-content: center;
   justify-items: center;
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 0;
 `;
 
 const Splash = props => {

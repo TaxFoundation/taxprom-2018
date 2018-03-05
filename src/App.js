@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
+import Theme from './Theme';
 
 import data from './data/taxprom2018.json';
 import Header from './sections/Header';
@@ -12,27 +13,27 @@ import Information from './sections/Information';
 import Footer from './sections/Footer';
 
 const AppLayout = styled.div`
-  display: grid;
-  font-family: 'Futura', sans-serif;
-  grid-template-rows: 100vh auto;
+  font-family: ${props => props.theme.fontFamily};
 `;
 
 class App extends Component {
   render() {
     return (
-      <AppLayout>
-        <Header />
-        <Splash title={data.title} date={data.date} venueName={data.venueName} />
-        <Details details={data.details} />
-        <Awards />
-        <Sponsorships
-          sponsorships={data.sponsorships}
-          dates={{ early: data.earlyPriceEnds, regular: data.regularPriceEnds }}
-        />
-        <Sponsors sponsorships={data.sponsorships} />
-        <Information />
-        <Footer />
-      </AppLayout>
+      <ThemeProvider theme={Theme}>
+        <AppLayout>
+          <Header />
+          <Splash title={data.title} date={data.date} venueName={data.venueName} />
+          <Details details={data.details} />
+          <Awards />
+          <Sponsorships
+            sponsorships={data.sponsorships}
+            dates={{ early: data.earlyPriceEnds, regular: data.regularPriceEnds }}
+          />
+          <Sponsors sponsorships={data.sponsorships} />
+          <Information />
+          <Footer />
+        </AppLayout>
+      </ThemeProvider>
     );
   }
 }

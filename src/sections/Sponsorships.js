@@ -7,6 +7,10 @@ import Ticket from '../components/Ticket';
 const SponsorshipsSection = styled.section`
   display: grid;
   grid-template: repeat(3, auto) / auto;
+
+  h3 {
+    text-align: center;
+  }
 `;
 
 const LevelsContainer = styled.div`
