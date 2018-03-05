@@ -7,6 +7,7 @@ import Ticket from '../components/Ticket';
 const SponsorshipsSection = styled.section`
   display: grid;
   grid-template: repeat(3, auto) / auto;
+  padding: 0 1rem;
 
   h3 {
     text-align: center;
@@ -16,8 +17,16 @@ const SponsorshipsSection = styled.section`
 const LevelsContainer = styled.div`
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr;
   grid-template-rows: repeat(2, auto);
+
+  @media (min-width: 600px) and (max-width: 1079px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1080px) {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 `;
 
 const Sponsorships = props => (

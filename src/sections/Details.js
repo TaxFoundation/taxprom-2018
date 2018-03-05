@@ -1,7 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const DetailsContainer = styled.section``;
+const DetailsContainer = styled.section`
+  padding: 0 1rem;
+`;
 
 const Details = props => (
   <DetailsContainer>

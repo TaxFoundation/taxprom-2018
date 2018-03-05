@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 
 const SponsorLevel = styled.div`
+  align-content: start;
   border: 1px solid ${props => props.theme.borderColor || '#000'};
+  display: grid;
   padding: 1rem 1.6rem;
 
   h4 {

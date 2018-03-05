@@ -14,6 +14,37 @@ import Footer from './sections/Footer';
 
 const AppLayout = styled.div`
   font-family: ${props => props.theme.fontFamily};
+  margin: 0 auto;
+  max-width: 1440px;
+
+  h1 {
+    font-size: calc(3 * ${props => props.theme.fontSize});
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    font-size: calc(2.4 * ${props => props.theme.fontSize});
+    line-height: 1.4;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: calc(1.8 * ${props => props.theme.fontSize});
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  h4 {
+    font-size: calc(1.4 * ${props => props.theme.fontSize});
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
 `;
 
 class App extends Component {
