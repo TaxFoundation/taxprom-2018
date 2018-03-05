@@ -17,11 +17,13 @@ const updateData = () => {
 const beginTheWatch = () => {
   console.log('Inital new data building.');
   updateData();
-  console.log('Watching for new changes...');
-  fs.watch(input, { encoding: 'utf8' }, (event, file) => {
-    console.log('Updating data...');
-    updateData();
-  });
+  if (process.argv.includes('--watch')) {
+    console.log('Watching for new changes...');
+    fs.watch(input, { encoding: 'utf8' }, (event, file) => {
+      console.log('Updating data...');
+      updateData();
+    });
+  }
 };
 
 console.log('Removing old data.');
