@@ -1,9 +1,9 @@
 import React from 'react';
-import styled from 'styled-components';
+import SponsorLevel from './SponsorLevel';
 import { dollars } from '../utilities/formatters';
 
-const TableBox = styled.div`
-  display: grid;
+const TableBox = SponsorLevel.extend`
+  background-color: #c0ffee;
 `;
 
 const Table = props => {
@@ -19,7 +19,7 @@ const Table = props => {
 
   return (
     <TableBox>
-      <h3>{props.table.name}</h3>
+      <h4>{props.table.name}</h4>
       <p>{dollars(currentPrice)}</p>
       <ul>{props.table.benefits.map((b, i) => <li key={`${props.id}-${i}`}>{b}</li>)}</ul>
     </TableBox>

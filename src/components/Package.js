@@ -1,14 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
+import SponsorLevel from './SponsorLevel';
 import { dollars } from '../utilities/formatters';
 
-const PackageBox = styled.div`
-  display: grid;
+const PackageBox = SponsorLevel.extend`
+  background-color: #d1337b;
 `;
 
 const Package = props => (
   <PackageBox>
-    <h3>{props.package.name}</h3>
+    <h4>{props.package.name}</h4>
     <p>{dollars(props.package.price)}</p>
     <ul>{props.package.benefits.map((b, i) => <li key={`${props.id}-${i}`}>{b}</li>)}</ul>
   </PackageBox>
