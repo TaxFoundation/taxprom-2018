@@ -27,7 +27,12 @@ const SponsorLevel = styled.div`
 
   .sponsorship__pledge {
     align-self: end;
+    background-color: #fff;
+    border: 1px solid #000;
     display: block;
+    line-height: 1.6;
+    padding: 0.6rem;
+    text-align: center;
   }
 `;
 

@@ -9,6 +9,7 @@ import Details from './sections/Details';
 import Awards from './sections/Awards';
 import Sponsorships from './sections/Sponsorships';
 import Sponsors from './sections/Sponsors';
+import PreviousSponsors from './sections/PreviousSponsors';
 import Information from './sections/Information';
 import Footer from './sections/Footer';
 
@@ -61,6 +62,7 @@ class App extends Component {
           {data.showCurrentSponsorsSection ? (
             <Sponsors packages={data.sponsorships.packages} tables={data.sponsorships.tables} />
           ) : null}
+          <PreviousSponsors sponsorships={data.sponsorships} />
           <Information />
           <Footer />
         </AppLayout>
