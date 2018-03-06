@@ -1,4 +1,7 @@
+# If you need help understanding the syntax of this document: https://learnxinyminutes.com/docs/yaml/
+# This section is for general event details.
 title: Tax Prom 2018
+# Please use YYYY-MM-DD date formats.
 date: 2018-11-15
 time: 6 p.m.
 earlyPriceEnds: 2018-05-25
@@ -7,6 +10,8 @@ venueName: The National Building Museum
 venueAddress: >
   440 G Street NW
   Washington, DC 20001
+# Use these shoWhatever variables to turn on and off certain parts of the site.
+# Setting it to 'true' turns it on, and 'false' turns it off.
 showCurrentSponsorsSection: true
 showAwardWinnerSection: true
 details:
@@ -20,6 +25,9 @@ details:
     - Engage with more than 700 of the tax community's most influential executive branch officials, congressional staffers, members of Congress, fortune 500 companies, trade associations, D.C. firms, and non-profits.
     - Establish yourself or your organization as a critical voice in the tax reform debate.
     - Promote your brand to the DC tax community.
+# Each sponsorship is contained as a package (e.g., the receptions), a table, or a ticket.
+# Under each type is a list of the available levels (e.g., Platinum, Gold, etc.).
+# Past and present sponsors are also recorded under the level they have sponsored.
 sponsorships:
   packages:
     - name: VIP Receiption
