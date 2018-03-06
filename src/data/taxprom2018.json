@@ -33,7 +33,8 @@
         ],
         "sponsors": [
           {
-            "name": "Top Sponsor"
+            "name": "Top Sponsor",
+            "link": "https://taxfoundation.org"
           },
           {
             "name": "Another Top Sponsor"

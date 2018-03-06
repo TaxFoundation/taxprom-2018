@@ -31,7 +31,19 @@ const Sponsors = props => (
           {props.packages.map((p, i) => (
             <div key={`package-${i}`}>
               <h4>{p.name}</h4>
-              <ul>{p.sponsors.map((s, j) => <li key={`package-${i}-sponsor-${j}`}>{s.name}</li>)}</ul>
+              <ul>
+                {p.sponsors.map((s, j) => {
+                  if (s.link) {
+                    return (
+                      <li key={`package-${i}-sponsor-${j}`}>
+                        <a href={s.link}>{s.name}</a>
+                      </li>
+                    );
+                  } else {
+                    return <li key={`package-${i}-sponsor-${j}`}>{s.name}</li>;
+                  }
+                })}
+              </ul>
             </div>
           ))}
         </SponsorsContainer>

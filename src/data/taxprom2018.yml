@@ -34,6 +34,7 @@ sponsorships:
         - Recognition by name from the podium during dinner
       sponsors:
         - name: Top Sponsor
+          link: https://taxfoundation.org
         - name: Another Top Sponsor
       previousSponsors:
         - name: Business Roundtable
