@@ -21,6 +21,16 @@ const SponsorsContainer = styled.div`
   }
 `;
 
+const SponsorsSection = styled.div`
+  border: 1px solid ${props => props.theme.borderColor};
+  padding: 1rem;
+`;
+
+const SponsorsList = styled.ul`
+  display: grid;
+  grid-gap: 0.6rem;
+`;
+
 const Sponsors = props => (
   <SectionContainer>
     <section>
@@ -29,9 +39,9 @@ const Sponsors = props => (
         <h3>Reception Sponsors</h3>
         <SponsorsContainer>
           {props.packages.map((p, i) => (
-            <div key={`package-${i}`}>
+            <SponsorsSection key={`package-${i}`}>
               <h4>{p.name}</h4>
-              <ul>
+              <SponsorsList>
                 {p.sponsors.map((s, j) => {
                   if (s.link) {
                     return (
@@ -43,8 +53,8 @@ const Sponsors = props => (
                     return <li key={`package-${i}-sponsor-${j}`}>{s.name}</li>;
                   }
                 })}
-              </ul>
-            </div>
+              </SponsorsList>
+            </SponsorsSection>
           ))}
         </SponsorsContainer>
       </section>
@@ -52,10 +62,10 @@ const Sponsors = props => (
         <h3>Table Sponsors</h3>
         <SponsorsContainer>
           {props.tables.map((t, i) => (
-            <div key={`table-${i}`}>
+            <SponsorsSection key={`table-${i}`}>
               <h4>{t.name}</h4>
-              <ul>{t.sponsors.map((s, j) => <li key={`table-${i}-sponsor-${j}`}>{s.name}</li>)}</ul>
-            </div>
+              <SponsorsList>{t.sponsors.map((s, j) => <li key={`table-${i}-sponsor-${j}`}>{s.name}</li>)}</SponsorsList>
+            </SponsorsSection>
           ))}
         </SponsorsContainer>
       </section>

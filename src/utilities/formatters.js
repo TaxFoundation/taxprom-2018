@@ -35,4 +35,6 @@ const fullDate = date => {
   return `${theMonth} ${theDate}, ${theYear}`;
 };
 
-export { dollars, getOrdinal, fullDate };
+const slugify = words => words.replace(/\s+/g, '-').toLowerCase();
+
+export { dollars, getOrdinal, fullDate, slugify };

@@ -8,9 +8,12 @@ const PackageBox = SponsorLevel.extend`
 
 const Package = props => (
   <PackageBox>
-    <h4>{props.package.name}</h4>
-    <p>{dollars(props.package.price)}</p>
-    <ul>{props.package.benefits.map((b, i) => <li key={`${props.id}-${i}`}>{b}</li>)}</ul>
+    <h4 className="sponsorship__title">{props.package.name}</h4>
+    <p className="sponsorship__price">{dollars(props.package.price)}</p>
+    <ul className="sponsorship__benefits">
+      {props.package.benefits.map((b, i) => <li key={`${props.id}-${i}`}>{b}</li>)}
+    </ul>
+    <a className="sponsorship__pledge" href="#">{`Sponsor the ${props.package.name}`}</a>
   </PackageBox>
 );
 

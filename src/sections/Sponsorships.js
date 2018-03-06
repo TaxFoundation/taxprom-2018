@@ -4,6 +4,7 @@ import SectionContainer from '../components/SectionContainer';
 import Table from '../components/Table';
 import Package from '../components/Package';
 import Ticket from '../components/Ticket';
+import { slugify } from '../utilities/formatters';
 
 const LevelsContainer = styled.div`
   display: grid;
@@ -26,7 +27,7 @@ const Sponsorships = props => (
       <h3>Reception Sponsorships</h3>
       <LevelsContainer>
         {props.sponsorships.packages.map(t => {
-          let id = `package-${t.name.replace(/\s+/g, '-').toLowerCase()}`;
+          let id = `package-${slugify(t.name)}`;
           return <Package key={id} id={id} package={t} dates={props.dates} />;
         })}
       </LevelsContainer>
@@ -35,7 +36,7 @@ const Sponsorships = props => (
       <h3>Table Sponsorships</h3>
       <LevelsContainer>
         {props.sponsorships.tables.map(t => {
-          let id = `table-${t.name.replace(/\s+/g, '-').toLowerCase()}`;
+          let id = `table-${slugify(t.name)}`;
           return <Table key={id} id={id} table={t} dates={props.dates} />;
         })}
       </LevelsContainer>
@@ -44,7 +45,7 @@ const Sponsorships = props => (
       <h3>Individual Tickets</h3>
       <LevelsContainer>
         {props.sponsorships.tickets.map(t => {
-          let id = `ticket-${t.name.replace(/\s+/g, '-').toLowerCase()}`;
+          let id = `ticket-${slugify(t.name)}`;
           return <Ticket key={id} id={id} ticket={t} dates={props.dates} />;
         })}
       </LevelsContainer>

@@ -8,9 +8,12 @@ const TicketBox = SponsorLevel.extend`
 
 const Ticket = props => (
   <TicketBox>
-    <h4>{props.ticket.name}</h4>
-    <p>{dollars(props.ticket.price)}</p>
-    <ul>{props.ticket.benefits.map((b, i) => <li key={`${props.id}-${i}`}>{b}</li>)}</ul>
+    <h4 className="sponsorship__title">{props.ticket.name}</h4>
+    <p className="sponsorship__price">{dollars(props.ticket.price)}</p>
+    <ul className="sponsorship__benefits">
+      {props.ticket.benefits.map((b, i) => <li key={`${props.id}-${i}`}>{b}</li>)}
+    </ul>
+    <a className="sponsorship__pledge" href="#">{`Buy a ${props.ticket.name} Ticket`}</a>
   </TicketBox>
 );
 

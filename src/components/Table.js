@@ -19,9 +19,12 @@ const Table = props => {
 
   return (
     <TableBox>
-      <h4>{props.table.name}</h4>
-      <p>{dollars(currentPrice)}</p>
-      <ul>{props.table.benefits.map((b, i) => <li key={`${props.id}-${i}`}>{b}</li>)}</ul>
+      <h4 className="sponsorship__title">{props.table.name}</h4>
+      <p className="sponsorship__price">{dollars(currentPrice)}</p>
+      <ul className="sponsorship__benefits">
+        {props.table.benefits.map((b, i) => <li key={`${props.id}-${i}`}>{b}</li>)}
+      </ul>
+      <a className="sponsorship__pledge" href="#">{`Sponsor a ${props.table.name} Table`}</a>
     </TableBox>
   );
 };
