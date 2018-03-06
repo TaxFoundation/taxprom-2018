@@ -6,6 +6,8 @@
   "regularPriceEnds": "2018-10-15T00:00:00.000Z",
   "venueName": "The National Building Museum",
   "venueAddress": "440 G Street NW Washington, DC 20001\n",
+  "showCurrentSponsorsSection": true,
+  "showAwardWinnerSection": true,
   "details": {
     "detailsTitle": "Celebrating 81 Years of Promoting Better Tax Policy",
     "detailsDescription": "For 81 years, the Tax Foundation’s annual dinner has been an institution\nfor the tax community’s best, brightest, and most influential. Join us in\nNovember of 2018 for our 81st annual Tax Prom, and find out why hundreds of\npeople say this is the tax world’s most celebrated event of the year.\n",
@@ -29,7 +31,14 @@
           "Opportunity to Give a Toast at the VIP Reception",
           "Recognition by name from the podium during dinner"
         ],
-        "sponsors": [],
+        "sponsors": [
+          {
+            "name": "Top Sponsor"
+          },
+          {
+            "name": "Another Top Sponsor"
+          }
+        ],
         "previousSponsors": [
           {
             "name": "Business Roundtable",
@@ -47,7 +56,14 @@
           "Full page customized company recognition spot in the event program provided to all guests",
           "Recognition by name from the podium during dinner"
         ],
-        "sponsors": [],
+        "sponsors": [
+          {
+            "name": "Top Sponsor"
+          },
+          {
+            "name": "Another Top Sponsor"
+          }
+        ],
         "previousSponsors": [
           {
             "name": "Anheuser-Busch Companies",
@@ -65,7 +81,14 @@
           "Full page customized company recognition spot in the event program provided to all guests",
           "Recognition by name from the podium during dinner"
         ],
-        "sponsors": [],
+        "sponsors": [
+          {
+            "name": "Top Sponsor"
+          },
+          {
+            "name": "Another Top Sponsor"
+          }
+        ],
         "previousSponsors": []
       }
     ],
@@ -89,12 +112,20 @@
           "Recognition by name from the podium during dinner"
         ],
         "sponsors": [
-          "Top Sponsor",
-          "Another Top Sponsor"
+          {
+            "name": "Top Sponsor"
+          },
+          {
+            "name": "Another Top Sponsor"
+          }
         ],
         "previousSponsors": [
-          "Top Sponsor",
-          "Another Top Sponsor"
+          {
+            "name": "Top Sponsor"
+          },
+          {
+            "name": "Another Top Sponsor"
+          }
         ]
       },
       {
@@ -115,12 +146,20 @@
           "Opportunity to nominate Tax Prom King & Queen candidates"
         ],
         "sponsors": [
-          "Top Sponsor",
-          "Another Top Sponsor"
+          {
+            "name": "Top Sponsor"
+          },
+          {
+            "name": "Another Top Sponsor"
+          }
         ],
         "previousSponsors": [
-          "Top Sponsor",
-          "Another Top Sponsor"
+          {
+            "name": "Top Sponsor"
+          },
+          {
+            "name": "Another Top Sponsor"
+          }
         ]
       },
       {
@@ -139,12 +178,20 @@
           "Opportunity to seat key guests at your table"
         ],
         "sponsors": [
-          "Top Sponsor",
-          "Another Top Sponsor"
+          {
+            "name": "Top Sponsor"
+          },
+          {
+            "name": "Another Top Sponsor"
+          }
         ],
         "previousSponsors": [
-          "Top Sponsor",
-          "Another Top Sponsor"
+          {
+            "name": "Top Sponsor"
+          },
+          {
+            "name": "Another Top Sponsor"
+          }
         ]
       },
       {
@@ -158,12 +205,20 @@
           "Listing as Bronze Sponsor in the event programs provided to all guests"
         ],
         "sponsors": [
-          "Top Sponsor",
-          "Another Top Sponsor"
+          {
+            "name": "Top Sponsor"
+          },
+          {
+            "name": "Another Top Sponsor"
+          }
         ],
         "previousSponsors": [
-          "Top Sponsor",
-          "Another Top Sponsor"
+          {
+            "name": "Top Sponsor"
+          },
+          {
+            "name": "Another Top Sponsor"
+          }
         ]
       }
     ],

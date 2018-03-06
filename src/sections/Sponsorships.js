@@ -1,18 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
+import SectionContainer from '../components/SectionContainer';
 import Table from '../components/Table';
 import Package from '../components/Package';
 import Ticket from '../components/Ticket';
-
-const SponsorshipsSection = styled.section`
-  display: grid;
-  grid-template: repeat(3, auto) / auto;
-  padding: 0 1rem;
-
-  h3 {
-    text-align: center;
-  }
-`;
 
 const LevelsContainer = styled.div`
   display: grid;
@@ -30,7 +21,7 @@ const LevelsContainer = styled.div`
 `;
 
 const Sponsorships = props => (
-  <SponsorshipsSection>
+  <SectionContainer>
     <section>
       <h3>Reception Sponsorships</h3>
       <LevelsContainer>
@@ -58,7 +49,7 @@ const Sponsorships = props => (
         })}
       </LevelsContainer>
     </section>
-  </SponsorshipsSection>
+  </SectionContainer>
 );
 
 export default Sponsorships;

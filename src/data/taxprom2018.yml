@@ -7,6 +7,8 @@ venueName: The National Building Museum
 venueAddress: >
   440 G Street NW
   Washington, DC 20001
+showCurrentSponsorsSection: true
+showAwardWinnerSection: true
 details:
   detailsTitle: Celebrating 81 Years of Promoting Better Tax Policy
   detailsDescription: |
@@ -30,7 +32,9 @@ sponsorships:
         - Full page company sponsorship recognition spot in the event program provided to all guests
         - Opportunity to Give a Toast at the VIP Reception
         - Recognition by name from the podium during dinner
-      sponsors: []
+      sponsors:
+        - name: Top Sponsor
+        - name: Another Top Sponsor
       previousSponsors:
         - name: Business Roundtable
           link: http://businessroundtable.org/
@@ -42,7 +46,9 @@ sponsorships:
         - Branded Napkins
         - Full page customized company recognition spot in the event program provided to all guests
         - Recognition by name from the podium during dinner
-      sponsors: []
+      sponsors:
+        - name: Top Sponsor
+        - name: Another Top Sponsor
       previousSponsors:
         - name: Anheuser-Busch Companies
           link: http://www.anheuser-busch.com/
@@ -54,7 +60,9 @@ sponsorships:
         - Branded Napkins
         - Full page customized company recognition spot in the event program provided to all guests
         - Recognition by name from the podium during dinner
-      sponsors: []
+      sponsors:
+        - name: Top Sponsor
+        - name: Another Top Sponsor
       previousSponsors: []
   tables:
     - name: Platinum
@@ -74,11 +82,11 @@ sponsorships:
         - Opportunity to nominate Tax Prom King & Queen candidates
         - Recognition by name from the podium during dinner
       sponsors:
-        - Top Sponsor
-        - Another Top Sponsor
+        - name: Top Sponsor
+        - name: Another Top Sponsor
       previousSponsors:
-        - Top Sponsor
-        - Another Top Sponsor
+        - name: Top Sponsor
+        - name: Another Top Sponsor
     - name: Gold
       earlyPrice: 15000
       regularPrice: 20000
@@ -95,11 +103,11 @@ sponsorships:
         - Listing or logo in repeating slideshow during event
         - Opportunity to nominate Tax Prom King & Queen candidates
       sponsors:
-        - Top Sponsor
-        - Another Top Sponsor
+        - name: Top Sponsor
+        - name: Another Top Sponsor
       previousSponsors:
-        - Top Sponsor
-        - Another Top Sponsor
+        - name: Top Sponsor
+        - name: Another Top Sponsor
     - name: Silver
       earlyPrice: 12000
       regularPrice: 15000
@@ -114,11 +122,11 @@ sponsorships:
         - Listing on posters at general and dessert receptions
         - Opportunity to seat key guests at your table
       sponsors:
-        - Top Sponsor
-        - Another Top Sponsor
+        - name: Top Sponsor
+        - name: Another Top Sponsor
       previousSponsors:
-        - Top Sponsor
-        - Another Top Sponsor
+        - name: Top Sponsor
+        - name: Another Top Sponsor
     - name: Bronze
       earlyPrice: 8000
       regularPrice: 10000
@@ -128,11 +136,11 @@ sponsorships:
         - Namebadge ribbon recognizing sponsorship level
         - Listing as Bronze Sponsor in the event programs provided to all guests
       sponsors:
-        - Top Sponsor
-        - Another Top Sponsor
+        - name: Top Sponsor
+        - name: Another Top Sponsor
       previousSponsors:
-        - Top Sponsor
-        - Another Top Sponsor        
+        - name: Top Sponsor
+        - name: Another Top Sponsor      
   tickets:
     - name: VIP Ticket
       price: 2500

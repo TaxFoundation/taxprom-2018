@@ -14,8 +14,6 @@ import Footer from './sections/Footer';
 
 const AppLayout = styled.div`
   font-family: ${props => props.theme.fontFamily};
-  margin: 0 auto;
-  max-width: 1440px;
 
   h1 {
     font-size: calc(3 * ${props => props.theme.fontSize});
@@ -55,12 +53,14 @@ class App extends Component {
           <Header />
           <Splash title={data.title} date={data.date} venueName={data.venueName} />
           <Details details={data.details} />
-          <Awards />
+          {data.showAwardsSection ? <Awards /> : null}
           <Sponsorships
             sponsorships={data.sponsorships}
             dates={{ early: data.earlyPriceEnds, regular: data.regularPriceEnds }}
           />
-          <Sponsors sponsorships={data.sponsorships} />
+          {data.showCurrentSponsorsSection ? (
+            <Sponsors packages={data.sponsorships.packages} tables={data.sponsorships.tables} />
+          ) : null}
           <Information />
           <Footer />
         </AppLayout>

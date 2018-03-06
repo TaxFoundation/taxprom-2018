@@ -1,15 +1,11 @@
 import React from 'react';
-import styled from 'styled-components';
-
-const DetailsContainer = styled.section`
-  padding: 0 1rem;
-`;
+import SectionContainer from '../components/SectionContainer';
 
 const Details = props => (
-  <DetailsContainer>
+  <SectionContainer>
     <h2>{props.details.detailsTitle}</h2>
     <p>{props.details.detailsDescription}</p>
-  </DetailsContainer>
+  </SectionContainer>
 );
 
 export default Details;
