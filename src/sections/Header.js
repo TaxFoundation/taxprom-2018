@@ -13,6 +13,7 @@ const StyledHeader = styled.header`
   position: fixed;
   right: 0;
   top: 0;
+  transition: background-color 0.3s ease-in-out;
 `;
 
 const LogoLink = styled.a`
@@ -31,8 +32,8 @@ const MenuLink = styled.div`
   justify-self: end;
 `;
 
-const Header = () => (
-  <StyledHeader backgroundColor="#0094ff">
+const Header = props => (
+  <StyledHeader backgroundColor={props.transparent ? 'transparent' : '#0094ff'}>
     <LogoLink href="https://taxfoundation.org">
       <Logo fill="#fff" />
     </LogoLink>

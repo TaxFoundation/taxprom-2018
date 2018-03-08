@@ -46,24 +46,70 @@ const AppLayout = styled.div`
   }
 `;
 
+const sectionRoutes = [
+  {
+    name: 'Why Tax Prom?',
+    slug: 'details',
+  },
+  {
+    name: 'Sponsor Tax Prom',
+    slug: 'sponsorships',
+  },
+  {
+    name: 'Who Sponsors Tax Prom?',
+    slug: 'sponsors',
+  },
+  {
+    name: 'About the Event',
+    slug: 'information',
+  },
+];
+
 class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      transparentHeader: true,
+    };
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 30) {
+        this.setState({ transparentHeader: false });
+      } else {
+        this.setState({ transparentHeader: true });
+      }
+    });
+  }
+
+  updateHeaderBG() {
+    this.setState({ transparentHeader: !this.transparentHeader });
+  }
+
   render() {
     return (
       <ThemeProvider theme={Theme}>
         <AppLayout>
-          <Header />
-          <Splash title={data.title} date={data.date} venueName={data.venueName} />
-          <Details details={data.details} />
+          <Header routes={sectionRoutes} transparent={this.state.transparentHeader} />
+          <Splash title={data.title} date={data.date} updateHeaderBG={this.updateHeaderBG} venueName={data.venueName} />
+          <Details details={data.details} route={sectionRoutes[0]} />
           {data.showAwardsSection ? <Awards /> : null}
           <Sponsorships
+            routes={sectionRoutes[1]}
             sponsorships={data.sponsorships}
             dates={{ early: data.earlyPriceEnds, regular: data.regularPriceEnds }}
           />
           {data.showCurrentSponsorsSection ? (
-            <Sponsors packages={data.sponsorships.packages} tables={data.sponsorships.tables} />
+            <Sponsors
+              routes={sectionRoutes[2]}
+              packages={data.sponsorships.packages}
+              tables={data.sponsorships.tables}
+            />
           ) : null}
           <PreviousSponsors sponsorships={data.sponsorships} />
-          <Information />
+          <Information routes={sectionRoutes[3]} />
           <Footer />
         </AppLayout>
       </ThemeProvider>
