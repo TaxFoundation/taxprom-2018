@@ -118,7 +118,13 @@ class App extends Component {
             />
           ) : null}
           <PreviousSponsors sponsorships={data.sponsorships} />
-          <Information routes={sectionRoutes[3]} date={data.date} venue={data.venueName} address={data.venueAddress} />
+          <Information
+            routes={sectionRoutes[3]}
+            map={data.locationGoogleMapEmbedLink}
+            date={data.date}
+            venue={data.venueName}
+            address={data.venueAddress}
+          />
           <Footer />
         </AppLayout>
       </ThemeProvider>

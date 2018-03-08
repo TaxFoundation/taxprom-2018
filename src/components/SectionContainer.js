@@ -4,7 +4,7 @@ const SectionContainer = styled.section`
   justify-content: center;
   display: grid;
   grid-template: auto / minmax(auto, ${props => props.theme.maxWidth});
-  padding: 0 1rem;
+  padding: 0.5rem 1rem;
 `;
 
 export default SectionContainer;
