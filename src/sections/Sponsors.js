@@ -38,35 +38,49 @@ const Sponsors = props => (
       <section>
         <h3>Reception Sponsors</h3>
         <SponsorsContainer>
-          {props.packages.map((p, i) => (
-            <SponsorsSection key={`package-${i}`}>
-              <h4>{p.name}</h4>
-              <SponsorsList>
-                {p.sponsors.map((s, j) => {
-                  if (s.link) {
-                    return (
-                      <li key={`package-${i}-sponsor-${j}`}>
-                        <a href={s.link}>{s.name}</a>
-                      </li>
-                    );
-                  } else {
-                    return <li key={`package-${i}-sponsor-${j}`}>{s.name}</li>;
-                  }
-                })}
-              </SponsorsList>
-            </SponsorsSection>
-          ))}
+          {props.packages.map((p, i) => {
+            if (p.sponsors.length > 0) {
+              return (
+                <SponsorsSection key={`package-${i}`}>
+                  <h4>{p.name}</h4>
+                  <SponsorsList>
+                    {p.sponsors.map((s, j) => {
+                      if (s.link) {
+                        return (
+                          <li key={`package-${i}-sponsor-${j}`}>
+                            <a href={s.link}>{s.name}</a>
+                          </li>
+                        );
+                      } else {
+                        return <li key={`package-${i}-sponsor-${j}`}>{s.name}</li>;
+                      }
+                    })}
+                  </SponsorsList>
+                </SponsorsSection>
+              );
+            } else {
+              return null;
+            }
+          })}
         </SponsorsContainer>
       </section>
       <section>
         <h3>Table Sponsors</h3>
         <SponsorsContainer>
-          {props.tables.map((t, i) => (
-            <SponsorsSection key={`table-${i}`}>
-              <h4>{t.name}</h4>
-              <SponsorsList>{t.sponsors.map((s, j) => <li key={`table-${i}-sponsor-${j}`}>{s.name}</li>)}</SponsorsList>
-            </SponsorsSection>
-          ))}
+          {props.tables.map((t, i) => {
+            if (t.sponsors.length > 0) {
+              return (
+                <SponsorsSection key={`table-${i}`}>
+                  <h4>{t.name}</h4>
+                  <SponsorsList>
+                    {t.sponsors.map((s, j) => <li key={`table-${i}-sponsor-${j}`}>{s.name}</li>)}
+                  </SponsorsList>
+                </SponsorsSection>
+              );
+            } else {
+              return null;
+            }
+          })}
         </SponsorsContainer>
       </section>
     </section>

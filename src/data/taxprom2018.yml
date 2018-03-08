@@ -99,8 +99,14 @@ sponsorships:
         - name: Top Sponsor
         - name: Another Top Sponsor
       previousSponsors:
-        - name: Top Sponsor
-        - name: Another Top Sponsor
+        - name: Aflac, Inc.
+        - name: American Bankers Association
+        - name: Coca-Cola Company
+        - name: Emerson
+        - name: EY
+        - name: Intuit Inc.
+        - name: PricewaterhouseCoopers LLP
+        - name: Wine & Spirits Wholesalers of America
     - name: Gold
       earlyPrice: 15000
       regularPrice: 20000
@@ -120,8 +126,20 @@ sponsorships:
         - name: Top Sponsor
         - name: Another Top Sponsor
       previousSponsors:
-        - name: Top Sponsor
-        - name: Another Top Sponsor
+        - name: 3M Company
+        - name: Altria Client Services LLC
+        - name: Caterpillar Inc.
+        - name: ExxonMobil Corporation
+        - name: H&R Block, Inc.
+        - name: K&L Gates LLP
+        - name: McGuireWoods LLP
+        - name: Pfizer, Inc.
+        - name: PMI Global Services, Inc.
+        - name: Praxair, Inc.
+        - name: Procter & Gamble Co.
+        - name: S&P Global, Inc.
+        - name: Squire Patton Boggs
+        - name: United Technologies Corporation
     - name: Silver
       earlyPrice: 12000
       regularPrice: 15000
@@ -139,8 +157,24 @@ sponsorships:
         - name: Top Sponsor
         - name: Another Top Sponsor
       previousSponsors:
-        - name: Top Sponsor
-        - name: Another Top Sponsor
+        - name: Allergan Plc
+        - name: Alliance for Market Solutions
+        - name: Amgen Inc.
+        - name: Boeing Company
+        - name: Brownstein Hyatt Farber Schreck, LLP
+        - name: DCI Group
+        - name: Deloitte Tax LLP
+        - name: FedEx
+        - name: HP Inc.
+        - name: International Council of Shopping Centers
+        - name: KPMG LLP
+        - name: Microsoft Corporation
+        - name: Miller & Chevalier Chartered
+        - name: Nareit
+        - name: PepsiCo, Inc.
+        - name: United Parcel Service Inc.
+        - name: Verizon Communications Inc.
+        - name: Weyerhaeuser Company
     - name: Bronze
       earlyPrice: 8000
       regularPrice: 10000
@@ -153,8 +187,24 @@ sponsorships:
         - name: Top Sponsor
         - name: Another Top Sponsor
       previousSponsors:
-        - name: Top Sponsor
-        - name: Another Top Sponsor      
+        - name: Abbott Laboratories
+        - name: Abbvie Inc.
+        - name: American Express Company
+        - name: AT&T
+        - name: Beer Institute
+        - name: Dow Chemical Company
+        - name: Federal Policy Group
+        - name: Goodyear Tire & Rubber Company
+        - name: Hoover Institution
+        - name: Horizon Pharma
+        - name: Iron Mountain Inc.
+        - name: Lockheed Martin Company
+        - name: Merck & Co., Inc.
+        - name: New York Life Insurance Company
+        - name: NextEra Energy, Inc.
+        - name: Raytheon Company
+        - name: Shell Oil Company
+        - name: State Policy Network
   tickets:
     - name: VIP Ticket
       price: 2500
