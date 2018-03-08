@@ -6,6 +6,7 @@ const Theme = {
   mobileWidth: '480px',
   tfBlue: '#0094ff',
   headerBG: '#0094ff',
+  splashBG: '#de1e7e',
 };
 
 export default Theme;

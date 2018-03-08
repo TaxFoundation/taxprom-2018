@@ -5,7 +5,7 @@ import { fullDate } from '../utilities/formatters';
 const SplashContainer = styled.section`
   align-content: center;
   align-items: center;
-  background-color: #999;
+  background-color: ${props => props.theme.splashBG};
   display: grid;
   grid-gap: 1rem;
   height: 100vh;
