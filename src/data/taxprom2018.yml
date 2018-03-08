@@ -1,11 +1,11 @@
 # If you need help understanding the syntax of this document: https://learnxinyminutes.com/docs/yaml/
 # This section is for general event details.
 title: Tax Prom 2018
-# Please use YYYY-MM-DD date formats.
-date: 2018-11-15
+# Please use YYYY-MM-DD HH:MM:SS -[[EST hour offset]] date formats.
+date: 2018-11-15 18:00:00 -5
 time: 6 p.m.
-earlyPriceEnds: 2018-05-25
-regularPriceEnds: 2018-10-15
+earlyPriceEnds: 2018-05-25 23:59:59 -4
+regularPriceEnds: 2018-10-15 23:59:59 -4
 venueName: The National Building Museum
 venueAddress: >
   440 G Street NW
@@ -14,6 +14,7 @@ venueAddress: >
 # Setting it to 'true' turns it on, and 'false' turns it off.
 showCurrentSponsorsSection: true
 showAwardWinnerSection: true
+showHostCommittee: true
 details:
   detailsTitle: Celebrating 81 Years of Promoting Better Tax Policy
   detailsDescription: |
@@ -165,3 +166,10 @@ sponsorships:
       benefits:
       - Includes General Seating
       - Access to General and Dessert Receptions
+hostcommittee:
+  - name: Person One
+    org: Super Megacorp
+  - name: Person Two
+    org: Ultra Bigbox Inc
+  - name: Person Three
+    org: I'm running out of fake company name ideas
