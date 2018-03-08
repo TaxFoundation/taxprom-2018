@@ -5,10 +5,6 @@ const SectionContainer = styled.section`
   display: grid;
   grid-template: auto / minmax(auto, ${props => props.theme.maxWidth});
   padding: 0 1rem;
-
-  h3 {
-    text-align: center;
-  }
 `;
 
 export default SectionContainer;

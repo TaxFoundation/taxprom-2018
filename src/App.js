@@ -16,6 +16,15 @@ import Footer from './sections/Footer';
 const AppLayout = styled.div`
   font-family: ${props => props.theme.fontFamily};
 
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-align: center;
+  }
+
   h1 {
     font-size: calc(3 * ${props => props.theme.fontSize});
     line-height: 1.2;
@@ -109,7 +118,7 @@ class App extends Component {
             />
           ) : null}
           <PreviousSponsors sponsorships={data.sponsorships} />
-          <Information routes={sectionRoutes[3]} />
+          <Information routes={sectionRoutes[3]} date={data.date} venue={data.venueName} address={data.venueAddress} />
           <Footer />
         </AppLayout>
       </ThemeProvider>
