@@ -5,7 +5,7 @@ import { Logo, Menu } from '../components/Icons';
 const StyledHeader = styled.header`
   align-content: space-between;
   align-items: end;
-  background-color: ${props => props.backgroundColor};
+  background-color: ${props => (props.backgroundColor ? props.theme.headerBG : 'transparent')};
   display: grid;
   grid-template: auto / auto 1fr auto;
   left: 0;
@@ -33,7 +33,7 @@ const MenuLink = styled.div`
 `;
 
 const Header = props => (
-  <StyledHeader backgroundColor={props.transparent ? 'transparent' : '#0094ff'}>
+  <StyledHeader backgroundColor={props.transparent ? false : true}>
     <LogoLink href="https://taxfoundation.org">
       <Logo fill="#fff" />
     </LogoLink>

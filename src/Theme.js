@@ -5,6 +5,7 @@ const Theme = {
   maxWidth: '1440px',
   mobileWidth: '480px',
   tfBlue: '#0094ff',
+  headerBG: '#0094ff',
 };
 
 export default Theme;
