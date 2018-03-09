@@ -21,36 +21,46 @@ const LevelsContainer = styled.div`
   }
 `;
 
-const Sponsorships = props => (
-  <SectionContainer>
-    <section>
-      <h3>Reception Sponsorships</h3>
-      <LevelsContainer>
-        {props.sponsorships.packages.map(t => {
-          let id = `package-${slugify(t.name)}`;
-          return <Package key={id} id={id} package={t} dates={props.dates} />;
-        })}
-      </LevelsContainer>
-    </section>
-    <section>
-      <h3>Table Sponsorships</h3>
-      <LevelsContainer>
-        {props.sponsorships.tables.map(t => {
-          let id = `table-${slugify(t.name)}`;
-          return <Table key={id} id={id} table={t} dates={props.dates} />;
-        })}
-      </LevelsContainer>
-    </section>
-    <section>
-      <h3>Individual Tickets</h3>
-      <LevelsContainer>
-        {props.sponsorships.tickets.map(t => {
-          let id = `ticket-${slugify(t.name)}`;
-          return <Ticket key={id} id={id} ticket={t} dates={props.dates} />;
-        })}
-      </LevelsContainer>
-    </section>
-  </SectionContainer>
-);
+const Sponsorships = props => {
+  let priceType = 'earlyPrice';
+  const now = Date.now();
+  if (now > new Date(props.dates.regular)) {
+    priceType = 'latePrice';
+  } else if (now > new Date(props.dates.early)) {
+    priceType = 'regularPrice';
+  }
+
+  return (
+    <SectionContainer>
+      <section>
+        <h3>Reception Sponsorships</h3>
+        <LevelsContainer>
+          {props.sponsorships.packages.map(t => {
+            let id = `package-${slugify(t.name)}`;
+            return <Package key={id} id={id} package={t} />;
+          })}
+        </LevelsContainer>
+      </section>
+      <section>
+        <h3>Table Sponsorships</h3>
+        <LevelsContainer>
+          {props.sponsorships.tables.map(t => {
+            let id = `table-${slugify(t.name)}`;
+            return <Table key={id} id={id} table={t} price={priceType} />;
+          })}
+        </LevelsContainer>
+      </section>
+      <section>
+        <h3>Individual Tickets</h3>
+        <LevelsContainer>
+          {props.sponsorships.tickets.map(t => {
+            let id = `ticket-${slugify(t.name)}`;
+            return <Ticket key={id} id={id} ticket={t} />;
+          })}
+        </LevelsContainer>
+      </section>
+    </SectionContainer>
+  );
+};
 
 export default Sponsorships;

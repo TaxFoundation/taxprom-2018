@@ -7,20 +7,10 @@ const TableBox = SponsorLevel.extend`
 `;
 
 const Table = props => {
-  let currentPrice = 0;
-  const now = Date.now();
-  if (now > new Date(props.dates.regular)) {
-    currentPrice = props.table.latePrice;
-  } else if (now > new Date(props.dates.early)) {
-    currentPrice = props.table.regularPrice;
-  } else {
-    currentPrice = props.table.earlyPrice;
-  }
-
   return (
     <TableBox>
       <h4 className="sponsorship__title">{props.table.name}</h4>
-      <p className="sponsorship__price">{dollars(currentPrice)}</p>
+      <p className="sponsorship__price">{dollars(props.table[props.price])}</p>
       <ul className="sponsorship__benefits">
         {props.table.benefits.map((b, i) => <li key={`${props.id}-${i}`}>{b}</li>)}
       </ul>
