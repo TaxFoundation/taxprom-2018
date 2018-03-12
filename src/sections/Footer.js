@@ -10,24 +10,34 @@ const FooterContainer = styled.footer`
 const FooterContent = styled.div`
   color: #fff;
   display: grid;
-  grid-template-columns: minmax(300px, 500px) 1fr minmax(350px, 1fr);
-  grid-template-rows: 50px auto;
+  grid-gap: 1rem;
+  grid-template-areas:
+    'logo'
+    'address'
+    'disclaimer';
+  grid-template-columns: auto;
+  grid-template-rows: 40px repeat(2, auto);
   padding: 0.5rem 0;
+
+  @media (min-width: 800px) {
+    grid-template-areas:
+      'logo    . disclaimer'
+      'address . disclaimer';
+    grid-template-columns: minmax(300px, 500px) 1fr minmax(350px, 1fr);
+    grid-template-rows: 50px auto;
+  }
 `;
 
 const LogoSection = styled.div`
-  grid-column: 1 / 2;
-  grid-row: 1 / 2;
+  grid-area: logo;
 `;
 
 const ContactInfo = styled.div`
-  grid-column: 1 / 2;
-  grid-row: 2 / 3;
+  grid-area: address;
 `;
 
 const Disclaimer = styled.div`
-  grid-column: 3 / 4;
-  grid-row: 1 / 3;
+  grid-area: disclaimer;
 `;
 
 const Footer = () => (
