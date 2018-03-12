@@ -4,7 +4,12 @@ import SectionContainer from '../components/SectionContainer';
 import { Logo } from '../components/Icons';
 
 const FooterContainer = styled.footer`
-  background-color: ${props => props.theme.footerBG};
+  background-color: ${props => props.theme.primary};
+  background: linear-gradient(
+    180deg,
+    ${props => props.theme.primary} 0%,
+    ${props => props.theme.primaryHighlight} 100%
+  );
 `;
 
 const FooterContent = styled.div`

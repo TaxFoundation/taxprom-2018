@@ -13,8 +13,12 @@ const Theme = {
   maxWidth: '1440px',
   mobileWidth: '480px',
   tfBlue: '#0094ff',
+  primary: palette.primary,
+  primaryHighlight: palette.primaryHighlight,
+  secondary: palette.secondary,
+  secondaryHighlight: palette.secondaryHighlight,
+  tertiary: palette.tertiary,
   headerBG: palette.primary,
-  splashBG: palette.secondary,
   footerBG: palette.primary,
 };
 

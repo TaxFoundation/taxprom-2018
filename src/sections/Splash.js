@@ -5,7 +5,13 @@ import { fullDate } from '../utilities/formatters';
 const SplashContainer = styled.section`
   align-content: center;
   align-items: center;
-  background-color: ${props => props.theme.splashBG};
+  background-color: ${props => props.theme.secondary};
+  background: linear-gradient(
+    180deg,
+    ${props => props.theme.secondary} 0%,
+    ${props => props.theme.secondaryHighlight} 100%
+  );
+  color: #fff;
   display: grid;
   grid-gap: 1rem;
   height: 100vh;
