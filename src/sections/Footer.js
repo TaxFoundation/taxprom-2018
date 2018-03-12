@@ -37,7 +37,18 @@ const ContactInfo = styled.div`
 `;
 
 const Disclaimer = styled.div`
+  font-size: 0.8rem;
   grid-area: disclaimer;
+
+  a {
+    color: #fff;
+
+    &:focus,
+    &:active,
+    &:visited {
+      color: #fff;
+    }
+  }
 `;
 
 const Footer = () => (

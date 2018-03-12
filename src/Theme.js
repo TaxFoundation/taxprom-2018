@@ -1,3 +1,11 @@
+const palette = {
+  primary: '#00548d',
+  primaryHighlight: '#3695b6',
+  secondary: '#55b4a4',
+  secondaryHighlight: '#bedae6',
+  tertiary: '#f9e3c5',
+};
+
 const Theme = {
   borderColor: '#333',
   fontFamily: '"Futura", sans-serif',
@@ -5,9 +13,9 @@ const Theme = {
   maxWidth: '1440px',
   mobileWidth: '480px',
   tfBlue: '#0094ff',
-  headerBG: '#0094ff',
-  splashBG: '#de1e7e',
-  footerBG: '#800813',
+  headerBG: palette.primary,
+  splashBG: palette.secondary,
+  footerBG: palette.primary,
 };
 
 export default Theme;
