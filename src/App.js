@@ -74,6 +74,12 @@ const sectionRoutes = [
   },
 ];
 
+const AppContent = styled.div`
+  display: grid;
+  grid-gap: 1rem;
+  grid-template: auto / auto;
+`;
+
 class App extends Component {
   constructor() {
     super();
@@ -103,28 +109,30 @@ class App extends Component {
         <AppLayout>
           <Header routes={sectionRoutes} transparent={this.state.transparentHeader} />
           <Splash title={data.title} date={data.date} updateHeaderBG={this.updateHeaderBG} venueName={data.venueName} />
-          <Details details={data.details} route={sectionRoutes[0]} />
-          {data.showAwardsSection ? <Awards /> : null}
-          <Sponsorships
-            routes={sectionRoutes[1]}
-            sponsorships={data.sponsorships}
-            dates={{ early: data.earlyPriceEnds, regular: data.regularPriceEnds }}
-          />
-          {data.showCurrentSponsorsSection ? (
-            <Sponsors
-              routes={sectionRoutes[2]}
-              packages={data.sponsorships.packages}
-              tables={data.sponsorships.tables}
+          <AppContent>
+            <Details details={data.details} route={sectionRoutes[0]} />
+            {data.showAwardsSection ? <Awards /> : null}
+            <Sponsorships
+              routes={sectionRoutes[1]}
+              sponsorships={data.sponsorships}
+              dates={{ early: data.earlyPriceEnds, regular: data.regularPriceEnds }}
             />
-          ) : null}
-          <PreviousSponsors sponsorships={data.sponsorships} />
-          <Information
-            routes={sectionRoutes[3]}
-            map={data.locationGoogleMapEmbedLink}
-            date={data.date}
-            venue={data.venueName}
-            address={data.venueAddress}
-          />
+            {data.showCurrentSponsorsSection ? (
+              <Sponsors
+                routes={sectionRoutes[2]}
+                packages={data.sponsorships.packages}
+                tables={data.sponsorships.tables}
+              />
+            ) : null}
+            <PreviousSponsors sponsorships={data.sponsorships} />
+            <Information
+              routes={sectionRoutes[3]}
+              map={data.locationGoogleMapEmbedLink}
+              date={data.date}
+              venue={data.venueName}
+              address={data.venueAddress}
+            />
+          </AppContent>
           <Footer />
         </AppLayout>
       </ThemeProvider>
