@@ -17,6 +17,14 @@ const SplashContainer = styled.section`
   height: 100vh;
   justify-content: center;
   justify-items: center;
+
+  h1 {
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
+  }
+
+  p {
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  }
 `;
 
 class Splash extends Component {
