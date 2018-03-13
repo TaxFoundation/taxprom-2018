@@ -83,6 +83,7 @@ sponsorships:
       earlyPrice: 25000
       regularPrice: 30000
       latePrice: 35000
+      color: primary
       benefits:
         - One large table (10 tickets) with preferred seating
         - Namebadge ribbon recognizing sponsorship level
@@ -111,6 +112,7 @@ sponsorships:
       earlyPrice: 15000
       regularPrice: 20000
       latePrice: 22000
+      color: primaryHighlight
       benefits:
         - One large table (10 tickets) with preferred seating
         - Namebadge ribbon recognizing sponsorship level
@@ -144,6 +146,7 @@ sponsorships:
       earlyPrice: 12000
       regularPrice: 15000
       latePrice: 18000
+      color: white
       benefits:
         - One table (8 tickets)
         - Namebadge ribbon recognizing sponsorship level
@@ -179,6 +182,7 @@ sponsorships:
       earlyPrice: 8000
       regularPrice: 10000
       latePrice: 10000
+      color: white
       benefits:
         - Half-Table (4 tickets)
         - Namebadge ribbon recognizing sponsorship level

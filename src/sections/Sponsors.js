@@ -1,28 +1,34 @@
 import React from 'react';
 import styled from 'styled-components';
+import BackgroundColorContainer from '../components/BackgroundColorContainer';
 import SectionContainer from '../components/SectionContainer';
+import Table from '../components/Table';
 
 const SponsorsContainer = styled.div`
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, auto);
-
-  @media (min-width: 600px) and (max-width: 1079px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: 1080px) {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
 
   h4 {
     text-align: center;
   }
 `;
 
+const PackagesContainer = SponsorsContainer.extend`
+  @media (min-width: 920px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+`;
+
+const TablesContainer = SponsorsContainer.extend`
+  @media (min-width: 920px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+`;
+
 const SponsorsSection = styled.div`
-  border: 1px solid ${props => props.theme.borderColor};
   padding: 1rem;
 `;
 
@@ -32,12 +38,11 @@ const SponsorsList = styled.ul`
 `;
 
 const Sponsors = props => (
-  <SectionContainer>
-    <section>
-      <h2>Sponsors</h2>
+  <BackgroundColorContainer bg="secondaryHighlight" color="primary">
+    <SectionContainer>
       <section>
-        <h3>Reception Sponsors</h3>
-        <SponsorsContainer>
+        <h2>Sponsors</h2>
+        <PackagesContainer>
           {props.packages.map((p, i) => {
             if (p.sponsors.length > 0) {
               return (
@@ -62,11 +67,8 @@ const Sponsors = props => (
               return null;
             }
           })}
-        </SponsorsContainer>
-      </section>
-      <section>
-        <h3>Table Sponsors</h3>
-        <SponsorsContainer>
+        </PackagesContainer>
+        <TablesContainer>
           {props.tables.map((t, i) => {
             if (t.sponsors.length > 0) {
               return (
@@ -81,11 +83,10 @@ const Sponsors = props => (
               return null;
             }
           })}
-        </SponsorsContainer>
+        </TablesContainer>
       </section>
-    </section>
-    <section />
-  </SectionContainer>
+    </SectionContainer>
+  </BackgroundColorContainer>
 );
 
 export default Sponsors;

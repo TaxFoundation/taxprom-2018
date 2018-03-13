@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import BackgroundColorContainer from '../components/BackgroundColorContainer';
 import SectionContainer from '../components/SectionContainer';
 import { slugify } from '../utilities/formatters';
 
@@ -33,12 +34,14 @@ const PreviousSponsors = props => {
   });
 
   return (
-    <SectionContainer>
-      <h2>Previous Sponsors</h2>
-      <PreviousSponsorList>
-        {allPreviousSponsors.map((s, i) => <li key={`${slugify(s.name)}-${i}`}>{s.name}</li>)}
-      </PreviousSponsorList>
-    </SectionContainer>
+    <BackgroundColorContainer bg="secondary" color="white">
+      <SectionContainer>
+        <h2>Previous Sponsors</h2>
+        <PreviousSponsorList>
+          {allPreviousSponsors.map((s, i) => <li key={`${slugify(s.name)}-${i}`}>{s.name}</li>)}
+        </PreviousSponsorList>
+      </SectionContainer>
+    </BackgroundColorContainer>
   );
 };
 

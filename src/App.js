@@ -33,13 +33,13 @@ const AppLayout = styled.div`
   }
 
   h2 {
-    font-size: calc(2.4 * ${props => props.theme.fontSize});
+    font-size: calc(2.6 * ${props => props.theme.fontSize});
     line-height: 1.4;
     margin-bottom: 1rem;
   }
 
   h3 {
-    font-size: calc(1.8 * ${props => props.theme.fontSize});
+    font-size: calc(2 * ${props => props.theme.fontSize});
     line-height: 1.6;
     margin-bottom: 1rem;
   }

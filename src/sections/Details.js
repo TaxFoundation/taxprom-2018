@@ -15,10 +15,6 @@ const DetailsContainer = styled.div`
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-
-  > * {
-    border: 1px solid #000;
-  }
 `;
 
 const DetailsList = styled.ul`
@@ -38,7 +34,6 @@ const StatisticsList = styled.ul`
   }
 
   li {
-    border: 1px solid #000;
     line-height: 1.6;
     padding: 1rem 2rem;
     text-align: center;
@@ -53,15 +48,17 @@ const Details = props => (
         <p>{props.details.detailsDescription}</p>
       </TaglineContainer>
     </BackgroundColorContainer>
-    <SectionContainer>
-      <DetailsContainer>
-        <DetailsList>{props.details.detailsBullets.map((d, i) => <li key={`detail-${i}`}>{d}</li>)}</DetailsList>
-        <div>Photos Go Here</div>
-      </DetailsContainer>
-      <h2>Why You Can't Miss Tax Prom</h2>
-      <h3>In 2017 Tax Prom was Joined By</h3>
-      <StatisticsList>{props.details.detailsStatistics.map((d, i) => <li key={`stat-${i}`}>{d}</li>)}</StatisticsList>
-    </SectionContainer>
+    <BackgroundColorContainer bg="secondary" color="white">
+      <SectionContainer>
+        <h3>Why You Can't Miss Tax Prom</h3>
+        <DetailsContainer>
+          <DetailsList>{props.details.detailsBullets.map((d, i) => <li key={`detail-${i}`}>{d}</li>)}</DetailsList>
+          <div>Photos Go Here</div>
+        </DetailsContainer>
+        <h4>In 2017 Tax Prom was Joined By</h4>
+        <StatisticsList>{props.details.detailsStatistics.map((d, i) => <li key={`stat-${i}`}>{d}</li>)}</StatisticsList>
+      </SectionContainer>
+    </BackgroundColorContainer>
   </Fragment>
 );
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import BackgroundColorContainer from '../components/BackgroundColorContainer';
 import SectionContainer from '../components/SectionContainer';
 import { fullDate } from '../utilities/formatters';
 
@@ -27,13 +28,15 @@ const Informations = props => {
   let date = new Date(props.date);
 
   return (
-    <SectionContainer>
-      <InfoHeading>{`${fullDate(date)} at ${props.venue}`}</InfoHeading>
-      <VenueAddress>{props.address}</VenueAddress>
-      <IframeContainer>
-        <iframe src={props.map} allowFullScreen />
-      </IframeContainer>
-    </SectionContainer>
+    <BackgroundColorContainer bg="primaryHighlight" color="white">
+      <SectionContainer>
+        <InfoHeading>{`${fullDate(date)} at ${props.venue}`}</InfoHeading>
+        <VenueAddress>{props.address}</VenueAddress>
+        <IframeContainer>
+          <iframe src={props.map} allowFullScreen />
+        </IframeContainer>
+      </SectionContainer>
+    </BackgroundColorContainer>
   );
 };
 
