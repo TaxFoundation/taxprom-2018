@@ -3,7 +3,8 @@ import SponsorLevel from './SponsorLevel';
 import { dollars } from '../utilities/formatters';
 
 const TicketBox = SponsorLevel.extend`
-  background-color: #bada55;
+  background-color: ${props => props.theme.secondaryHighlight};
+  color: ${props => props.theme.primary};
 `;
 
 const Ticket = props => (

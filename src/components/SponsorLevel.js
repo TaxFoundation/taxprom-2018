@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const SponsorLevel = styled.div`
   align-content: start;
-  border: 1px solid ${props => props.theme.borderColor || '#000'};
   display: grid;
   grid-gap: 1rem;
   grid-template: repeat(3, auto) 1fr / auto;
@@ -28,7 +27,6 @@ const SponsorLevel = styled.div`
   .sponsorship__pledge {
     align-self: end;
     background-color: #fff;
-    border: 1px solid #000;
     display: block;
     line-height: 1.6;
     padding: 0.6rem;

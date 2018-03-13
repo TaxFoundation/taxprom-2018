@@ -5,6 +5,10 @@ const SectionContainer = styled.section`
   grid-template: auto / minmax(auto, ${props => props.theme.maxWidth});
   justify-content: center;
   padding: 0.5rem 1rem;
+
+  @media (min-width: 500px) {
+    padding: 2rem 5rem;
+  }
 `;
 
 export default SectionContainer;

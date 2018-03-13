@@ -3,7 +3,8 @@ import SponsorLevel from './SponsorLevel';
 import { dollars } from '../utilities/formatters';
 
 const TableBox = SponsorLevel.extend`
-  background-color: #c0ffee;
+  background-color: ${props => props.theme.white};
+  color: ${props => props.theme.primary};
 `;
 
 const Table = props => {

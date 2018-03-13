@@ -1,6 +1,15 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
+import BackgroundColorContainer from '../components/BackgroundColorContainer';
 import SectionContainer from '../components/SectionContainer';
+
+const TaglineContainer = SectionContainer.extend`
+  padding: 2rem 3rem;
+
+  @media (min-width: 500px) {
+    padding: 5rem 9rem;
+  }
+`;
 
 const DetailsContainer = styled.div`
   display: grid;
@@ -38,10 +47,12 @@ const StatisticsList = styled.ul`
 
 const Details = props => (
   <Fragment>
-    <SectionContainer>
-      <h2>{props.details.detailsTitle}</h2>
-      <p>{props.details.detailsDescription}</p>
-    </SectionContainer>
+    <BackgroundColorContainer bg="primary" color="white">
+      <TaglineContainer>
+        <h2>{props.details.detailsTitle}</h2>
+        <p>{props.details.detailsDescription}</p>
+      </TaglineContainer>
+    </BackgroundColorContainer>
     <SectionContainer>
       <DetailsContainer>
         <DetailsList>{props.details.detailsBullets.map((d, i) => <li key={`detail-${i}`}>{d}</li>)}</DetailsList>

@@ -1,9 +1,9 @@
 const palette = {
-  primary: '#00548d',
-  primaryHighlight: '#3695b6',
-  secondary: '#55b4a4',
-  secondaryHighlight: '#bedae6',
-  tertiary: '#f9e3c5',
+  primary: 'rgb(21, 65, 107)',
+  primaryHighlight: 'rgb(65, 148, 180)',
+  secondary: 'rgb(91, 178, 163)',
+  secondaryHighlight: 'rgb(190, 217, 230)',
+  tertiary: 'rgb(252, 222, 129)',
 };
 
 const Theme = {
@@ -13,6 +13,7 @@ const Theme = {
   maxWidth: '1440px',
   mobileWidth: '480px',
   tfBlue: '#0094ff',
+  white: '#fff',
   primary: palette.primary,
   primaryHighlight: palette.primaryHighlight,
   secondary: palette.secondary,

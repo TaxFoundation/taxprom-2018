@@ -3,7 +3,8 @@ import SponsorLevel from './SponsorLevel';
 import { dollars } from '../utilities/formatters';
 
 const PackageBox = SponsorLevel.extend`
-  background-color: #d1337b;
+  background-color: ${props => props.theme.secondary};
+  color: #fff;
 `;
 
 const Package = props => (
