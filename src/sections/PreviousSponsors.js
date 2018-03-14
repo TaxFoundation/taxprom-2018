@@ -5,8 +5,12 @@ import SectionContainer from '../components/SectionContainer';
 import { slugify } from '../utilities/formatters';
 
 const PreviousSponsorList = styled.ul`
-  line-height: 1.6;
+  line-height: 1.4;
   text-align: center;
+
+  li {
+    margin-bottom: 0.6rem;
+  }
 
   @media (min-width: 520px) and (max-width: 819px) {
     column-count: 2;

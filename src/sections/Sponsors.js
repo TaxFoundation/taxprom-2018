@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import BackgroundColorContainer from '../components/BackgroundColorContainer';
 import SectionContainer from '../components/SectionContainer';
-import Table from '../components/Table';
 
 const SponsorsContainer = styled.div`
   display: grid;
@@ -34,7 +33,17 @@ const SponsorsSection = styled.div`
 
 const SponsorsList = styled.ul`
   display: grid;
-  grid-gap: 0.6rem;
+  grid-gap: 0.8rem;
+
+  li {
+    line-height: 1.2;
+    text-align: center;
+
+    a {
+      color: ${props => props.theme.primary};
+      text-decoration: none;
+    }
+  }
 `;
 
 const Sponsors = props => (
