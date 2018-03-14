@@ -17,11 +17,10 @@ const SponsorLevel = styled.div`
   .sponsorship__benefits {
     display: grid;
     font-size: 0.8rem;
-    grid-gap: 0.5rem;
+    grid-gap: 0.7rem;
     line-height: 1.3;
-    margin: 0 auto;
-    max-width: 300px;
-    padding: 0 0.3rem;
+    margin: 0 auto 1rem;
+    padding: 0 2rem;
   }
 
   .sponsorship__pledge {
