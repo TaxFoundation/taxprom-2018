@@ -6,11 +6,11 @@
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.1.1",
-    "styled-components": "^3.1.6"
+    "styled-components": "^3.1.6",
+    "validator": "^9.4.1"
   },
   "scripts": {
-    "start":
-      "concurrently -c \"magenta,cyan\" --names \"Data,React\" \"npm run watch-data\" \"react-scripts start\"",
+    "start": "concurrently -c \"magenta,cyan\" --names \"Data,React\" \"npm run watch-data\" \"react-scripts start\"",
     "build": "npm run build-data && react-scripts build",
     "build-data": "node ./src/yamlToJson.js",
     "watch-data": "node ./src/yamlToJson.js --watch",
