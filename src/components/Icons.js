@@ -1,7 +1,15 @@
 import React from 'react';
 
 const Logo = props => (
-  <svg x="0px" y="0px" height="100%" viewBox="0 0 228 35" shapeRendering="geometricPrecision">
+  <svg
+    x="0px"
+    y="0px"
+    height={props.height ? props.height : '100%'}
+    width={props.width ? props.width : '100%'}
+    viewBox="0 0 228 35"
+    shapeRendering="geometricPrecision"
+    preserveAspectRatio="xMinYMin meet"
+  >
     <polygon fill={props.fill} points="42.5,26 45.5,26 45.5,12 50.5,12 50.5,9 37.5,9 37.5,12 42.5,12 	" />
     <path
       fill={props.fill}

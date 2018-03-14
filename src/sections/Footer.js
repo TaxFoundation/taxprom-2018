@@ -8,6 +8,7 @@ const FooterContainer = styled.footer`
 `;
 
 const FooterContent = styled.div`
+  align-items: end;
   color: #fff;
   display: grid;
   grid-gap: 1rem;
@@ -23,8 +24,8 @@ const FooterContent = styled.div`
     grid-template-areas:
       'logo    . disclaimer'
       'address . disclaimer';
-    grid-template-columns: minmax(300px, 500px) 1fr minmax(350px, 1fr);
-    grid-template-rows: 50px auto;
+    grid-template-columns: minmax(300px, 400px) 1fr minmax(350px, 1fr);
+    grid-template-rows: 50px 1fr;
   }
 `;
 
@@ -56,12 +57,13 @@ const Footer = () => (
     <SectionContainer>
       <FooterContent>
         <LogoSection>
-          <Logo fill="#fff" />
+          <Logo fill="#fff" height="40px" />
         </LogoSection>
         <ContactInfo>
           <p>
             1325 G Street NW<br />Suite 950<br />Washington, DC 20005
           </p>
+          <p>202-464-6200</p>
         </ContactInfo>
         <Disclaimer>
           <p>
