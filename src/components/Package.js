@@ -14,7 +14,7 @@ const Package = props => (
     <ul className="sponsorship__benefits">
       {props.package.benefits.map((b, i) => <li key={`${props.id}-${i}`}>{b}</li>)}
     </ul>
-    <a className="sponsorship__pledge" href="#">{`Sponsor the ${props.package.name}`}</a>
+    <div className="sponsorship__pledge" href="#">{`Sponsor the ${props.package.name}`}</div>
   </PackageBox>
 );
 

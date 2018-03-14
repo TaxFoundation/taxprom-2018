@@ -15,7 +15,7 @@ const Table = props => {
       <ul className="sponsorship__benefits">
         {props.table.benefits.map((b, i) => <li key={`${props.id}-${i}`}>{b}</li>)}
       </ul>
-      <a className="sponsorship__pledge" href="#">{`Sponsor a ${props.table.name} Table`}</a>
+      <div className="sponsorship__pledge" href="#">{`Sponsor a ${props.table.name} Table`}</div>
     </TableBox>
   );
 };

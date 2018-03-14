@@ -26,7 +26,9 @@ const SponsorLevel = styled.div`
 
   .sponsorship__pledge {
     align-self: end;
-    background-color: #fff;
+    background-color: ${props => props.theme.white};
+    color: ${props => props.theme.primary};
+    cursor: pointer;
     display: block;
     line-height: 1.6;
     padding: 0.6rem;

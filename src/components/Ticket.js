@@ -14,7 +14,7 @@ const Ticket = props => (
     <ul className="sponsorship__benefits">
       {props.ticket.benefits.map((b, i) => <li key={`${props.id}-${i}`}>{b}</li>)}
     </ul>
-    <a className="sponsorship__pledge" href="#">{`Buy a ${props.ticket.name} Ticket`}</a>
+    <div className="sponsorship__pledge" href="#">{`Buy a ${props.ticket.name} Ticket`}</div>
   </TicketBox>
 );
 
