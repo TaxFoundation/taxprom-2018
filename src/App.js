@@ -140,7 +140,7 @@ class App extends Component {
         <ThemeProvider theme={Theme}>
           <AppLayout>
             <Header routes={sectionRoutes} transparent={this.state.transparentHeader} />
-            <Route path='/' component={Sections}></Route>
+            <Route path="/" render={props => <Sections {...props} />} />
           </AppLayout>
         </ThemeProvider>
       </BrowserRouter>
