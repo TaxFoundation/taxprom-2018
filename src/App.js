@@ -62,18 +62,27 @@ const sectionRoutes = [
   {
     name: 'Why Tax Prom?',
     slug: 'about',
+    show: true,
   },
   {
     name: 'Sponsor Tax Prom',
     slug: 'sponsorships',
+    show: true,
   },
   {
     name: 'Who Sponsors Tax Prom?',
     slug: 'sponsors',
+    show: data.showCurrentSponsorsSection,
   },
   {
     name: 'About the Event',
     slug: 'information',
+    show: true,
+  },
+  {
+    name: 'Awards',
+    slug: 'awards',
+    show: data.showAwardsSection,
   },
 ];
 
