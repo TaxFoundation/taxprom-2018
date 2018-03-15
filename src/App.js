@@ -86,30 +86,48 @@ const sectionRoutes = [
   },
 ];
 
-const Sections = () => (
-  <Fragment>
-    <Splash title={data.title} date={data.date} updateHeaderBG={this.updateHeaderBG} venueName={data.venueName} />
-    <Details details={data.details} id={sectionRoutes[0].slug} />
-    {data.showAwardsSection ? <Awards id="awards" /> : null}
-    <Sponsorships
-      id={sectionRoutes[1].slug}
-      sponsorships={data.sponsorships}
-      dates={{ early: data.earlyPriceEnds, regular: data.regularPriceEnds }}
-    />
-    {data.showCurrentSponsorsSection ? (
-      <Sponsors id={sectionRoutes[2].slug} packages={data.sponsorships.packages} tables={data.sponsorships.tables} />
-    ) : null}
-    <PreviousSponsors sponsorships={data.sponsorships} />
-    <Information
-      id={sectionRoutes[3].slug}
-      map={data.locationGoogleMapEmbedLink}
-      date={data.date}
-      venue={data.venueName}
-      address={data.venueAddress}
-    />
-    <Footer />
-  </Fragment>
-);
+class Sections extends Component {
+  componentDidMount() {
+    sectionRoutes.forEach(r => {
+      if (`/${r.slug}` === this.props.location.pathname && r.show) {
+        let theSection = document.getElementById(r.slug);
+        console.log(theSection);
+        scrollToElement(document.getElementById(r.slug));
+      }
+    });
+  }
+
+  render() {
+    return (
+      <Fragment>
+        <Splash title={data.title} date={data.date} updateHeaderBG={this.updateHeaderBG} venueName={data.venueName} />
+        <Details details={data.details} id={sectionRoutes[0].slug} />
+        {data.showAwardsSection ? <Awards id={sectionRoutes[4].slug} /> : null}
+        <Sponsorships
+          id={sectionRoutes[1].slug}
+          sponsorships={data.sponsorships}
+          dates={{ early: data.earlyPriceEnds, regular: data.regularPriceEnds }}
+        />
+        {data.showCurrentSponsorsSection ? (
+          <Sponsors
+            id={sectionRoutes[2].slug}
+            packages={data.sponsorships.packages}
+            tables={data.sponsorships.tables}
+          />
+        ) : null}
+        <PreviousSponsors sponsorships={data.sponsorships} />
+        <Information
+          id={sectionRoutes[3].slug}
+          map={data.locationGoogleMapEmbedLink}
+          date={data.date}
+          venue={data.venueName}
+          address={data.venueAddress}
+        />
+        <Footer />
+      </Fragment>
+    );
+  }
+}
 
 class App extends Component {
   state = {
