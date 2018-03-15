@@ -30,7 +30,7 @@ const StatisticsList = styled.ul`
   grid-template-columns: 1fr;
 
   @media (min-width: 700px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(${props => props.statsNumber}, 1fr);
   }
 
   li {
@@ -56,7 +56,9 @@ const Details = props => (
           <div>Photos Go Here</div>
         </DetailsContainer>
         <h4>In 2017 Tax Prom was Joined By</h4>
-        <StatisticsList>{props.details.detailsStatistics.map((d, i) => <li key={`stat-${i}`}>{d}</li>)}</StatisticsList>
+        <StatisticsList statsNumber={props.details.detailsStatistics.length}>
+          {props.details.detailsStatistics.map((d, i) => <li key={`stat-${i}`}>{d}</li>)}
+        </StatisticsList>
       </SectionContainer>
     </BackgroundColorContainer>
   </div>
