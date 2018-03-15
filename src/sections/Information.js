@@ -28,7 +28,7 @@ const Informations = props => {
   let date = new Date(props.date);
 
   return (
-    <BackgroundColorContainer bg="primaryHighlight" color="white">
+    <BackgroundColorContainer bg="primaryHighlight" color="white" id={props.id}>
       <SectionContainer>
         <InfoHeading>{`${fullDate(date)} at ${props.venue}`}</InfoHeading>
         <VenueAddress>{props.address}</VenueAddress>

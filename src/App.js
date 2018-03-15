@@ -91,8 +91,7 @@ class Sections extends Component {
     sectionRoutes.forEach(r => {
       if (`/${r.slug}` === this.props.location.pathname && r.show) {
         let theSection = document.getElementById(r.slug);
-        console.log(theSection);
-        scrollToElement(document.getElementById(r.slug));
+        scrollToElement(document.getElementById(r.slug), {offset: -56});
       }
     });
   }

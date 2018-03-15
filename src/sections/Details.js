@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import BackgroundColorContainer from '../components/BackgroundColorContainer';
 import SectionContainer from '../components/SectionContainer';
@@ -41,7 +41,7 @@ const StatisticsList = styled.ul`
 `;
 
 const Details = props => (
-  <Fragment>
+  <div id={props.id}>
     <BackgroundColorContainer bg="primary" color="white">
       <TaglineContainer>
         <h2>{props.details.detailsTitle}</h2>
@@ -59,7 +59,7 @@ const Details = props => (
         <StatisticsList>{props.details.detailsStatistics.map((d, i) => <li key={`stat-${i}`}>{d}</li>)}</StatisticsList>
       </SectionContainer>
     </BackgroundColorContainer>
-  </Fragment>
+  </div>
 );
 
 export default Details;
