@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 import scrollToElement from 'scroll-to-element';
 import { Link } from 'react-router-dom';
-import { Logo, MenuIcon } from '../components/Icons';
+import { Logo, MenuIcon, CloseIcon } from '../components/Icons';
 
 const StyledHeader = styled.header`
   align-content: space-between;
@@ -34,20 +34,46 @@ const MenuLink = styled.div`
   justify-self: end;
 `;
 
+const CloseLink = styled.div`
+  align-self: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 24px;
+  justify-self: end;
+  margin-right: 1rem;
+`;
+
 const Menu = styled.div`
+  align-content: start;
   background-color: ${props => props.theme.primary};
   bottom: 0;
   display: grid;
+  grid-template-columns: 1fr;
   grid-template-rows: 56px auto;
   position: fixed;
   right: 0;
   transform: translateX(${props => (props.show ? '0' : '100%')});
+  transition: transform 0.2s ease-in-out;
   top: 0;
   width: 100%;
   z-index: 100;
 
   @media (min-width: 500px) {
     width: 300px;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  color: ${props => props.theme.white};
+  padding: 2rem;
+  text-decoration: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: ${props => props.theme.primaryHighlight};
+    color: ${props => props.theme.white};
   }
 `;
 
@@ -82,12 +108,14 @@ class Header extends Component {
           <MenuIcon fill="#fff" />
         </MenuLink>
         <Menu show={this.state.showMenu}>
-          <p onClick={this.toggleMenu}>Close</p>
+          <CloseLink onClick={this.toggleMenu}>
+            <CloseIcon />
+          </CloseLink>
           {this.props.routes.map(r => {
             return (
-              <Link key={`nav-${r.slug}`} to={`/${r.slug}`} onClick={e => this.goToSection(r.slug)}>
+              <StyledLink key={`nav-${r.slug}`} to={`/${r.slug}`} onClick={e => this.goToSection(r.slug)}>
                 {r.name}
-              </Link>
+              </StyledLink>
             );
           })}
         </Menu>

@@ -157,7 +157,7 @@ class App extends Component {
       <BrowserRouter>
         <ThemeProvider theme={Theme}>
           <AppLayout>
-            <Header goToSection={this.goToSection} routes={sectionRoutes} transparent={this.state.transparentHeader} />
+            <Header routes={sectionRoutes} transparent={this.state.transparentHeader} />
             <Route path="/" render={props => <Sections {...props} />} />
           </AppLayout>
         </ThemeProvider>
