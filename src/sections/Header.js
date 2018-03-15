@@ -41,6 +41,7 @@ const Menu = styled.div`
   grid-template-rows: 56px auto;
   position: fixed;
   right: 0;
+  transform: translateX(${props => (props.show ? '0' : '100%')});
   top: 0;
   width: 100%;
   z-index: 100;
@@ -51,12 +52,19 @@ const Menu = styled.div`
 `;
 
 class Header extends Component {
-  state = {
-    showMenu: false,
-  };
+  constructor() {
+    super();
+
+    this.state = {
+      showMenu: false,
+    };
+
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
 
   toggleMenu() {
     let menu = !this.state.showMenu;
+    console.log(menu);
     this.setState({ showMenu: menu });
   }
 
@@ -70,13 +78,17 @@ class Header extends Component {
         <LogoLink href="https://taxfoundation.org">
           <Logo fill="#fff" />
         </LogoLink>
-        <MenuLink>
-          <MenuIcon onClick={this.toggleMenu} fill="#fff" />
+        <MenuLink onClick={this.toggleMenu}>
+          <MenuIcon fill="#fff" />
         </MenuLink>
         <Menu show={this.state.showMenu}>
           <p onClick={this.toggleMenu}>Close</p>
           {this.props.routes.map(r => {
-            return <Link key={`nav-${r.slug}`} to={`/${r.slug}`} onClick={e => this.goToSection(r.slug)}>{r.name}</Link>;
+            return (
+              <Link key={`nav-${r.slug}`} to={`/${r.slug}`} onClick={e => this.goToSection(r.slug)}>
+                {r.name}
+              </Link>
+            );
           })}
         </Menu>
       </StyledHeader>
