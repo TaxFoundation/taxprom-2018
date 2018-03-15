@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Logo, Menu } from '../components/Icons';
+import scrollToElement from 'scroll-to-element';
+import { Link } from 'react-router-dom';
+import { Logo, MenuIcon } from '../components/Icons';
 
 const StyledHeader = styled.header`
   align-content: space-between;
@@ -32,15 +34,54 @@ const MenuLink = styled.div`
   justify-self: end;
 `;
 
-const Header = props => (
-  <StyledHeader backgroundColor={props.transparent ? false : true}>
-    <LogoLink href="https://taxfoundation.org">
-      <Logo fill="#fff" />
-    </LogoLink>
-    <MenuLink>
-      <Menu fill="#fff" />
-    </MenuLink>
-  </StyledHeader>
-);
+const Menu = styled.div`
+  background-color: ${props => props.theme.primary};
+  bottom: 0;
+  display: grid;
+  grid-template-rows: 56px auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  @media (min-width: 500px) {
+    width: 300px;
+  }
+`;
+
+class Header extends Component {
+  state = {
+    showMenu: false,
+  };
+
+  toggleMenu() {
+    let menu = !this.state.showMenu;
+    this.setState({ showMenu: menu });
+  }
+
+  goToSection(id) {
+    scrollToElement(document.getElementById(id), { offset: -56 });
+  }
+
+  render() {
+    return (
+      <StyledHeader backgroundColor={this.props.transparent ? false : true}>
+        <LogoLink href="https://taxfoundation.org">
+          <Logo fill="#fff" />
+        </LogoLink>
+        <MenuLink>
+          <MenuIcon onClick={this.toggleMenu} fill="#fff" />
+        </MenuLink>
+        <Menu show={this.state.showMenu}>
+          <p onClick={this.toggleMenu}>Close</p>
+          {this.props.routes.map(r => {
+            return <Link key={`nav-${r.slug}`} to={`/${r.slug}`} onClick={e => this.goToSection(r.slug)}>{r.name}</Link>;
+          })}
+        </Menu>
+      </StyledHeader>
+    );
+  }
+}
 
 export default Header;

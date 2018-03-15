@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { BrowserRouter, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import scrollToElement from 'scroll-to-element';
 import Theme from './Theme';
 
@@ -88,12 +88,17 @@ const sectionRoutes = [
 
 class Sections extends Component {
   componentDidMount() {
-    sectionRoutes.forEach(r => {
-      if (`/${r.slug}` === this.props.location.pathname && r.show) {
-        let theSection = document.getElementById(r.slug);
-        scrollToElement(document.getElementById(r.slug), {offset: -56});
-      }
-    });
+    this.goToSection();
+  }
+
+  goToSection() {
+    if (this.props.location.pathname !== '/') {
+      sectionRoutes.forEach(r => {
+        if (`/${r.slug}` === this.props.location.pathname && r.show) {
+          scrollToElement(document.getElementById(r.slug), { offset: -56 });
+        }
+      });
+    }
   }
 
   render() {
@@ -147,16 +152,12 @@ class App extends Component {
     this.setState({ transparentHeader: !this.transparentHeader });
   }
 
-  jumpToSection() {
-    const hash = {};
-  }
-
   render() {
     return (
       <BrowserRouter>
         <ThemeProvider theme={Theme}>
           <AppLayout>
-            <Header routes={sectionRoutes} transparent={this.state.transparentHeader} />
+            <Header goToSection={this.goToSection} routes={sectionRoutes} transparent={this.state.transparentHeader} />
             <Route path="/" render={props => <Sections {...props} />} />
           </AppLayout>
         </ThemeProvider>
