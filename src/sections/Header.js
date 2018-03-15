@@ -97,6 +97,7 @@ class Header extends Component {
 
   goToSection(id) {
     scrollToElement(document.getElementById(id), { offset: -56 });
+    this.toggleMenu();
   }
 
   render() {
@@ -119,6 +120,9 @@ class Header extends Component {
               </StyledLink>
             ) : null;
           })}
+          <StyledLink to="/contact" onClick={this.toggleMenu}>
+            Contact
+          </StyledLink>
         </Menu>
       </StyledHeader>
     );
