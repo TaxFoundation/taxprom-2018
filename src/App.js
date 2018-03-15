@@ -65,24 +65,24 @@ const sectionRoutes = [
     show: true,
   },
   {
-    name: 'Sponsor Tax Prom',
+    name: 'Awards',
+    slug: 'awards',
+    show: data.showAwardsSection,
+  },
+  {
+    name: 'Join Tax Prom',
     slug: 'sponsorships',
     show: true,
   },
   {
-    name: 'Who Sponsors Tax Prom?',
+    name: 'Our Sponsors',
     slug: 'sponsors',
     show: data.showCurrentSponsorsSection,
   },
   {
-    name: 'About the Event',
+    name: 'Event Details',
     slug: 'information',
     show: true,
-  },
-  {
-    name: 'Awards',
-    slug: 'awards',
-    show: data.showAwardsSection,
   },
 ];
 
@@ -106,22 +106,22 @@ class Sections extends Component {
       <Fragment>
         <Splash title={data.title} date={data.date} updateHeaderBG={this.updateHeaderBG} venueName={data.venueName} />
         <Details details={data.details} id={sectionRoutes[0].slug} />
-        {data.showAwardsSection ? <Awards id={sectionRoutes[4].slug} /> : null}
+        {data.showAwardsSection ? <Awards id={sectionRoutes[1].slug} /> : null}
         <Sponsorships
-          id={sectionRoutes[1].slug}
+          id={sectionRoutes[2].slug}
           sponsorships={data.sponsorships}
           dates={{ early: data.earlyPriceEnds, regular: data.regularPriceEnds }}
         />
         {data.showCurrentSponsorsSection ? (
           <Sponsors
-            id={sectionRoutes[2].slug}
+            id={sectionRoutes[3].slug}
             packages={data.sponsorships.packages}
             tables={data.sponsorships.tables}
           />
         ) : null}
         <PreviousSponsors sponsorships={data.sponsorships} />
         <Information
-          id={sectionRoutes[3].slug}
+          id={sectionRoutes[4].slug}
           map={data.locationGoogleMapEmbedLink}
           date={data.date}
           venue={data.venueName}

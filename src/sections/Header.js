@@ -51,15 +51,17 @@ const Menu = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 56px auto;
+  overflow-y: auto;
   position: fixed;
   right: 0;
   transform: translateX(${props => (props.show ? '0' : '100%')});
-  transition: transform 0.2s ease-in-out;
+  transition: box-shadow 0.1s linear, transform 0.2s ease-in-out;
   top: 0;
   width: 100%;
   z-index: 100;
 
   @media (min-width: 500px) {
+    box-shadow: ${props => (props.show ? '-3px 0 5px' : '3px 0 0')} rgba(0, 0, 0, 0.3);
     width: 300px;
   }
 `;
@@ -90,7 +92,6 @@ class Header extends Component {
 
   toggleMenu() {
     let menu = !this.state.showMenu;
-    console.log(menu);
     this.setState({ showMenu: menu });
   }
 
@@ -112,11 +113,11 @@ class Header extends Component {
             <CloseIcon />
           </CloseLink>
           {this.props.routes.map(r => {
-            return (
+            return r.show ? (
               <StyledLink key={`nav-${r.slug}`} to={`/${r.slug}`} onClick={e => this.goToSection(r.slug)}>
                 {r.name}
               </StyledLink>
-            );
+            ) : null;
           })}
         </Menu>
       </StyledHeader>
