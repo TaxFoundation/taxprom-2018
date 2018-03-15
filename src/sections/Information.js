@@ -33,7 +33,7 @@ const Informations = props => {
         <InfoHeading>{`${fullDate(date)} at ${props.venue}`}</InfoHeading>
         <VenueAddress>{props.address}</VenueAddress>
         <IframeContainer>
-          <iframe src={props.map} allowFullScreen />
+          <iframe src={props.map} allowFullScreen title="Map to Venue" />
         </IframeContainer>
       </SectionContainer>
     </BackgroundColorContainer>
