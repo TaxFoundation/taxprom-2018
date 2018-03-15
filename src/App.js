@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
+import { BrowserRouter, Route, Link } from 'react-router-dom';
+import scrollToElement from 'scroll-to-element';
 import Theme from './Theme';
 
 import data from './data/taxprom2018.json';
@@ -75,14 +77,35 @@ const sectionRoutes = [
   },
 ];
 
-class App extends Component {
-  constructor() {
-    super();
+const Sections = () => (
+  <Fragment>
+    <Splash title={data.title} date={data.date} updateHeaderBG={this.updateHeaderBG} venueName={data.venueName} />
+    <Details details={data.details} id={sectionRoutes[0].slug} />
+    {data.showAwardsSection ? <Awards id="awards" /> : null}
+    <Sponsorships
+      id={sectionRoutes[1].slug}
+      sponsorships={data.sponsorships}
+      dates={{ early: data.earlyPriceEnds, regular: data.regularPriceEnds }}
+    />
+    {data.showCurrentSponsorsSection ? (
+      <Sponsors id={sectionRoutes[2].slug} packages={data.sponsorships.packages} tables={data.sponsorships.tables} />
+    ) : null}
+    <PreviousSponsors sponsorships={data.sponsorships} />
+    <Information
+      id={sectionRoutes[3].slug}
+      map={data.locationGoogleMapEmbedLink}
+      date={data.date}
+      venue={data.venueName}
+      address={data.venueAddress}
+    />
+    <Footer />
+  </Fragment>
+);
 
-    this.state = {
-      transparentHeader: true,
-    };
-  }
+class App extends Component {
+  state = {
+    transparentHeader: true,
+  };
 
   componentDidMount() {
     window.addEventListener('scroll', () => {
@@ -98,37 +121,20 @@ class App extends Component {
     this.setState({ transparentHeader: !this.transparentHeader });
   }
 
+  jumpToSection() {
+    const hash = {};
+  }
+
   render() {
     return (
-      <ThemeProvider theme={Theme}>
-        <AppLayout>
-          <Header routes={sectionRoutes} transparent={this.state.transparentHeader} />
-          <Splash title={data.title} date={data.date} updateHeaderBG={this.updateHeaderBG} venueName={data.venueName} />
-          <Details details={data.details} id={sectionRoutes[0].slug} />
-          {data.showAwardsSection ? <Awards id="awards" /> : null}
-          <Sponsorships
-            id={sectionRoutes[1].slug}
-            sponsorships={data.sponsorships}
-            dates={{ early: data.earlyPriceEnds, regular: data.regularPriceEnds }}
-          />
-          {data.showCurrentSponsorsSection ? (
-            <Sponsors
-              id={sectionRoutes[2].slug}
-              packages={data.sponsorships.packages}
-              tables={data.sponsorships.tables}
-            />
-          ) : null}
-          <PreviousSponsors sponsorships={data.sponsorships} />
-          <Information
-            id={sectionRoutes[3].slug}
-            map={data.locationGoogleMapEmbedLink}
-            date={data.date}
-            venue={data.venueName}
-            address={data.venueAddress}
-          />
-          <Footer />
-        </AppLayout>
-      </ThemeProvider>
+      <BrowserRouter>
+        <ThemeProvider theme={Theme}>
+          <AppLayout>
+            <Header routes={sectionRoutes} transparent={this.state.transparentHeader} />
+            <Route path='/' component={Sections}></Route>
+          </AppLayout>
+        </ThemeProvider>
+      </BrowserRouter>
     );
   }
 }
