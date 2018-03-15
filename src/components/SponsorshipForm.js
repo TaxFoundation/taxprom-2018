@@ -3,34 +3,56 @@ import styled from 'styled-components';
 import validator from 'validator';
 import { slugify, dollars } from '../utilities/formatters';
 
-/* 
-level
-first name
-last name
-email
-org
-title
-address 1
-address 2
-city
-state
-zip
-country
-*/
+const StyledForm = styled.div`
+  align-content: center;
+  background-color: ${props => props.theme.secondary};
+  display: grid;
+  height: 100vh;
+  justify-content: center;
+  padding: 70px 1rem 1rem 1rem;
+
+  @media (min-width: 500px) {
+    padding: 70px 3rem 3rem 3rem;
+  }
+`;
 
 class SponsorshipForm extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      level: this.props.match.params.level,
+    };
+  }
+
   submitForm(e) {
     e.preventDefault();
   }
 
   render() {
+    const allLevels = []
+      .concat(...this.props.sponsorships.packages, ...this.props.sponsorships.tables, this.props.sponsorships.tickets)
+      .sort((a, b) => {
+        if (a.price < b.price) {
+          return 1;
+        } else if (a.price > b.price) {
+          return -1;
+        }
+        return 0;
+      });
+
     return (
-      <div>
+      <StyledForm>
         <form onSubmit={e => this.submitForm(e)}>
-          {/* <label htmlFor="level">Sponsorship Level</label>
-          <select name="level" id="level">
-            {this.props.levels.map(l => <option value={slugify(l.name)}>{`${l.name} - ${dollars(l.price)}`}</option>)}
-          </select> */}
+          {this.state.level ? (
+            <div>
+              <label htmlFor="level">Sponsorship Level</label>
+              <select name="level" id="level">
+                {allLevels.map(l => <option value={slugify(l.name)}>{`${l.name} - ${dollars(l.price)}`}</option>)}
+              </select>
+            </div>
+          ) : null}
+
           <label htmlFor="">Email Address</label>
           <input name="email" id="email" type="text" />
           <label htmlFor="">First Name</label>
@@ -52,8 +74,7 @@ class SponsorshipForm extends Component {
           <label htmlFor="zip">ZIP / Postal Code</label>
           <input name="zip" id="zip" type="text" />
           <label htmlFor="country">Country</label>
-          <select name="country" id="country">
-            <option value="" selected="selected" />
+          <select name="country" id="country" defaultValue="United States">
             <option value="United States">United States</option>
             <option value="United Kingdom">United Kingdom</option>
             <option value="Australia">Australia</option>
@@ -275,7 +296,7 @@ class SponsorshipForm extends Component {
           <input name="comments" id="comments" type="textarea" />
           <button type="submit">Submit</button>
         </form>
-      </div>
+      </StyledForm>
     );
   }
 }

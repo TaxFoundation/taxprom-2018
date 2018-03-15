@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import scrollToElement from 'scroll-to-element';
 import Theme from './Theme';
 
@@ -14,6 +14,7 @@ import Sponsors from './sections/Sponsors';
 import PreviousSponsors from './sections/PreviousSponsors';
 import Information from './sections/Information';
 import Footer from './sections/Footer';
+import SponsorshipForm from './components/SponsorshipForm';
 
 const AppLayout = styled.div`
   font-family: ${props => props.theme.fontFamily};
@@ -158,7 +159,13 @@ class App extends Component {
         <ThemeProvider theme={Theme}>
           <AppLayout>
             <Header routes={sectionRoutes} transparent={this.state.transparentHeader} />
-            <Route path="/" render={props => <Sections {...props} />} />
+            <Switch>
+              <Route exact path="/" render={props => <Sections {...props} />} />
+              {sectionRoutes.map(r => <Route key={`route-${r.slug}`} path={`/${r.slug}`} render={props => <Sections {...props} />} />)}
+              <Route path="/join-tax-prom/:level" render={props => <SponsorshipForm {...props} sponsorships={data.sponsorships} />} />
+              <Route path="/contact" component={SponsorshipForm}></Route>
+            </Switch>
+            <Route />
           </AppLayout>
         </ThemeProvider>
       </BrowserRouter>
