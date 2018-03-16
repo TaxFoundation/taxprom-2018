@@ -175,11 +175,20 @@ class SponsorshipForm extends Component {
       <Fragment>
         <StyledForm success={this.state.success}>
           <form onSubmit={e => this.submitForm(e)} required>
-            {this.state.level ? (
+            {this.state.data.level ? (
               <div>
                 <label htmlFor="level">Sponsorship Level</label>
-                <select name="level" id="level" defaultValue={this.state.level}>
-                  {this.allLevels.map(l => <option value={l.name}>{`${l.name}`}</option>)}
+                <select
+                  name="level"
+                  id="level"
+                  defaultValue={this.state.data.level}
+                  onChange={e => {
+                    this.updateRequest('level', e.target.value);
+                  }}
+                >
+                  {this.allLevels.map(l => (
+                    <option key={`level-${slugify(l.name)}`} value={l.name}>{`${l.name}`}</option>
+                  ))}
                 </select>
               </div>
             ) : null}
