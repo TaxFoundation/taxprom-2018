@@ -19,7 +19,9 @@ const IframeContainer = styled.div`
   padding-bottom: 0.5rem;
 
   iframe {
+    height: 400px;
     height: 100%;
+    min-height: 400px;
     width: 100%;
   }
 `;
