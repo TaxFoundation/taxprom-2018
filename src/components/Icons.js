@@ -59,7 +59,7 @@ const Logo = props => (
   </svg>
 );
 
-const Menu = props => (
+const MenuIcon = props => (
   <svg height="100%" viewBox="0 0 32 32" shapeRendering="geometricPrecision">
     <path
       fill={props.fill}
@@ -68,4 +68,11 @@ const Menu = props => (
   </svg>
 );
 
-export { Logo, Menu };
+const CloseIcon = props => (
+  <svg viewBox="0 0 12 12" height="100%">
+    <line x1="1" y1="11" x2="11" y2="1" stroke="white" strokeWidth="2" />
+    <line x1="1" y1="1" x2="11" y2="11" stroke="white" strokeWidth="2" />
+  </svg>
+);
+
+export { Logo, MenuIcon, CloseIcon };

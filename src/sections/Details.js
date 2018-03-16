@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import BackgroundColorContainer from '../components/BackgroundColorContainer';
 import SectionContainer from '../components/SectionContainer';
@@ -30,7 +30,7 @@ const StatisticsList = styled.ul`
   grid-template-columns: 1fr;
 
   @media (min-width: 700px) {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(${props => props.statsNumber}, 1fr);
   }
 
   li {
@@ -41,7 +41,7 @@ const StatisticsList = styled.ul`
 `;
 
 const Details = props => (
-  <Fragment>
+  <div id={props.id}>
     <BackgroundColorContainer bg="primary" color="white">
       <TaglineContainer>
         <h2>{props.details.detailsTitle}</h2>
@@ -56,10 +56,12 @@ const Details = props => (
           <div>Photos Go Here</div>
         </DetailsContainer>
         <h4>In 2017 Tax Prom was Joined By</h4>
-        <StatisticsList>{props.details.detailsStatistics.map((d, i) => <li key={`stat-${i}`}>{d}</li>)}</StatisticsList>
+        <StatisticsList statsNumber={props.details.detailsStatistics.length}>
+          {props.details.detailsStatistics.map((d, i) => <li key={`stat-${i}`}>{d}</li>)}
+        </StatisticsList>
       </SectionContainer>
     </BackgroundColorContainer>
-  </Fragment>
+  </div>
 );
 
 export default Details;

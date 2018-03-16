@@ -1,5 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import styled, { ThemeProvider } from 'styled-components';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import scrollToElement from 'scroll-to-element';
 import Theme from './Theme';
 
 import data from './data/taxprom2018.json';
@@ -12,9 +14,12 @@ import Sponsors from './sections/Sponsors';
 import PreviousSponsors from './sections/PreviousSponsors';
 import Information from './sections/Information';
 import Footer from './sections/Footer';
+import SponsorshipForm from './components/SponsorshipForm';
+import Success from './sections/Success';
 
 const AppLayout = styled.div`
   font-family: ${props => props.theme.fontFamily};
+  height: 100%;
 
   h1,
   h2,
@@ -60,29 +65,81 @@ const sectionRoutes = [
   {
     name: 'Why Tax Prom?',
     slug: 'about',
+    show: true,
   },
   {
-    name: 'Sponsor Tax Prom',
+    name: 'Awards',
+    slug: 'awards',
+    show: data.showAwardsSection,
+  },
+  {
+    name: 'Join Tax Prom',
     slug: 'sponsorships',
+    show: true,
   },
   {
-    name: 'Who Sponsors Tax Prom?',
+    name: 'Our Sponsors',
     slug: 'sponsors',
+    show: data.showCurrentSponsorsSection,
   },
   {
-    name: 'About the Event',
+    name: 'Venue Details',
     slug: 'information',
+    show: true,
   },
 ];
 
-class App extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      transparentHeader: true,
-    };
+class Sections extends Component {
+  componentDidMount() {
+    this.goToSection();
   }
+
+  goToSection() {
+    if (this.props.location.pathname !== '/') {
+      sectionRoutes.forEach(r => {
+        if (`/${r.slug}` === this.props.location.pathname && r.show) {
+          scrollToElement(document.getElementById(r.slug), { offset: -56 });
+        }
+      });
+    }
+  }
+
+  render() {
+    return (
+      <Fragment>
+        <Splash title={data.title} date={data.date} updateHeaderBG={this.updateHeaderBG} venueName={data.venueName} />
+        <Details details={data.details} id={sectionRoutes[0].slug} />
+        {data.showAwardsSection ? <Awards id={sectionRoutes[1].slug} /> : null}
+        <Sponsorships
+          id={sectionRoutes[2].slug}
+          sponsorships={data.sponsorships}
+          dates={{ early: data.earlyPriceEnds, regular: data.regularPriceEnds }}
+        />
+        {data.showCurrentSponsorsSection ? (
+          <Sponsors
+            id={sectionRoutes[3].slug}
+            packages={data.sponsorships.packages}
+            tables={data.sponsorships.tables}
+          />
+        ) : null}
+        <PreviousSponsors sponsorships={data.sponsorships} />
+        <Information
+          id={sectionRoutes[4].slug}
+          map={data.locationGoogleMapEmbedLink}
+          date={data.date}
+          venue={data.venueName}
+          address={data.venueAddress}
+        />
+        <Footer />
+      </Fragment>
+    );
+  }
+}
+
+class App extends Component {
+  state = {
+    transparentHeader: true,
+  };
 
   componentDidMount() {
     window.addEventListener('scroll', () => {
@@ -100,35 +157,21 @@ class App extends Component {
 
   render() {
     return (
-      <ThemeProvider theme={Theme}>
-        <AppLayout>
-          <Header routes={sectionRoutes} transparent={this.state.transparentHeader} />
-          <Splash title={data.title} date={data.date} updateHeaderBG={this.updateHeaderBG} venueName={data.venueName} />
-          <Details details={data.details} id={sectionRoutes[0].slug} />
-          {data.showAwardsSection ? <Awards id="awards" /> : null}
-          <Sponsorships
-            id={sectionRoutes[1].slug}
-            sponsorships={data.sponsorships}
-            dates={{ early: data.earlyPriceEnds, regular: data.regularPriceEnds }}
-          />
-          {data.showCurrentSponsorsSection ? (
-            <Sponsors
-              id={sectionRoutes[2].slug}
-              packages={data.sponsorships.packages}
-              tables={data.sponsorships.tables}
-            />
-          ) : null}
-          <PreviousSponsors sponsorships={data.sponsorships} />
-          <Information
-            id={sectionRoutes[3].slug}
-            map={data.locationGoogleMapEmbedLink}
-            date={data.date}
-            venue={data.venueName}
-            address={data.venueAddress}
-          />
-          <Footer />
-        </AppLayout>
-      </ThemeProvider>
+      <BrowserRouter>
+        <ThemeProvider theme={Theme}>
+          <AppLayout>
+            <Header routes={sectionRoutes} transparent={this.state.transparentHeader} />
+            <Switch>
+              <Route exact path="/" render={props => <Sections {...props} />} />
+              {sectionRoutes.map(r => <Route key={`route-${r.slug}`} path={`/${r.slug}`} render={props => <Sections {...props} />} />)}
+              <Route path="/join-tax-prom/:level" render={props => <SponsorshipForm {...props} sponsorships={data.sponsorships} />} />
+              <Route path="/contact" component={SponsorshipForm}></Route>
+              <Route path="/success" component={Success}></Route>
+            </Switch>
+            <Route />
+          </AppLayout>
+        </ThemeProvider>
+      </BrowserRouter>
     );
   }
 }

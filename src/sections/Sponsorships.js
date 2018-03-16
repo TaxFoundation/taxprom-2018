@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import BackgroundColorContainer from '../components/BackgroundColorContainer';
 import SectionContainer from '../components/SectionContainer';
@@ -43,7 +43,7 @@ const Sponsorships = props => {
   }
 
   return (
-    <Fragment>
+    <div id={props.id}>
       <BackgroundColorContainer bg="secondaryHighlight" color="primary">
         <SectionContainer>
           <h3>Sponsorships</h3>
@@ -72,7 +72,7 @@ const Sponsorships = props => {
           </TicketsContainer>
         </SectionContainer>
       </BackgroundColorContainer>
-    </Fragment>
+    </div>
   );
 };
 

@@ -47,7 +47,7 @@ const SponsorsList = styled.ul`
 `;
 
 const Sponsors = props => (
-  <BackgroundColorContainer bg="secondaryHighlight" color="primary">
+  <BackgroundColorContainer bg="secondaryHighlight" color="primary" id={props.id}>
     <SectionContainer>
       <section>
         <h2>Sponsors</h2>

@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
-import { Logo, Menu } from '../components/Icons';
+import scrollToElement from 'scroll-to-element';
+import { Link } from 'react-router-dom';
+import { Logo, MenuIcon, CloseIcon } from '../components/Icons';
 
 const StyledHeader = styled.header`
   align-content: space-between;
@@ -14,6 +16,7 @@ const StyledHeader = styled.header`
   right: 0;
   top: 0;
   transition: background-color 0.3s ease-in-out;
+  z-index: 20;
 `;
 
 const LogoLink = styled.a`
@@ -32,15 +35,99 @@ const MenuLink = styled.div`
   justify-self: end;
 `;
 
-const Header = props => (
-  <StyledHeader backgroundColor={props.transparent ? false : true}>
-    <LogoLink href="https://taxfoundation.org">
-      <Logo fill="#fff" />
-    </LogoLink>
-    <MenuLink>
-      <Menu fill="#fff" />
-    </MenuLink>
-  </StyledHeader>
-);
+const CloseLink = styled.div`
+  align-self: center;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 24px;
+  justify-self: end;
+  margin-right: 1rem;
+`;
+
+const Menu = styled.div`
+  align-content: start;
+  background-color: ${props => props.theme.primary};
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 56px auto;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  transform: translateX(${props => (props.show ? '0' : '100%')});
+  transition: box-shadow 0.1s linear, transform 0.2s ease-in-out;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  @media (min-width: 500px) {
+    box-shadow: ${props => (props.show ? '-3px 0 5px' : '3px 0 0')} rgba(0, 0, 0, 0.3);
+    width: 300px;
+  }
+`;
+
+const StyledLink = styled(Link)`
+  color: ${props => props.theme.white};
+  padding: 2rem;
+  text-decoration: none;
+
+  &:active,
+  &:focus,
+  &:hover {
+    background-color: ${props => props.theme.primaryHighlight};
+    color: ${props => props.theme.white};
+  }
+`;
+
+class Header extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      showMenu: false,
+    };
+
+    this.toggleMenu = this.toggleMenu.bind(this);
+  }
+
+  toggleMenu() {
+    let menu = !this.state.showMenu;
+    this.setState({ showMenu: menu });
+  }
+
+  goToSection(id) {
+    scrollToElement(document.getElementById(id), { offset: -56 });
+    this.toggleMenu();
+  }
+
+  render() {
+    return (
+      <StyledHeader backgroundColor={this.props.transparent ? false : true}>
+        <LogoLink href="https://taxfoundation.org">
+          <Logo fill="#fff" />
+        </LogoLink>
+        <MenuLink onClick={this.toggleMenu}>
+          <MenuIcon fill="#fff" />
+        </MenuLink>
+        <Menu show={this.state.showMenu}>
+          <CloseLink onClick={this.toggleMenu}>
+            <CloseIcon />
+          </CloseLink>
+          {this.props.routes.map(r => {
+            return r.show ? (
+              <StyledLink key={`nav-${r.slug}`} to={`/${r.slug}`} onClick={e => this.goToSection(r.slug)}>
+                {r.name}
+              </StyledLink>
+            ) : null;
+          })}
+          <StyledLink to="/contact" onClick={this.toggleMenu}>
+            Contact
+          </StyledLink>
+        </Menu>
+      </StyledHeader>
+    );
+  }
+}
 
 export default Header;

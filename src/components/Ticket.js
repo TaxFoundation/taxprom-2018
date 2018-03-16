@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SponsorLevel from './SponsorLevel';
-import { dollars } from '../utilities/formatters';
+import { dollars, slugify } from '../utilities/formatters';
 
 const TicketBox = SponsorLevel.extend`
   background-color: ${props => props.theme.secondaryHighlight};
@@ -14,7 +15,9 @@ const Ticket = props => (
     <ul className="sponsorship__benefits">
       {props.ticket.benefits.map((b, i) => <li key={`${props.id}-${i}`}>{b}</li>)}
     </ul>
-    <div className="sponsorship__pledge" href="#">{`Buy a ${props.ticket.name} Ticket`}</div>
+    <Link className="sponsorship__pledge" to={`/join-tax-prom/${slugify(props.ticket.name)}`}>
+      {`Buy a ${props.ticket.name} Ticket`}
+    </Link>
   </TicketBox>
 );
 

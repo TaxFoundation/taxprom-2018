@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import SponsorLevel from './SponsorLevel';
-import { dollars } from '../utilities/formatters';
+import { dollars, slugify } from '../utilities/formatters';
 
 const TableBox = SponsorLevel.extend`
   background-color: ${props => props.theme[props.bg]};
@@ -15,7 +16,9 @@ const Table = props => {
       <ul className="sponsorship__benefits">
         {props.table.benefits.map((b, i) => <li key={`${props.id}-${i}`}>{b}</li>)}
       </ul>
-      <div className="sponsorship__pledge" href="#">{`Sponsor a ${props.table.name} Table`}</div>
+      <Link className="sponsorship__pledge" to={`/join-tax-prom/${slugify(props.table.name)}`}>
+        {`Sponsor a ${props.table.name} Table`}
+      </Link>
     </TableBox>
   );
 };
