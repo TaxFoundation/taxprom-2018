@@ -148,7 +148,7 @@ class SponsorshipForm extends Component {
       fetch(request)
         .then(response => {
           if (response.status === 200) {
-            return response.json();
+            console.log(response);
           } else {
             throw new Error('Form submission did not work');
           }

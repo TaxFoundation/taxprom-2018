@@ -1,4 +1,4 @@
-io# If you need help understanding the syntax of this document: https://learnxinyminutes.com/docs/yaml/
+# If you need help understanding the syntax of this document: https://learnxinyminutes.com/docs/yaml/
 # This section is for general event details.
 title: Tax Prom 2018
 # Please use YYYY-MM-DD HH:MM:SS -[[EST hour offset]] date formats.
