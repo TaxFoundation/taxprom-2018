@@ -85,7 +85,7 @@ const TextInput = props => {
         id={props.item}
         onChange={e => props.update(props.item, e.target.value)}
         type={props.type ? props.type : 'text'}
-        required={props.required ? props.required : true}
+        required={props.required || false}
       />
     </div>
   );
@@ -157,6 +157,9 @@ class SponsorshipForm extends Component {
         .then(response => {
           if (response.status === 200) {
             this.setState({success: true});
+            setTimeout(() => {
+              this.props.history.push('/success');
+            }, 700);
           } else {
             throw new Error('Form submission did not work');
           }
@@ -187,24 +190,24 @@ class SponsorshipForm extends Component {
               </div>
             ) : null}
             <div className="tp-name">
-              <TextInput item="fName" label="First Name" update={this.updateRequest} />
-              <TextInput item="lName" label="Last Name" update={this.updateRequest} />
+              <TextInput item="fName" label="First Name" update={this.updateRequest} required />
+              <TextInput item="lName" label="Last Name" update={this.updateRequest} required />
             </div>
             <div className="tp-name">
               <TextInput item="org" label="Organization" update={this.updateRequest} />
               <TextInput item="title" label="title" update={this.updateRequest} />
             </div>
             <div className="tp-contact">
-              <TextInput item="email" label="Email Address" update={this.updateRequest} type="email" />
-              <TextInput item="phone" label="Phone Number" update={this.updateRequest} type="tel" />
+              <TextInput item="email" label="Email Address" update={this.updateRequest} required type="email" />
+              <TextInput item="phone" label="Phone Number" update={this.updateRequest} required type="tel" />
             </div>
             <div className="tp-address">
-              <TextInput item="address1" label="Address Line 1" update={this.updateRequest} />
-              <TextInput item="address2" label="Address Line 2 (optional)" update={this.updateRequest} required={false} />
+              <TextInput item="address1" label="Address Line 1" update={this.updateRequest} required />
+              <TextInput item="address2" label="Address Line 2 (optional)" update={this.updateRequest} required />
               <div className="tp-address3">
-                <TextInput item="city" label="City" update={this.updateRequest} />
-                <TextInput item="state" label="State / Province" update={this.updateRequest} />
-                <TextInput item="zip" label="ZIP / Postal Code" update={this.updateRequest} />
+                <TextInput item="city" label="City" update={this.updateRequest} required />
+                <TextInput item="state" label="State / Province" update={this.updateRequest} required />
+                <TextInput item="zip" label="ZIP / Postal Code" update={this.updateRequest} required />
               </div>
               <div className="tp-country">
                 <label htmlFor="country">Country</label>
@@ -212,6 +215,7 @@ class SponsorshipForm extends Component {
                   name="country"
                   id="country"
                   defaultValue="United States"
+                  required
                   onChange={e => this.updateRequest('country', e.target.value)}
                 >
                   <option value="United States">United States</option>

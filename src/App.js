@@ -15,6 +15,7 @@ import PreviousSponsors from './sections/PreviousSponsors';
 import Information from './sections/Information';
 import Footer from './sections/Footer';
 import SponsorshipForm from './components/SponsorshipForm';
+import Success from './sections/Success';
 
 const AppLayout = styled.div`
   font-family: ${props => props.theme.fontFamily};
@@ -165,6 +166,7 @@ class App extends Component {
               {sectionRoutes.map(r => <Route key={`route-${r.slug}`} path={`/${r.slug}`} render={props => <Sections {...props} />} />)}
               <Route path="/join-tax-prom/:level" render={props => <SponsorshipForm {...props} sponsorships={data.sponsorships} />} />
               <Route path="/contact" component={SponsorshipForm}></Route>
+              <Route path="/success" component={Success}></Route>
             </Switch>
             <Route />
           </AppLayout>
