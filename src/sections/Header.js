@@ -16,6 +16,7 @@ const StyledHeader = styled.header`
   right: 0;
   top: 0;
   transition: background-color 0.3s ease-in-out;
+  z-index: 20;
 `;
 
 const LogoLink = styled.a`

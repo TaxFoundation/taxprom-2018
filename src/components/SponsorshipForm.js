@@ -9,10 +9,15 @@ const StyledForm = styled.div`
   align-content: stretch;
   align-items: center;
   background-color: ${props => props.theme.secondary};
+  bottom: 0;
   display: grid;
-  height: 100%;
   justify-content: center;
+  left: 0;
+  overflow-y: auto;
   padding: 70px 1rem 1rem 1rem;
+  position: fixed;
+  right: 0;
+  top: 0;
 
   @media (min-width: 500px) {
     padding: 70px 3rem 3rem 3rem;
@@ -70,7 +75,13 @@ const TextInput = props => {
   return (
     <div className={`tp-${props.item}`}>
       <label htmlFor={props.item}>{props.label}</label>
-      <input name={props.item} id={props.item} onChange={e => props.update(props.item, e.target.value)} type="text" />
+      <input
+        name={props.item}
+        id={props.item}
+        onChange={e => props.update(props.item, e.target.value)}
+        type={props.type ? props.type : 'text'}
+        required={props.required ? props.required : true}
+      />
     </div>
   );
 };
@@ -92,7 +103,7 @@ class SponsorshipForm extends Component {
 
     this.state = {
       level: this.allLevels.filter(l => slugify(l.name) === this.props.match.params.level)[0].name,
-      submitter: '',
+      email: '',
       fName: '',
       lName: '',
       org: '',
@@ -102,7 +113,7 @@ class SponsorshipForm extends Component {
       city: '',
       state: '',
       zip: '',
-      country: '',
+      country: 'United States',
       phone: '',
       comments: '',
     };
@@ -122,12 +133,11 @@ class SponsorshipForm extends Component {
     if (this.validateData()) {
       const headers = new Headers();
       headers.append('Content-Type', 'application/json');
-      headers.append('Access-Control-Allow-Origin', '*');
       const request = new Request(API, {
         headers: headers,
         method: 'POST',
         mode: 'cors',
-        body: this.state,
+        body: JSON.stringify(this.state),
       });
 
       fetch(request)
@@ -153,7 +163,7 @@ class SponsorshipForm extends Component {
   render() {
     return (
       <StyledForm>
-        <form onSubmit={e => this.submitForm(e)}>
+        <form onSubmit={e => this.submitForm(e)} required>
           {this.state.level ? (
             <div>
               <label htmlFor="level">Sponsorship Level</label>
@@ -171,12 +181,12 @@ class SponsorshipForm extends Component {
             <TextInput item="title" label="title" update={this.updateRequest} />
           </div>
           <div className="tp-contact">
-            <TextInput item="submitter" label="Email Address" update={this.updateRequest} />
-            <TextInput item="phone" label="Phone Number" update={this.updateRequest} />
+            <TextInput item="email" label="Email Address" update={this.updateRequest} type="email" />
+            <TextInput item="phone" label="Phone Number" update={this.updateRequest} type="tel" />
           </div>
           <div className="tp-address">
             <TextInput item="address1" label="Address Line 1" update={this.updateRequest} />
-            <TextInput item="address2" label="Address Line 2 (optional)" update={this.updateRequest} />
+            <TextInput item="address2" label="Address Line 2 (optional)" update={this.updateRequest} required={false} />
             <div className="tp-address3">
               <TextInput item="city" label="City" update={this.updateRequest} />
               <TextInput item="state" label="State / Province" update={this.updateRequest} />
