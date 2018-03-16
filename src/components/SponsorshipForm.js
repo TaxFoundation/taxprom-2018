@@ -1,6 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
 import validator from 'validator';
+import { Link } from 'react-router-dom';
 import { slugify } from '../utilities/formatters';
 
 const API = 'https://qzdppwz79c.execute-api.us-east-1.amazonaws.com/prod/taxprom';
@@ -91,6 +92,24 @@ const TextInput = props => {
   );
 };
 
+const StyledLink = styled(Link)`
+  border-bottom: 1px solid ${props => props.theme.primaryHighlight};
+  color: ${props => props.theme.primary};
+  display: block;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  text-decoration: none;
+
+  &:active,
+  &:focus,
+  &:visited {
+    color: ${props => props.theme.primary};
+    text-decoration: none;
+  }
+`;
+
 class SponsorshipForm extends Component {
   constructor(props) {
     super(props);
@@ -175,6 +194,7 @@ class SponsorshipForm extends Component {
       <Fragment>
         <StyledForm success={this.state.success}>
           <form onSubmit={e => this.submitForm(e)} required>
+            <StyledLink to="/">← Back to Main Page</StyledLink>
             {this.state.data.level ? (
               <div>
                 <label htmlFor="level">Sponsorship Level</label>
