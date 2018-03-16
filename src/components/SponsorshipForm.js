@@ -37,7 +37,7 @@ const StyledForm = styled.div`
   }
 
   form {
-    transform: scaleY(${props => props.success ? '0' : '1'});
+    transform: scaleY(${props => (props.success ? '0' : '1')});
     transition: transform 0.1s ease-in-out;
   }
 
@@ -119,12 +119,12 @@ class SponsorshipForm extends Component {
         lName: '',
         org: '',
         title: '',
-        address1: '',
-        address2: '',
-        city: '',
-        state: '',
-        zip: '',
-        country: 'United States',
+        // address1: '',
+        // address2: '',
+        // city: '',
+        // state: '',
+        // zip: '',
+        // country: 'United States',
         phone: '',
         comments: '',
       },
@@ -156,7 +156,7 @@ class SponsorshipForm extends Component {
       fetch(request)
         .then(response => {
           if (response.status === 200) {
-            this.setState({success: true});
+            this.setState({ success: true });
             setTimeout(() => {
               this.props.history.push('/success');
             }, 700);
@@ -173,7 +173,7 @@ class SponsorshipForm extends Component {
   updateRequest(item, content) {
     let newState = Object.assign({}, this.state.data);
     newState[item] = content;
-    this.setState({data: newState});
+    this.setState({ data: newState });
   }
 
   render() {
@@ -195,7 +195,7 @@ class SponsorshipForm extends Component {
             </div>
             <div className="tp-name">
               <TextInput item="org" label="Organization" update={this.updateRequest} />
-              <TextInput item="title" label="title" update={this.updateRequest} />
+              <TextInput item="title" label="Title" update={this.updateRequest} />
             </div>
             <div className="tp-contact">
               <TextInput item="email" label="Email Address" update={this.updateRequest} required type="email" />

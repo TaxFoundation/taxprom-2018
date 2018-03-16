@@ -83,7 +83,7 @@ const sectionRoutes = [
     show: data.showCurrentSponsorsSection,
   },
   {
-    name: 'Event Details',
+    name: 'Venue Details',
     slug: 'information',
     show: true,
   },
