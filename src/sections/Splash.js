@@ -1,16 +1,15 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { fullDate } from '../utilities/formatters';
+import splash from '../images/splash.jpg';
 
 const SplashContainer = styled.section`
   align-content: center;
   align-items: center;
-  background-color: ${props => props.theme.secondary};
-  background: linear-gradient(
-    180deg,
-    ${props => props.theme.secondary} 0%,
-    ${props => props.theme.secondaryHighlight} 100%
-  );
+  background-color: ${props => props.theme.primary};
+  background-image: url(${splash});
+  background-position: 50% 50%;
+  background-size: cover;
   color: #fff;
   display: grid;
   grid-gap: 1rem;

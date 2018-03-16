@@ -75,4 +75,6 @@ const CloseIcon = props => (
   </svg>
 );
 
-export { Logo, MenuIcon, CloseIcon };
+const TaxProm = props => <svg />;
+
+export { Logo, MenuIcon, CloseIcon, TaxProm };
