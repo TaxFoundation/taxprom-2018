@@ -62,8 +62,8 @@ const StyledForm = styled.div`
   button {
     background-color: ${props => props.theme.primary};
     border: 0;
-    border-radius: 4px;
     color: ${props => props.theme.white};
+    cursor: pointer;
     font-size: 1rem;
     margin: 1rem 0;
     padding: 0.5rem;
@@ -99,6 +99,7 @@ const StyledLink = styled(Link)`
   font-size: 1.4rem;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+  transition: color 0.2s ease-in-out;
   text-align: center;
   text-decoration: none;
 
@@ -107,6 +108,10 @@ const StyledLink = styled(Link)`
   &:visited {
     color: ${props => props.theme.primary};
     text-decoration: none;
+  }
+
+  &:hover {
+    color: ${props => props.theme.primaryHighlight};
   }
 `;
 
