@@ -1,4 +1,4 @@
-# If you need help understanding the syntax of this document: https://learnxinyminutes.com/docs/yaml/
+io# If you need help understanding the syntax of this document: https://learnxinyminutes.com/docs/yaml/
 # This section is for general event details.
 title: Tax Prom 2018
 # Please use YYYY-MM-DD HH:MM:SS -[[EST hour offset]] date formats.
@@ -36,7 +36,7 @@ details:
 # Past and present sponsors are also recorded under the level they have sponsored.
 sponsorships:
   packages:
-    - name: VIP Receiption
+    - name: VIP Reception
       price: 50000
       benefits:
         - Two Platinum large tables (20 people)
@@ -69,7 +69,7 @@ sponsorships:
       previousSponsors:
         - name: Anheuser-Busch Companies
           link: http://www.anheuser-busch.com/
-    - name: Dessert Receiption
+    - name: Dessert Reception
       price: 35000
       benefits:
         - One Platinum large table (10 people)
