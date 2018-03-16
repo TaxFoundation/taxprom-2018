@@ -109,19 +109,39 @@ class SponsorshipForm extends Component {
 
     this.updateRequest = this.updateRequest.bind(this);
     this.submitForm = this.submitForm.bind(this);
+    this.validateData = this.validateData.bind(this);
+  }
+
+  validateData() {
+    return true;
   }
 
   submitForm(e) {
     e.preventDefault();
-    console.log(e.target);
-    const headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-    const request = new Request(API, {
-      headers: headers,
-      method: 'POST',
-      mode: 'cors',
-      body: this.state,
-    });
+
+    if (this.validateData()) {
+      const headers = new Headers();
+      headers.append('Content-Type', 'application/json');
+      headers.append('Access-Control-Allow-Origin', '*');
+      const request = new Request(API, {
+        headers: headers,
+        method: 'POST',
+        mode: 'cors',
+        body: this.state,
+      });
+
+      fetch(request)
+        .then(response => {
+          if (response.status === 200) {
+            return response.json();
+          } else {
+            throw new Error('Form submission did not work');
+          }
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    }
   }
 
   updateRequest(item, content) {
@@ -137,12 +157,8 @@ class SponsorshipForm extends Component {
           {this.state.level ? (
             <div>
               <label htmlFor="level">Sponsorship Level</label>
-              <select name="level" id="level">
-                {this.allLevels.map(l => (
-                  <option value={l.name} selected={this.state.level === slugify(l.name) ? true : false}>
-                    {`${l.name}`}
-                  </option>
-                ))}
+              <select name="level" id="level" defaultValue={this.state.level}>
+                {this.allLevels.map(l => <option value={l.name}>{`${l.name}`}</option>)}
               </select>
             </div>
           ) : null}
