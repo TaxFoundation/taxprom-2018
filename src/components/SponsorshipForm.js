@@ -9,7 +9,7 @@ const API = 'https://qzdppwz79c.execute-api.us-east-1.amazonaws.com/prod/taxprom
 const StyledForm = styled.div`
   align-content: stretch;
   align-items: center;
-  background-color: ${props => props.theme.secondary};
+  background-color: ${props => (props.success ? props.theme.primaryHighlight : props.theme.secondary)};
   bottom: 0;
   display: grid;
   justify-content: center;
@@ -19,6 +19,7 @@ const StyledForm = styled.div`
   position: fixed;
   right: 0;
   top: 0;
+  transition: background-color 0.7s ease-in-out;
 
   @media (min-width: 500px) {
     padding: 70px 3rem 3rem 3rem;
@@ -236,7 +237,6 @@ class SponsorshipForm extends Component {
             <button type="submit">Submit</button>
           </form>
         </StyledForm>
-        {this.state.success ? <h1>Success! Check your email for confirmation.</h1> : null}
       </Fragment>
     );
   }
