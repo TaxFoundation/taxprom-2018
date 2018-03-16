@@ -18,6 +18,7 @@ import SponsorshipForm from './components/SponsorshipForm';
 
 const AppLayout = styled.div`
   font-family: ${props => props.theme.fontFamily};
+  height: 100%;
 
   h1,
   h2,
