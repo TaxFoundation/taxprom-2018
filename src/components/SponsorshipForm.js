@@ -79,8 +79,19 @@ class SponsorshipForm extends Component {
   constructor(props) {
     super(props);
 
+    this.allLevels = []
+      .concat(...this.props.sponsorships.packages, ...this.props.sponsorships.tables, this.props.sponsorships.tickets)
+      .sort((a, b) => {
+        if (a.price < b.price) {
+          return 1;
+        } else if (a.price > b.price) {
+          return -1;
+        }
+        return 0;
+      });
+
     this.state = {
-      level: this.props.match.params.level,
+      level: this.allLevels.filter(l => slugify(l.name) === this.props.match.params.level)[0].name,
       submitter: '',
       fName: '',
       lName: '',
@@ -120,17 +131,6 @@ class SponsorshipForm extends Component {
   }
 
   render() {
-    const allLevels = []
-      .concat(...this.props.sponsorships.packages, ...this.props.sponsorships.tables, this.props.sponsorships.tickets)
-      .sort((a, b) => {
-        if (a.price < b.price) {
-          return 1;
-        } else if (a.price > b.price) {
-          return -1;
-        }
-        return 0;
-      });
-
     return (
       <StyledForm>
         <form onSubmit={e => this.submitForm(e)}>
@@ -138,7 +138,7 @@ class SponsorshipForm extends Component {
             <div>
               <label htmlFor="level">Sponsorship Level</label>
               <select name="level" id="level">
-                {allLevels.map(l => (
+                {this.allLevels.map(l => (
                   <option value={l.name} selected={this.state.level === slugify(l.name) ? true : false}>
                     {`${l.name}`}
                   </option>
