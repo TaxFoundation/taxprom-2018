@@ -90,19 +90,24 @@ class SponsorshipForm extends Component {
   constructor(props) {
     super(props);
 
-    this.allLevels = []
-      .concat(...this.props.sponsorships.packages, ...this.props.sponsorships.tables, this.props.sponsorships.tickets)
-      .sort((a, b) => {
-        if (a.price < b.price) {
-          return 1;
-        } else if (a.price > b.price) {
-          return -1;
-        }
-        return 0;
-      });
+    let level = null;
+    if (this.props.sponsorships) {
+      this.allLevels = []
+        .concat(...this.props.sponsorships.packages, ...this.props.sponsorships.tables, this.props.sponsorships.tickets)
+        .sort((a, b) => {
+          if (a.price < b.price) {
+            return 1;
+          } else if (a.price > b.price) {
+            return -1;
+          }
+          return 0;
+        });
+
+      level = this.allLevels.filter(l => slugify(l.name) === this.props.match.params.level)[0].name;
+    }
 
     this.state = {
-      level: this.allLevels.filter(l => slugify(l.name) === this.props.match.params.level)[0].name,
+      level: level,
       email: '',
       fName: '',
       lName: '',
