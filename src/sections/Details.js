@@ -29,8 +29,8 @@ const DetailsList = styled.ul`
 
 const StatisticsList = styled.ul`
   display: grid;
-  grid-gap: 1rem;
   grid-template-columns: 1fr;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
 
   @media (min-width: 700px) {
     grid-template-columns: repeat(${props => props.statsNumber}, 1fr);
@@ -38,9 +38,20 @@ const StatisticsList = styled.ul`
 `;
 
 const StatisticItem = styled.li`
+  background-color: ${props => props.theme[props.color]};
   line-height: 1.6;
   padding: 1rem 2rem;
   text-align: center;
+`;
+
+const StatisticsNumber = styled.p`
+  font-size: 3rem;
+  font-weight: 700;
+`;
+
+const StatisticsText = styled.p`
+  font-size: 1.2rem;
+  text-transform: uppercase;
 `;
 
 const PhotoGrid = styled.div`
@@ -87,9 +98,9 @@ const Details = props => (
         <h4>In 2017 Tax Prom was Joined By</h4>
         <StatisticsList statsNumber={props.details.detailsStatistics.length}>
           {props.details.detailsStatistics.map((d, i) => (
-            <StatisticItem key={`stat-${i}`}>
-              <h4>{d.number}</h4>
-              <p>{d.text}</p>
+            <StatisticItem key={`stat-${i}`} color={d.color}>
+              <StatisticsNumber>{d.number}</StatisticsNumber>
+              <StatisticsText>{d.text}</StatisticsText>
             </StatisticItem>
           ))}
         </StatisticsList>

@@ -12,9 +12,9 @@ venueAddress: >
   Washington, DC 20001
 # Use these shoWhatever variables to turn on and off certain parts of the site.
 # Setting it to 'true' turns it on, and 'false' turns it off.
-showCurrentSponsorsSection: true
-showAwardWinnerSection: true
-showHostCommittee: true
+showCurrentSponsorsSection: false
+showAwardWinnerSection: false
+showHostCommittee: false
 details:
   detailsTitle: Celebrating 81 Years of Promoting Better Tax Policy
   detailsDescription: |
@@ -29,12 +29,16 @@ details:
   detailsStatistics:
     - number: 268
       text: Congressional Staffers
+      color: primary
     - number: 482
       text: Tax and Policy Professionals from the private sector
+      color: primaryHighlight
     - number: 750
       text: Total Policy Professionals in attendance
+      color: secondaryHighlight
     - number: 61
       text: Corporate Sponsors
+      color: tertiary
 # Each sponsorship is contained as a package (e.g., the receptions), a table, or a ticket.
 # Under each type is a list of the available levels (e.g., Platinum, Gold, etc.).
 # Past and present sponsors are also recorded under the level they have sponsored.
