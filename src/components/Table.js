@@ -10,6 +10,17 @@ const TableBox = SponsorLevel.extend`
   .sponsorship__price {
     border-bottom: 1px solid ${props => (props.bg === 'white' ? props.theme.primary : props.theme.white)};
   }
+
+  .sponsorship__pledge {
+    background-color: ${props => (props.bg === 'white' ? props.theme.primary : props.theme.white)};
+    color: ${props => (props.bg === 'white' ? props.theme.white : props.theme.primary)};
+
+    &:active,
+    &:focus,
+    &:visited {
+      color: ${props => (props.bg === 'white' ? props.theme.white : props.theme.primary)};
+    }
+  }
 `;
 
 const Table = props => {

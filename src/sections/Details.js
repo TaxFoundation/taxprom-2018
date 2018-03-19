@@ -23,6 +23,7 @@ const DetailsList = styled.ul`
   display: grid;
   grid-gap: 1rem;
   line-height: 1.6;
+  margin-bottom: 1rem;
   padding: 1rem;
 `;
 
@@ -34,12 +35,12 @@ const StatisticsList = styled.ul`
   @media (min-width: 700px) {
     grid-template-columns: repeat(${props => props.statsNumber}, 1fr);
   }
+`;
 
-  li {
-    line-height: 1.6;
-    padding: 1rem 2rem;
-    text-align: center;
-  }
+const StatisticItem = styled.li`
+  line-height: 1.6;
+  padding: 1rem 2rem;
+  text-align: center;
 `;
 
 const PhotoGrid = styled.div`
@@ -85,7 +86,12 @@ const Details = props => (
         <DetailsList>{props.details.detailsBullets.map((d, i) => <li key={`detail-${i}`}>{d}</li>)}</DetailsList>
         <h4>In 2017 Tax Prom was Joined By</h4>
         <StatisticsList statsNumber={props.details.detailsStatistics.length}>
-          {props.details.detailsStatistics.map((d, i) => <li key={`stat-${i}`}>{d}</li>)}
+          {props.details.detailsStatistics.map((d, i) => (
+            <StatisticItem key={`stat-${i}`}>
+              <h4>{d.number}</h4>
+              <p>{d.text}</p>
+            </StatisticItem>
+          ))}
         </StatisticsList>
       </SectionContainer>
     </BackgroundColorContainer>

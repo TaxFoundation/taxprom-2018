@@ -18,16 +18,28 @@
       "Promote your brand to the D.C. tax and policy community."
     ],
     "detailsStatistics": [
-      "268 Congressional Staffers",
-      "482 Tax and Policy Professionals from the private sector",
-      "750 Total Policy Professionals in attendance",
-      "60 Corporate Sponsors"
+      {
+        "number": 268,
+        "text": "Congressional Staffers"
+      },
+      {
+        "number": 482,
+        "text": "Tax and Policy Professionals from the private sector"
+      },
+      {
+        "number": 750,
+        "text": "Total Policy Professionals in attendance"
+      },
+      {
+        "number": 61,
+        "text": "Corporate Sponsors"
+      }
     ]
   },
   "sponsorships": {
     "packages": [
       {
-        "name": "VIP Receiption",
+        "name": "VIP Reception",
         "price": 50000,
         "benefits": [
           "Two Platinum large tables (20 people)",
@@ -82,7 +94,7 @@
         ]
       },
       {
-        "name": "Dessert Receiption",
+        "name": "Dessert Reception",
         "price": 35000,
         "benefits": [
           "One Platinum large table (10 people)",
@@ -219,7 +231,7 @@
             "name": "Procter & Gamble Co."
           },
           {
-            "name": "S&P Global, Inc."
+            "name": "S&P Global Inc."
           },
           {
             "name": "Squire Patton Boggs"
@@ -262,6 +274,9 @@
           },
           {
             "name": "Amgen Inc."
+          },
+          {
+            "name": "Atlas Network"
           },
           {
             "name": "Boeing Company"
@@ -358,7 +373,7 @@
             "name": "Hoover Institution"
           },
           {
-            "name": "Horizon Pharma"
+            "name": "Horizon Pharma Plc"
           },
           {
             "name": "Iron Mountain Inc."

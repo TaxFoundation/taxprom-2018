@@ -27,10 +27,14 @@ details:
     - Establish yourself or your organization as a critical voice in the tax reform debate.
     - Promote your brand to the D.C. tax and policy community.
   detailsStatistics:
-    - 268 Congressional Staffers
-    - 482 Tax and Policy Professionals from the private sector
-    - 750 Total Policy Professionals in attendance
-    - 61 Corporate Sponsors
+    - number: 268
+      text: Congressional Staffers
+    - number: 482
+      text: Tax and Policy Professionals from the private sector
+    - number: 750
+      text: Total Policy Professionals in attendance
+    - number: 61
+      text: Corporate Sponsors
 # Each sponsorship is contained as a package (e.g., the receptions), a table, or a ticket.
 # Under each type is a list of the available levels (e.g., Platinum, Gold, etc.).
 # Past and present sponsors are also recorded under the level they have sponsored.
