@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import BackgroundColorContainer from '../components/BackgroundColorContainer';
 import SectionContainer from '../components/SectionContainer';
@@ -72,7 +72,7 @@ const Photo = styled.div`
 `;
 
 const Details = props => (
-  <div id={props.id}>
+  <Fragment>
     <BackgroundColorContainer bg="primary" color="white">
       <TaglineContainer>
         <h2>{props.details.detailsTitle}</h2>
@@ -92,21 +92,23 @@ const Details = props => (
       </PhotoGrid>
     </BackgroundColorContainer>
     <BackgroundColorContainer bg="secondary" color="white">
-      <SectionContainer>
-        <h3>Why You Can't Miss Tax Prom</h3>
-        <DetailsList>{props.details.detailsBullets.map((d, i) => <li key={`detail-${i}`}>{d}</li>)}</DetailsList>
-        <h4>In 2017 Tax Prom was Joined By</h4>
-        <StatisticsList statsNumber={props.details.detailsStatistics.length}>
-          {props.details.detailsStatistics.map((d, i) => (
-            <StatisticItem key={`stat-${i}`} color={d.color}>
-              <StatisticsNumber>{d.number}</StatisticsNumber>
-              <StatisticsText>{d.text}</StatisticsText>
-            </StatisticItem>
-          ))}
-        </StatisticsList>
-      </SectionContainer>
+      <div id={props.id}>
+        <SectionContainer>
+          <h3>Why You Can't Miss Tax Prom</h3>
+          <DetailsList>{props.details.detailsBullets.map((d, i) => <li key={`detail-${i}`}>{d}</li>)}</DetailsList>
+          <h4>In 2017 Tax Prom was Joined By</h4>
+          <StatisticsList statsNumber={props.details.detailsStatistics.length}>
+            {props.details.detailsStatistics.map((d, i) => (
+              <StatisticItem key={`stat-${i}`} color={d.color}>
+                <StatisticsNumber>{d.number}</StatisticsNumber>
+                <StatisticsText>{d.text}</StatisticsText>
+              </StatisticItem>
+            ))}
+          </StatisticsList>
+        </SectionContainer>
+      </div>
     </BackgroundColorContainer>
-  </div>
+  </Fragment>
 );
 
 export default Details;
