@@ -20,7 +20,7 @@ const Ticket = props => (
       {props.ticket.benefits.map((b, i) => <li key={`${props.id}-${i}`}>{b}</li>)}
     </ul>
     <Link className="sponsorship__pledge" to={`/join-tax-prom/${slugify(props.ticket.name)}`}>
-      {`Buy a ${props.ticket.name} Ticket`}
+      {`Buy a ${props.ticket.name}`}
     </Link>
   </TicketBox>
 );
