@@ -14,6 +14,7 @@ const SplashContainer = styled.section`
   color: #fff;
   display: grid;
   grid-gap: 1rem;
+  grid-template-columns: 1fr;
   height: 100vh;
   justify-content: center;
   justify-items: center;
@@ -22,6 +23,7 @@ const SplashContainer = styled.section`
 const TaxPromContainer = styled.div`
   margin-bottom: 1rem;
   max-width: 900px;
+  width: 100%;
 `;
 
 const InfoText = styled.p`
