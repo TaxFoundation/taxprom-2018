@@ -81,6 +81,11 @@ const sectionRoutes = [
     show: data.showCurrentSponsorsSection,
   },
   {
+    name: 'Previous Sponsors',
+    slug: 'previous-sponsors',
+    show: true
+  },
+  {
     name: 'Venue Details',
     slug: 'information',
     show: true,
@@ -120,9 +125,9 @@ class Sections extends Component {
             tables={data.sponsorships.tables}
           />
         ) : null}
-        <PreviousSponsors sponsorships={data.sponsorships} />
+        <PreviousSponsors id={sectionRoutes[4].slug} sponsorships={data.sponsorships} />
         <Information
-          id={sectionRoutes[4].slug}
+          id={sectionRoutes[5].slug}
           map={data.locationGoogleMapEmbedLink}
           date={data.date}
           venue={data.venueName}

@@ -38,14 +38,16 @@ const PreviousSponsors = props => {
   });
 
   return (
-    <BackgroundColorContainer bg="secondary" color="white">
-      <SectionContainer>
-        <h2>Previous Sponsors</h2>
-        <PreviousSponsorList>
-          {allPreviousSponsors.map((s, i) => <li key={`${slugify(s.name)}-${i}`}>{s.name}</li>)}
-        </PreviousSponsorList>
-      </SectionContainer>
-    </BackgroundColorContainer>
+    <div id={props.id}>
+      <BackgroundColorContainer bg="secondary" color="white">
+        <SectionContainer>
+          <h2>Previous Sponsors</h2>
+          <PreviousSponsorList>
+            {allPreviousSponsors.map((s, i) => <li key={`${slugify(s.name)}-${i}`}>{s.name}</li>)}
+          </PreviousSponsorList>
+        </SectionContainer>
+      </BackgroundColorContainer>
+    </div>
   );
 };
 
