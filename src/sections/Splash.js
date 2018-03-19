@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import { fullDate } from '../utilities/formatters';
+import { TaxProm } from '../components/Icons';
 import splash from '../images/splash.jpg';
 
 const SplashContainer = styled.section`
@@ -16,14 +17,18 @@ const SplashContainer = styled.section`
   height: 100vh;
   justify-content: center;
   justify-items: center;
+`;
 
-  h1 {
-    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.3);
-  }
+const TaxPromContainer = styled.div`
+  margin-bottom: 1rem;
+  max-width: 900px;
+`;
 
-  p {
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
-  }
+const InfoText = styled.p`
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin: 0;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
 `;
 
 class Splash extends Component {
@@ -32,9 +37,11 @@ class Splash extends Component {
 
     return (
       <SplashContainer>
-        <h1>{this.props.title}</h1>
-        <p>{fullDate(date)}</p>
-        <p>{this.props.venueName}</p>
+        <TaxPromContainer>
+          <TaxProm />
+        </TaxPromContainer>
+        <InfoText>{fullDate(date)}</InfoText>
+        <InfoText>{this.props.venueName}</InfoText>
       </SplashContainer>
     );
   }

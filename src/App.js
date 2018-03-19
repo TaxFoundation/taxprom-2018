@@ -20,6 +20,7 @@ import Success from './sections/Success';
 const AppLayout = styled.div`
   font-family: ${props => props.theme.fontFamily};
   height: 100%;
+  line-height: 1.6;
 
   h1,
   h2,
@@ -51,11 +52,6 @@ const AppLayout = styled.div`
 
   h4 {
     font-size: calc(1.4 * ${props => props.theme.fontSize});
-    line-height: 1.6;
-    margin-bottom: 1rem;
-  }
-
-  p {
     line-height: 1.6;
     margin-bottom: 1rem;
   }
