@@ -6,6 +6,10 @@ import { dollars, slugify } from '../utilities/formatters';
 const TicketBox = SponsorLevel.extend`
   background-color: ${props => props.theme.secondaryHighlight};
   color: ${props => props.theme.primary};
+
+  .sponsorship__price {
+    border-bottom: 1px solid ${props => props.theme.primary};
+  }
 `;
 
 const Ticket = props => (

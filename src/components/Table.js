@@ -6,6 +6,10 @@ import { dollars, slugify } from '../utilities/formatters';
 const TableBox = SponsorLevel.extend`
   background-color: ${props => props.theme[props.bg]};
   color: ${props => (props.bg === 'white' ? props.theme.primary : props.theme.white)};
+
+  .sponsorship__price {
+    border-bottom: 1px solid ${props => (props.bg === 'white' ? props.theme.primary : props.theme.white)};
+  }
 `;
 
 const Table = props => {

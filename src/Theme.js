@@ -8,8 +8,9 @@ const palette = {
 
 const Theme = {
   borderColor: '#333',
-  fontFamily: '"Futura", sans-serif',
-  fontSize: '16px',
+  fontFamily: '"futura-pt", sans-serif',
+  fontSize: '22px',
+  fontWeight: '400',
   maxWidth: '1440px',
   mobileWidth: '480px',
   tfBlue: '#0094ff',

@@ -19,6 +19,8 @@ import Success from './sections/Success';
 
 const AppLayout = styled.div`
   font-family: ${props => props.theme.fontFamily};
+  font-size: ${props => props.theme.fontSize};
+  font-weight: ${props => props.theme.fontWeight};
   height: 100%;
   line-height: 1.6;
 

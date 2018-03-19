@@ -5,7 +5,7 @@ const SponsorLevel = styled.div`
   display: grid;
   grid-gap: 1rem;
   grid-template: repeat(3, auto) 1fr / auto;
-  padding: 1rem 1.6rem;
+  padding: 1.4rem 1.6rem 1rem;
 
   .sponsorship__title,
   .sponsorship__price {
@@ -14,9 +14,18 @@ const SponsorLevel = styled.div`
     text-align: center;
   }
 
+  .sponsorship__title {
+    font-size: 1.5rem;
+  }
+
+  .sponsorship__price {
+    border-bottom: 1px solid ${props => props.theme.white};
+    padding-bottom: 0.8rem;
+  }
+
   .sponsorship__benefits {
     display: grid;
-    font-size: 0.8rem;
+    font-size: 1rem;
     grid-gap: 0.7rem;
     line-height: 1.3;
     margin: 0 auto 1rem;
@@ -29,9 +38,18 @@ const SponsorLevel = styled.div`
     color: ${props => props.theme.primary};
     cursor: pointer;
     display: block;
+    font-size: 1rem;
     line-height: 1.6;
     padding: 0.6rem;
     text-align: center;
+    text-decoration: none;
+
+    &:active,
+    &:focus,
+    &:visited {
+      color: ${props => props.theme.primary};
+      text-decoration: none;
+    }
   }
 `;
 
