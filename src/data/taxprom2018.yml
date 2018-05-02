@@ -4,7 +4,7 @@ title: Tax Prom 2018
 # Please use YYYY-MM-DD HH:MM:SS -[[EST hour offset]] date formats.
 date: 2018-11-15 18:00:00 -5
 time: 6 p.m.
-earlyPriceEnds: 2018-05-25 23:59:59 -4
+earlyPriceEnds: 2018-07-15 23:59:59 -4
 regularPriceEnds: 2018-10-15 23:59:59 -4
 venueName: The National Building Museum
 venueAddress: >
