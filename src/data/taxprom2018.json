@@ -10,7 +10,7 @@
   "showAwardWinnerSection": false,
   "showHostCommittee": false,
   "video": {
-    "showVideo": true,
+    "showVideo": false,
     "youtubeURL": "https://www.youtube.com/embed/AmFST3bnUMQ"
   },
   "details": {
