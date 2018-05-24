@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import BackgroundColorContainer from '../components/BackgroundColorContainer';
-import SectionContainer from '../components/SectionContainer';
 
 const VideoWrapper = styled.iframe`
   width: 100vw;
