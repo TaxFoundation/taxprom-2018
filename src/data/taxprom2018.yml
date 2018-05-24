@@ -15,6 +15,7 @@ venueAddress: >
 showCurrentSponsorsSection: false
 showAwardWinnerSection: false
 showHostCommittee: false
+showVideo: false
 details:
   detailsTitle: Celebrating 81 Years of Promoting Better Tax Policy
   detailsDescription: |
