@@ -15,6 +15,9 @@ venueAddress: >
 showCurrentSponsorsSection: false
 showAwardWinnerSection: false
 showHostCommittee: false
+video:
+  showVideo: false
+  youtubeURL: https://www.youtube.com/embed/AmFST3bnUMQ
 details:
   detailsTitle: Celebrating 81 Years of Promoting Better Tax Policy
   detailsDescription: |

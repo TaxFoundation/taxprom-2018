@@ -8,6 +8,7 @@ import data from './data/taxprom2018.json';
 import Header from './sections/Header';
 import Splash from './sections/Splash';
 import Details from './sections/Details';
+import Video from './sections/Video';
 import Awards from './sections/Awards';
 import Sponsorships from './sections/Sponsorships';
 import Sponsors from './sections/Sponsors';
@@ -110,8 +111,15 @@ class Sections extends Component {
   render() {
     return (
       <Fragment>
-        <Splash title={data.title} date={data.date} updateHeaderBG={this.updateHeaderBG} venueName={data.venueName} />
+        <Splash
+          showVideo={data.video.showVideo}
+          title={data.title}
+          date={data.date}
+          updateHeaderBG={this.updateHeaderBG}
+          venueName={data.venueName}
+        />
         <Details details={data.details} id={sectionRoutes[0].slug} />
+        {data.video.showVideo ? <Video id="video" location={data.video.youtubeURL} /> : null}
         {data.showAwardsSection ? <Awards id={sectionRoutes[1].slug} /> : null}
         <Sponsorships
           id={sectionRoutes[2].slug}

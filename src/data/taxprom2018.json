@@ -2,13 +2,17 @@
   "title": "Tax Prom 2018",
   "date": "2018-11-15T23:00:00.000Z",
   "time": "6 p.m.",
-  "earlyPriceEnds": "2018-05-26T03:59:59.000Z",
+  "earlyPriceEnds": "2018-07-16T03:59:59.000Z",
   "regularPriceEnds": "2018-10-16T03:59:59.000Z",
   "venueName": "The National Building Museum",
   "venueAddress": "440 G Street NW Washington, DC 20001\n",
   "showCurrentSponsorsSection": false,
   "showAwardWinnerSection": false,
   "showHostCommittee": false,
+  "video": {
+    "showVideo": false,
+    "youtubeURL": "https://www.youtube.com/embed/AmFST3bnUMQ"
+  },
   "details": {
     "detailsTitle": "Celebrating 81 Years of Promoting Better Tax Policy",
     "detailsDescription": "For 81 years, the Tax Foundation’s annual dinner has been an institution \nfor the tax community’s best, brightest, and most influential. Join us \nThursday, November 15th for our 81st annual Tax Prom, and find out why hundreds of\npeople say this is the tax world’s most celebrated event of the year.\n",
@@ -194,7 +198,7 @@
         ],
         "sponsors": [
           {
-            "name": "Top Sponsor"
+            "name": "Nareit"
           },
           {
             "name": "Another Top Sponsor"
@@ -343,6 +347,15 @@
         "sponsors": [
           {
             "name": "New York Life Insurance Company"
+          },
+          {
+            "name": "State Policy Network"
+          },
+          {
+            "name": "Another Top Sponsor"
+          },
+          {
+            "name": "Another Top Sponsor"
           },
           {
             "name": "Another Top Sponsor"

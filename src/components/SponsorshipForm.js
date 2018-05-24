@@ -1,6 +1,5 @@
 import React, { Component, Fragment } from 'react';
 import styled from 'styled-components';
-import validator from 'validator';
 import { Link } from 'react-router-dom';
 import { slugify } from '../utilities/formatters';
 
