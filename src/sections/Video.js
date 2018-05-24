@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import BackgroundColorContainer from '../components/BackgroundColorContainer';
 
 const VideoWrapper = styled.iframe`
-  width: 100vw;
+  width: 100%;
   height: calc(100vw/1.77777778);
 `;
 
