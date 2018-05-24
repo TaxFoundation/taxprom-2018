@@ -34,18 +34,26 @@ const InfoText = styled.p`
 `;
 
 const SectionLink = styled.a`
+  background-color: ${props => props.theme.primary};
+  border-radius: 4px;
   color: #fff;
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 1.2;
-  margin: 1rem 0 0;
+  margin: 3rem 0 0;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s cubic-bezier(0.19, 1, 0.22, 1);
 
   &:hover,
   &:focus,
   &:visited {
     color: #fff;
     text-decoration: none;
+  }
+
+  &:hover {
+    background-color: ${props => props.theme.secondary};
   }
 `;
 
