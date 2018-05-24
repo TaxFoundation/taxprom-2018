@@ -33,6 +33,22 @@ const InfoText = styled.p`
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
 `;
 
+const SectionLink = styled.a`
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin: 1rem 0 0;
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
+
+  &:hover,
+  &:focus,
+  &:visited {
+    color: #fff;
+    text-decoration: none;
+  }
+`;
+
 class Splash extends Component {
   render() {
     let date = new Date(this.props.date);
@@ -44,6 +60,7 @@ class Splash extends Component {
         </TaxPromContainer>
         <InfoText>{fullDate(date)}</InfoText>
         <InfoText>{this.props.venueName}</InfoText>
+        <SectionLink href="#video">Watch 2017 Recap</SectionLink>
       </SplashContainer>
     );
   }

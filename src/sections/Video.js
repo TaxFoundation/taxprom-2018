@@ -10,6 +10,7 @@ const VideoWrapper = styled.iframe`
 const Video = props => (
   <BackgroundColorContainer bg="primaryHighlight" color="white">
     <VideoWrapper
+      id={props.id}
       width="560"
       height="315"
       src={`${props.location}?rel=0&amp;showinfo=0`}
