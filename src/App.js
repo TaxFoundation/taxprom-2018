@@ -113,7 +113,7 @@ class Sections extends Component {
       <Fragment>
         <Splash title={data.title} date={data.date} updateHeaderBG={this.updateHeaderBG} venueName={data.venueName} />
         <Details details={data.details} id={sectionRoutes[0].slug} />
-        {data.showVideo ? <Video /> : null}
+        {data.video.showVideo ? <Video location={data.video.youtubeURL} /> : null}
         {data.showAwardsSection ? <Awards id={sectionRoutes[1].slug} /> : null}
         <Sponsorships
           id={sectionRoutes[2].slug}
