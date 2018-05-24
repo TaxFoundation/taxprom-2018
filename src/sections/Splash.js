@@ -68,7 +68,7 @@ class Splash extends Component {
         </TaxPromContainer>
         <InfoText>{fullDate(date)}</InfoText>
         <InfoText>{this.props.venueName}</InfoText>
-        <SectionLink href="#video">Watch 2017 Recap</SectionLink>
+        {this.props.showVideo ? <SectionLink href="#video">Watch 2017 Recap</SectionLink> : null}
       </SplashContainer>
     );
   }

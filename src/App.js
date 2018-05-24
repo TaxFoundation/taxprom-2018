@@ -111,7 +111,13 @@ class Sections extends Component {
   render() {
     return (
       <Fragment>
-        <Splash title={data.title} date={data.date} updateHeaderBG={this.updateHeaderBG} venueName={data.venueName} />
+        <Splash
+          showVideo={data.video.showVideo}
+          title={data.title}
+          date={data.date}
+          updateHeaderBG={this.updateHeaderBG}
+          venueName={data.venueName}
+        />
         <Details details={data.details} id={sectionRoutes[0].slug} />
         {data.video.showVideo ? <Video id="video" location={data.video.youtubeURL} /> : null}
         {data.showAwardsSection ? <Awards id={sectionRoutes[1].slug} /> : null}
