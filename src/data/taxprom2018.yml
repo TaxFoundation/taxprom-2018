@@ -113,6 +113,9 @@ sponsorships:
         - Recognition by name from the podium during dinner
       sponsors:
         - name: PricewaterhouseCoopers LLP
+        - name: Ernst and Young LLP
+        - name: Another Top Sponsor
+        - name: Another Top Sponsor
         - name: Another Top Sponsor
       previousSponsors:
         - name: Aflac, Inc.
@@ -141,6 +144,9 @@ sponsorships:
         - Opportunity to nominate Tax Prom King & Queen candidates
       sponsors:
         - name: Nareit
+        - name: Altria Client Services LLC
+        - name: Another Top Sponsor
+        - name: Another Top Sponsor
         - name: Another Top Sponsor
       previousSponsors:
         - name: 3M Company
@@ -173,6 +179,10 @@ sponsorships:
         - Opportunity to seat key guests at your table
       sponsors:
         - name: ExxonMobil Corporation
+        - name: Deloitte Tax LLP
+        - name: Another Top Sponsor
+        - name: Another Top Sponsor
+        - name: Another Top Sponsor
         - name: Another Top Sponsor
       previousSponsors:
         - name: Allergan Plc
