@@ -145,8 +145,8 @@ sponsorships:
       sponsors:
         - name: Nareit
         - name: Altria Client Services LLC
-        - name: Another Top Sponsor
-        - name: Another Top Sponsor
+        - name: Microsoft Corporation
+        - name: Pfizer 
         - name: Another Top Sponsor
       previousSponsors:
         - name: 3M Company
@@ -216,6 +216,10 @@ sponsorships:
       sponsors:
         - name: New York Life Insurance Company
         - name: State Policy Network
+        - name: HP Inc.
+        - name: Miller & Chevalier Chartered
+        - name: Abbott Laboratories
+        - name: Another Top Sponsor
         - name: Another Top Sponsor
         - name: Another Top Sponsor
         - name: Another Top Sponsor
