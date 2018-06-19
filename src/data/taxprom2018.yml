@@ -114,9 +114,6 @@ sponsorships:
       sponsors:
         - name: PricewaterhouseCoopers LLP
         - name: Ernst and Young LLP
-        - name: Another Top Sponsor
-        - name: Another Top Sponsor
-        - name: Another Top Sponsor
       previousSponsors:
         - name: Aflac, Inc.
         - name: American Bankers Association
@@ -145,13 +142,8 @@ sponsorships:
       sponsors:
         - name: Nareit
         - name: Altria Client Services LLC
-        - name: Microsoft Corporation
         - name: Pfizer 
         - name: McGuireWoods LLP
-        - name: Another Top Sponsor
-        - name: Another Top Sponsor
-        - name: Another Top Sponsor
-        - name: Another Top Sponsor
       previousSponsors:
         - name: 3M Company
         - name: Altria Client Services LLC
@@ -184,10 +176,6 @@ sponsorships:
       sponsors:
         - name: ExxonMobil Corporation
         - name: Deloitte Tax LLP
-        - name: Another Top Sponsor
-        - name: Another Top Sponsor
-        - name: Another Top Sponsor
-        - name: Another Top Sponsor
       previousSponsors:
         - name: Allergan Plc
         - name: Alliance for Market Solutions
@@ -224,9 +212,6 @@ sponsorships:
         - name: Miller & Chevalier Chartered
         - name: Abbott Laboratories
         - name: Federal Policy Group
-        - name: Another Top Sponsor
-        - name: Another Top Sponsor
-        - name: Another Top Sponsor
       previousSponsors:
         - name: Abbott Laboratories
         - name: Abbvie Inc.
