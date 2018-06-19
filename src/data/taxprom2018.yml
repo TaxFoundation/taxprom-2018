@@ -110,7 +110,9 @@ sponsorships:
         - Recognition by name from the podium during dinner
       sponsors:
         - name: Ernst and Young LLP
+        link: http://www.ey.com/
         - name: PricewaterhouseCoopers LLP
+        link: https://www.pwc.com/us/en.html
       previousSponsors:
         - name: Aflac, Inc.
         - name: American Bankers Association
