@@ -6,7 +6,7 @@
   "regularPriceEnds": "2018-10-16T03:59:59.000Z",
   "venueName": "The National Building Museum",
   "venueAddress": "440 G Street NW Washington, DC 20001\n",
-  "showCurrentSponsorsSection": false,
+  "showCurrentSponsorsSection": true,
   "showAwardWinnerSection": false,
   "showHostCommittee": false,
   "video": {
@@ -61,11 +61,7 @@
         ],
         "sponsors": [
           {
-            "name": "Top Sponsor",
-            "link": "https://taxfoundation.org"
-          },
-          {
-            "name": "Another Top Sponsor"
+            "name": null
           }
         ],
         "previousSponsors": [
@@ -88,10 +84,7 @@
         ],
         "sponsors": [
           {
-            "name": "Top Sponsor"
-          },
-          {
-            "name": "Another Top Sponsor"
+            "name": null
           }
         ],
         "previousSponsors": [
@@ -114,10 +107,8 @@
         ],
         "sponsors": [
           {
-            "name": "Top Sponsor"
-          },
-          {
-            "name": "Another Top Sponsor"
+            "name": null,
+            "link": null
           }
         ],
         "previousSponsors": []
@@ -145,10 +136,12 @@
         ],
         "sponsors": [
           {
-            "name": "PricewaterhouseCoopers LLP"
+            "name": "Ernst and Young LLP",
+            "link": "http://www.ey.com/"
           },
           {
-            "name": "Another Top Sponsor"
+            "name": "PricewaterhouseCoopers LLP",
+            "link": "https://www.pwc.com/us/en.html"
           }
         ],
         "previousSponsors": [
@@ -198,10 +191,24 @@
         ],
         "sponsors": [
           {
-            "name": "Nareit"
+            "name": "Allergan Plc",
+            "link": "https://www.allergan.com/home"
           },
           {
-            "name": "Another Top Sponsor"
+            "name": "Altria Client Services LLC",
+            "link": "http://www.altria.com/Pages/default.aspx"
+          },
+          {
+            "name": "McGuireWoods LLP",
+            "link": "https://www.mcguirewoods.com/"
+          },
+          {
+            "name": "Nareit",
+            "link": "https://www.reit.com/"
+          },
+          {
+            "name": "Pfizer",
+            "link": "https://www.pfizer.com/"
           }
         ],
         "previousSponsors": [
@@ -267,10 +274,12 @@
         ],
         "sponsors": [
           {
-            "name": "ExxonMobil Corporation"
+            "name": "Deloitte Tax LLP",
+            "link": "https://www2.deloitte.com/us/en.html"
           },
           {
-            "name": "Another Top Sponsor"
+            "name": "ExxonMobil Corporation",
+            "link": "http://corporate.exxonmobil.com/"
           }
         ],
         "previousSponsors": [
@@ -346,19 +355,22 @@
         ],
         "sponsors": [
           {
+            "name": "Abbott Laboratories"
+          },
+          {
+            "name": "Federal Policy Group"
+          },
+          {
+            "name": "HP Inc."
+          },
+          {
+            "name": "Miller & Chevalier Chartered"
+          },
+          {
             "name": "New York Life Insurance Company"
           },
           {
             "name": "State Policy Network"
-          },
-          {
-            "name": "Another Top Sponsor"
-          },
-          {
-            "name": "Another Top Sponsor"
-          },
-          {
-            "name": "Another Top Sponsor"
           }
         ],
         "previousSponsors": [

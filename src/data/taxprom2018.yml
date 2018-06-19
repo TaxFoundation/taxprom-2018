@@ -149,7 +149,7 @@ sponsorships:
           link: https://www.reit.com/
         - name: Pfizer 
           link: https://www.pfizer.com/
-         previousSponsors:
+      previousSponsors:
         - name: 3M Company
         - name: Altria Client Services LLC
         - name: Caterpillar Inc.
