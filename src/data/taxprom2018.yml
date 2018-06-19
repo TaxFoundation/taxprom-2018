@@ -59,9 +59,7 @@ sponsorships:
         - Recognition by name from the podium during dinner
         - Opportunity to nominate Tax Prom King & Queen candidates
       sponsors:
-        - name: Top Sponsor
-          link: https://taxfoundation.org
-        - name: Another Top Sponsor
+        - name:
       previousSponsors:
         - name: Business Roundtable
           link: http://businessroundtable.org/
@@ -75,9 +73,8 @@ sponsorships:
         - Recognition by name from the podium during dinner
         - Opportunity to nominate Tax Prom King & Queen candidates
       sponsors:
-        - name: Top Sponsor
-        - name: Another Top Sponsor
-      previousSponsors:
+        - name:
+          previousSponsors:
         - name: Anheuser-Busch Companies
           link: http://www.anheuser-busch.com/
     - name: Dessert Reception
@@ -90,8 +87,8 @@ sponsorships:
         - Recognition by name from the podium during dinner
         - Opportunity to nominate Tax Prom King & Queen candidates
       sponsors:
-        - name: Top Sponsor
-        - name: Another Top Sponsor
+        - name:
+          link:
       previousSponsors: []
   tables:
     - name: Platinum
@@ -144,6 +141,7 @@ sponsorships:
         - name: Altria Client Services LLC
         - name: Pfizer 
         - name: McGuireWoods LLP
+        - name: Allergan Plc
       previousSponsors:
         - name: 3M Company
         - name: Altria Client Services LLC
