@@ -59,15 +59,15 @@ const Sponsors = props => (
                   <h4>{p.name}</h4>
                   <SponsorsList>
                     {p.sponsors.map((s, j) => {
-                      if (s.link) {
-                        return (
-                          <li key={`package-${i}-sponsor-${j}`}>
-                            <a href={s.link}>{s.name}</a>
-                          </li>
-                        );
-                      } else {
-                        return <li key={`package-${i}-sponsor-${j}`}>{s.name}</li>;
-                      }
+                      <li key={`package-${i}-sponsor-${j}`}>
+                        {s.link ? (
+                          <a href={s.link} target="_blank">
+                            {s.name}
+                          </a>
+                        ) : (
+                          s.name
+                        )}
+                      </li>;
                     })}
                   </SponsorsList>
                 </SponsorsSection>
@@ -84,7 +84,17 @@ const Sponsors = props => (
                 <SponsorsSection key={`table-${i}`}>
                   <h4>{t.name}</h4>
                   <SponsorsList>
-                    {t.sponsors.map((s, j) => <li key={`table-${i}-sponsor-${j}`}>{s.name}</li>)}
+                    {t.sponsors.map((s, j) => (
+                      <li key={`table-${i}-sponsor-${j}`}>
+                        {s.link ? (
+                          <a href={s.link} target="_blank">
+                            {s.name}
+                          </a>
+                        ) : (
+                          s.name
+                        )}
+                      </li>
+                    ))}
                   </SponsorsList>
                 </SponsorsSection>
               );
