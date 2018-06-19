@@ -110,9 +110,9 @@ sponsorships:
         - Recognition by name from the podium during dinner
       sponsors:
         - name: Ernst and Young LLP
-        link: http://www.ey.com/
+          link: http://www.ey.com/
         - name: PricewaterhouseCoopers LLP
-        link: https://www.pwc.com/us/en.html
+          link: https://www.pwc.com/us/en.html
       previousSponsors:
         - name: Aflac, Inc.
         - name: American Bankers Association
@@ -140,15 +140,15 @@ sponsorships:
         - Opportunity to nominate Tax Prom King & Queen candidates
       sponsors:
         - name: Allergan Plc
-        link: https://www.allergan.com/home
+          link: https://www.allergan.com/home
         - name: Altria Client Services LLC
-        link: http://www.altria.com/Pages/default.aspx
+          link: http://www.altria.com/Pages/default.aspx
         - name: McGuireWoods LLP
-        link: https://www.mcguirewoods.com/
+          link: https://www.mcguirewoods.com/
         - name: Nareit
-        link: https://www.reit.com/
+          link: https://www.reit.com/
         - name: Pfizer 
-        link: https://www.pfizer.com/
+          link: https://www.pfizer.com/
          previousSponsors:
         - name: 3M Company
         - name: Altria Client Services LLC
@@ -180,9 +180,9 @@ sponsorships:
         - Opportunity to seat key guests at your table
       sponsors:
         - name: Deloitte Tax LLP
-        link: https://www2.deloitte.com/us/en.html
+          link: https://www2.deloitte.com/us/en.html
         - name: ExxonMobil Corporation
-        link: http://corporate.exxonmobil.com/
+          link: http://corporate.exxonmobil.com/
       previousSponsors:
         - name: Allergan Plc
         - name: Alliance for Market Solutions
