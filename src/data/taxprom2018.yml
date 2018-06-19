@@ -109,8 +109,8 @@ sponsorships:
         - Opportunity to nominate Tax Prom King & Queen candidates
         - Recognition by name from the podium during dinner
       sponsors:
-        - name: PricewaterhouseCoopers LLP
         - name: Ernst and Young LLP
+        - name: PricewaterhouseCoopers LLP
       previousSponsors:
         - name: Aflac, Inc.
         - name: American Bankers Association
@@ -137,12 +137,12 @@ sponsorships:
         - Listing or logo in repeating slideshow during event
         - Opportunity to nominate Tax Prom King & Queen candidates
       sponsors:
-        - name: Nareit
-        - name: Altria Client Services LLC
-        - name: Pfizer 
-        - name: McGuireWoods LLP
         - name: Allergan Plc
-      previousSponsors:
+        - name: Altria Client Services LLC
+        - name: McGuireWoods LLP
+        - name: Nareit
+        - name: Pfizer 
+         previousSponsors:
         - name: 3M Company
         - name: Altria Client Services LLC
         - name: Caterpillar Inc.
@@ -172,8 +172,8 @@ sponsorships:
         - Listing on posters at general and dessert receptions
         - Opportunity to seat key guests at your table
       sponsors:
-        - name: ExxonMobil Corporation
         - name: Deloitte Tax LLP
+        - name: ExxonMobil Corporation
       previousSponsors:
         - name: Allergan Plc
         - name: Alliance for Market Solutions
@@ -203,13 +203,13 @@ sponsorships:
         - Half-Table (4 tickets)
         - Namebadge ribbon recognizing sponsorship level
         - Listing as Bronze Sponsor in the event programs provided to all guests
-      sponsors:
-        - name: New York Life Insurance Company
-        - name: State Policy Network
-        - name: HP Inc.
-        - name: Miller & Chevalier Chartered
+      sponsors: 
         - name: Abbott Laboratories
         - name: Federal Policy Group
+        - name: HP Inc.
+        - name: Miller & Chevalier Chartered
+        - name: New York Life Insurance Company
+        - name: State Policy Network
       previousSponsors:
         - name: Abbott Laboratories
         - name: Abbvie Inc.
