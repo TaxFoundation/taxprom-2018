@@ -140,10 +140,15 @@ sponsorships:
         - Opportunity to nominate Tax Prom King & Queen candidates
       sponsors:
         - name: Allergan Plc
+        link: https://www.allergan.com/home
         - name: Altria Client Services LLC
+        link: http://www.altria.com/Pages/default.aspx
         - name: McGuireWoods LLP
+        link: https://www.mcguirewoods.com/
         - name: Nareit
+        link: https://www.reit.com/
         - name: Pfizer 
+        link: https://www.pfizer.com/
          previousSponsors:
         - name: 3M Company
         - name: Altria Client Services LLC
@@ -175,7 +180,9 @@ sponsorships:
         - Opportunity to seat key guests at your table
       sponsors:
         - name: Deloitte Tax LLP
+        link: https://www2.deloitte.com/us/en.html
         - name: ExxonMobil Corporation
+        link: http://corporate.exxonmobil.com/
       previousSponsors:
         - name: Allergan Plc
         - name: Alliance for Market Solutions
