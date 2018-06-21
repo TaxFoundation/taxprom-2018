@@ -122,8 +122,7 @@ sponsorships:
         - name: EY
         - name: Intuit Inc.
         - name: PricewaterhouseCoopers LLP
-        - name: Wine & Spirits Wholesalers of America
-    - name: Gold
+      - name: Gold
       earlyPrice: 15000
       regularPrice: 20000
       latePrice: 22000
