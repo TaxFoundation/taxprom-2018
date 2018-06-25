@@ -10,7 +10,7 @@
   "showAwardWinnerSection": false,
   "showHostCommittee": false,
   "video": {
-    "showVideo": false,
+    "showVideo": true,
     "youtubeURL": "https://www.youtube.com/embed/AmFST3bnUMQ"
   },
   "details": {
@@ -19,6 +19,7 @@
     "detailsBullets": [
       "Engage with more than 700 of the tax community’s most influential executive branch officials, congressional staffers, members of Congress, Fortune 500 companies, trade associations, D.C. firms, and nonprofits.",
       "Establish yourself or your organization as a critical voice in the tax reform debate.",
+      "Maximize your organization’s visibility among key decision-makers on Capitol Hill.",
       "Promote your brand to the D.C. tax and policy community."
     ],
     "detailsStatistics": [
@@ -129,15 +130,15 @@
           "Half-page customized message to tax community in the event program provided to all guests",
           "Event Website recognition linked to your website",
           "Listing or logo recognition on posters at VIP, general, and dessert receptions",
-          "Opportunity to seat preferred key guests at your table",
+          "Opportunity to seat preferred key guests at your table ",
           "Listing or logo in repeating slideshow during event",
           "Opportunity to nominate Tax Prom King & Queen candidates",
           "Recognition by name from the podium during dinner"
         ],
         "sponsors": [
           {
-            "name": "Ernst and Young LLP",
-            "link": "http://www.ey.com/"
+            "name": "Aflac, Inc.",
+            "link": "https://www.aflac.com/"
           },
           {
             "name": "PricewaterhouseCoopers LLP",
@@ -158,16 +159,13 @@
             "name": "Emerson"
           },
           {
-            "name": "EY"
+            "name": "Ernst & Young LLP"
           },
           {
             "name": "Intuit Inc."
           },
           {
             "name": "PricewaterhouseCoopers LLP"
-          },
-          {
-            "name": "Wine & Spirits Wholesalers of America"
           }
         ]
       },
@@ -185,7 +183,7 @@
           "Quarter-page customized message to tax community in the event program provided to all guests",
           "Event Website recognition linked to your website",
           "Listing or logo recognition on posters at VIP, general, and dessert receptions",
-          "Opportunity to seat preferred key guests at your table",
+          "Opportunity to seat preferred key guests at your table ",
           "Listing or logo in repeating slideshow during event",
           "Opportunity to nominate Tax Prom King & Queen candidates"
         ],
@@ -209,6 +207,14 @@
           {
             "name": "Pfizer",
             "link": "https://www.pfizer.com/"
+          },
+          {
+            "name": "PMI Global Services Inc.",
+            "link": "https://www.pmi.com/"
+          },
+          {
+            "name": "Praxair, Inc. ",
+            "link": "http://www.praxair.com/"
           }
         ],
         "previousSponsors": [
@@ -358,6 +364,9 @@
             "name": "Abbott Laboratories"
           },
           {
+            "name": "Amgen Inc."
+          },
+          {
             "name": "Federal Policy Group"
           },
           {
@@ -368,6 +377,9 @@
           },
           {
             "name": "New York Life Insurance Company"
+          },
+          {
+            "name": "Northwestern Mutual"
           },
           {
             "name": "State Policy Network"

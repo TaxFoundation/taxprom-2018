@@ -26,10 +26,10 @@ details:
     Thursday, November 15th for our 81st annual Tax Prom, and find out why hundreds of
     people say this is the tax world’s most celebrated event of the year.
   detailsBullets:
-    - Engage with more than 700 of the tax community’s most influential executive branch officials, congressional staffers, members of Congress, Fortune 500 companies, trade associations, D.C. firms, and nonprofits.
-    - Establish yourself or your organization as a critical voice in the tax reform debate.
-    - Maximize your organization’s visibility among key decision-makers on Capitol Hill
-    - Promote your brand to the D.C. tax and policy community.
+    - "Engage with more than 700 of the tax community’s most influential executive branch officials, congressional staffers, members of Congress, Fortune 500 companies, trade associations, D.C. firms, and nonprofits."
+    - "Establish yourself or your organization as a critical voice in the tax reform debate."
+    - "Maximize your organization’s visibility among key decision-makers on Capitol Hill."
+    - "Promote your brand to the D.C. tax and policy community."
   detailsStatistics:
     - number: 268
       text: Congressional Staffers
@@ -51,14 +51,14 @@ sponsorships:
     - name: VIP Reception
       price: 50000
       benefits:
-        - Two Platinum large tables (20 people)
-        - 20 tickets to the VIP Reception
-        - VIP Reception Branding
-        - Branded Napkins
-        - Full-page customized message to tax community in the event program provided to all guests
-        - Opportunity to Give a Toast at the VIP Reception
-        - Recognition by name from the podium during dinner
-        - Opportunity to nominate Tax Prom King & Queen candidates
+        - "Two Platinum large tables (20 people)"
+        - "20 tickets to the VIP Reception"
+        - "VIP Reception Branding"
+        - "Branded Napkins"
+        - "Full-page customized message to tax community in the event program provided to all guests"
+        - "Opportunity to Give a Toast at the VIP Reception"
+        - "Recognition by name from the podium during dinner"
+        - "Opportunity to nominate Tax Prom King & Queen candidates"
       sponsors:
         - name:
       previousSponsors:
@@ -67,26 +67,26 @@ sponsorships:
     - name: General Reception
       price: 40000
       benefits:
-        - One Platinum large table (10 people)
-        - General Reception Branding
-        - Branded Napkins
-        - Full-page customized message to tax community in the event program provided to all guests
-        - Recognition by name from the podium during dinner
-        - Opportunity to nominate Tax Prom King & Queen candidates
+        - "One Platinum large table (10 people)"
+        - "General Reception Branding"
+        - "Branded Napkins"
+        - "Full-page customized message to tax community in the event program provided to all guests"
+        - "Recognition by name from the podium during dinner"
+        - "Opportunity to nominate Tax Prom King & Queen candidates"
       sponsors:
         - name:
       previousSponsors:
-        - name: Anheuser-Busch Companies
-          link: http://www.anheuser-busch.com/
+        - name: "Anheuser-Busch Companies"
+          link: "http://www.anheuser-busch.com/"
     - name: Dessert Reception
       price: 35000
       benefits:
-        - One Platinum large table (10 people)
-        - Dessert Reception Branding
-        - Branded Napkins
-        - Full-page customized message to tax community in the event program provided to all guests
-        - Recognition by name from the podium during dinner
-        - Opportunity to nominate Tax Prom King & Queen candidates
+        - "One Platinum large table (10 people)"
+        - "Dessert Reception Branding"
+        - "Branded Napkins"
+        - "Full-page customized message to tax community in the event program provided to all guests"
+        - "Recognition by name from the podium during dinner"
+        - "Opportunity to nominate Tax Prom King & Queen candidates"
       sponsors:
         - name:
           link:
@@ -98,163 +98,163 @@ sponsorships:
       latePrice: 35000
       color: primary
       benefits:
-        - One large table (10 tickets) with preferred seating
-        - Namebadge ribbon recognizing sponsorship level
-        - Logo recognition as a Platinum Sponsor in the event program provided to all guests
-        - 10 tickets to the VIP Reception
-        - Half-page customized message to tax community in the event program provided to all guests
-        - Event Website recognition linked to your website
-        - Listing or logo recognition on posters at VIP, general, and dessert receptions
-        - Opportunity to seat preferred key guests at your table 
-        - Listing or logo in repeating slideshow during event
-        - Opportunity to nominate Tax Prom King & Queen candidates
-        - Recognition by name from the podium during dinner
+        - "One large table (10 tickets) with preferred seating"
+        - "Namebadge ribbon recognizing sponsorship level"
+        - "Logo recognition as a Platinum Sponsor in the event program provided to all guests"
+        - "10 tickets to the VIP Reception"
+        - "Half-page customized message to tax community in the event program provided to all guests"
+        - "Event Website recognition linked to your website"
+        - "Listing or logo recognition on posters at VIP, general, and dessert receptions"
+        - "Opportunity to seat preferred key guests at your table "
+        - "Listing or logo in repeating slideshow during event"
+        - "Opportunity to nominate Tax Prom King & Queen candidates"
+        - "Recognition by name from the podium during dinner"
       sponsors:
-        - name: Aflac, Inc.
-          link: https://www.aflac.com/
-        - name: PricewaterhouseCoopers LLP
-          link: https://www.pwc.com/us/en.html
+        - name: "Aflac, Inc."
+          link: "https://www.aflac.com/"
+        - name: "PricewaterhouseCoopers LLP"
+          link: "https://www.pwc.com/us/en.html"
       previousSponsors:
-        - name: Aflac, Inc.
-        - name: American Bankers Association
-        - name: Coca-Cola Company
-        - name: Emerson
-        - name: Ernst & Young LLP
-        - name: Intuit Inc.
-        - name: PricewaterhouseCoopers LLP
-      - name: Gold
+        - name: "Aflac, Inc."
+        - name: "American Bankers Association"
+        - name: "Coca-Cola Company"
+        - name: "Emerson"
+        - name: "Ernst & Young LLP"
+        - name: "Intuit Inc."
+        - name: "PricewaterhouseCoopers LLP"
+    - name: Gold
       earlyPrice: 15000
       regularPrice: 20000
       latePrice: 22000
       color: primaryHighlight
       benefits:
-        - One large table (10 tickets) with preferred seating
-        - Namebadge ribbon recognizing sponsorship level
-        - Logo recognition as a Gold Sponsor in the event program provided to all guests
-        - 4 tickets to the VIP Reception
-        - Quarter-page customized message to tax community in the event program provided to all guests
-        - Event Website recognition linked to your website
-        - Listing or logo recognition on posters at VIP, general, and dessert receptions
-        - Opportunity to seat preferred key guests at your table 
-        - Listing or logo in repeating slideshow during event
-        - Opportunity to nominate Tax Prom King & Queen candidates
+        - "One large table (10 tickets) with preferred seating"
+        - "Namebadge ribbon recognizing sponsorship level"
+        - "Logo recognition as a Gold Sponsor in the event program provided to all guests"
+        - "4 tickets to the VIP Reception"
+        - "Quarter-page customized message to tax community in the event program provided to all guests"
+        - "Event Website recognition linked to your website"
+        - "Listing or logo recognition on posters at VIP, general, and dessert receptions"
+        - "Opportunity to seat preferred key guests at your table "
+        - "Listing or logo in repeating slideshow during event"
+        - "Opportunity to nominate Tax Prom King & Queen candidates"
       sponsors:
-        - name: Allergan Plc
-          link: https://www.allergan.com/home
-        - name: Altria Client Services LLC
-          link: http://www.altria.com/Pages/default.aspx
-        - name: McGuireWoods LLP
-          link: https://www.mcguirewoods.com/
-        - name: Nareit
-          link: https://www.reit.com/
-        - name: Pfizer 
-          link: https://www.pfizer.com/
-        - name: PMI Global Services Inc. 
-          link: https://www.pmi.com/
-        - name: Praxair, Inc. 
-          link: http://www.praxair.com/
+        - name: "Allergan Plc"
+          link: "https://www.allergan.com/home"
+        - name: "Altria Client Services LLC"
+          link: "http://www.altria.com/Pages/default.aspx"
+        - name: "McGuireWoods LLP"
+          link: "https://www.mcguirewoods.com/"
+        - name: "Nareit"
+          link: "https://www.reit.com/"
+        - name: "Pfizer"
+          link: "https://www.pfizer.com/"
+        - name: "PMI Global Services Inc."
+          link: "https://www.pmi.com/"
+        - name: "Praxair, Inc. "
+          link: "http://www.praxair.com/"
       previousSponsors:
-        - name: 3M Company
-        - name: Altria Client Services LLC
-        - name: Caterpillar Inc.
-        - name: ExxonMobil Corporation
-        - name: H&R Block, Inc.
-        - name: K&L Gates LLP
-        - name: McGuireWoods LLP
-        - name: Pfizer, Inc.
-        - name: PMI Global Services, Inc.
-        - name: Praxair, Inc.
-        - name: Procter & Gamble Co.
-        - name: S&P Global Inc.
-        - name: Squire Patton Boggs
-        - name: United Technologies Corporation
+        - name: "3M Company"
+        - name: "Altria Client Services LLC"
+        - name: "Caterpillar Inc."
+        - name: "ExxonMobil Corporation"
+        - name: "H&R Block, Inc."
+        - name: "K&L Gates LLP"
+        - name: "McGuireWoods LLP"
+        - name: "Pfizer, Inc."
+        - name: "PMI Global Services, Inc."
+        - name: "Praxair, Inc."
+        - name: "Procter & Gamble Co."
+        - name: "S&P Global Inc."
+        - name: "Squire Patton Boggs"
+        - name: "United Technologies Corporation"
     - name: Silver
       earlyPrice: 12000
       regularPrice: 15000
       latePrice: 18000
       color: white
       benefits:
-        - One table (8 tickets)
-        - Namebadge ribbon recognizing sponsorship level
-        - Logo recognition as a Silver Sponsor in the event program provided to all guests
-        - 2 tickets to the VIP Reception
-        - 50% off prices for a customized message to tax community in the event program provided to all guests
-        - Event Website recognition linked to your website
-        - Listing on posters at general and dessert receptions
-        - Opportunity to seat key guests at your table
+        - "One table (8 tickets)"
+        - "Namebadge ribbon recognizing sponsorship level"
+        - "Logo recognition as a Silver Sponsor in the event program provided to all guests"
+        - "2 tickets to the VIP Reception"
+        - "50% off prices for a customized message to tax community in the event program provided to all guests"
+        - "Event Website recognition linked to your website"
+        - "Listing on posters at general and dessert receptions"
+        - "Opportunity to seat key guests at your table"
       sponsors:
-        - name: Deloitte Tax LLP
-          link: https://www2.deloitte.com/us/en.html
-        - name: ExxonMobil Corporation
-          link: http://corporate.exxonmobil.com/
+        - name: "Deloitte Tax LLP"
+          link: "https://www2.deloitte.com/us/en.html"
+        - name: "ExxonMobil Corporation"
+          link: "http://corporate.exxonmobil.com/"
       previousSponsors:
-        - name: Allergan Plc
-        - name: Alliance for Market Solutions
-        - name: Amgen Inc.
-        - name: Atlas Network
-        - name: Boeing Company
-        - name: Brownstein Hyatt Farber Schreck, LLP
-        - name: DCI Group
-        - name: Deloitte Tax LLP
-        - name: FedEx
-        - name: HP Inc.
-        - name: International Council of Shopping Centers
-        - name: KPMG LLP
-        - name: Microsoft Corporation
-        - name: Miller & Chevalier Chartered
-        - name: Nareit
-        - name: PepsiCo, Inc.
-        - name: United Parcel Service Inc.
-        - name: Verizon Communications Inc.
-        - name: Weyerhaeuser Company
+        - name: "Allergan Plc"
+        - name: "Alliance for Market Solutions"
+        - name: "Amgen Inc."
+        - name: "Atlas Network"
+        - name: "Boeing Company"
+        - name: "Brownstein Hyatt Farber Schreck, LLP"
+        - name: "DCI Group"
+        - name: "Deloitte Tax LLP"
+        - name: "FedEx"
+        - name: "HP Inc."
+        - name: "International Council of Shopping Centers"
+        - name: "KPMG LLP"
+        - name: "Microsoft Corporation"
+        - name: "Miller & Chevalier Chartered"
+        - name: "Nareit"
+        - name: "PepsiCo, Inc."
+        - name: "United Parcel Service Inc."
+        - name: "Verizon Communications Inc."
+        - name: "Weyerhaeuser Company"
     - name: Bronze
       earlyPrice: 8000
       regularPrice: 10000
       latePrice: 10000
       color: white
       benefits:
-        - Half-Table (4 tickets)
-        - Namebadge ribbon recognizing sponsorship level
-        - Listing as Bronze Sponsor in the event programs provided to all guests
+        - "Half-Table (4 tickets)"
+        - "Namebadge ribbon recognizing sponsorship level"
+        - "Listing as Bronze Sponsor in the event programs provided to all guests"
       sponsors: 
-        - name: Abbott Laboratories
-        - name: Amgen Inc.
-        - name: Federal Policy Group
-        - name: HP Inc.
-        - name: Miller & Chevalier Chartered
-        - name: New York Life Insurance Company
-        - name: Northwestern Mutual
-        - name: State Policy Network
+        - name: "Abbott Laboratories"
+        - name: "Amgen Inc."
+        - name: "Federal Policy Group"
+        - name: "HP Inc."
+        - name: "Miller & Chevalier Chartered"
+        - name: "New York Life Insurance Company"
+        - name: "Northwestern Mutual"
+        - name: "State Policy Network"
       previousSponsors:
-        - name: Abbott Laboratories
-        - name: Abbvie Inc.
-        - name: American Express Company
-        - name: AT&T
-        - name: Beer Institute
-        - name: Dow Chemical Company
-        - name: Federal Policy Group
-        - name: Goodyear Tire & Rubber Company
-        - name: Hoover Institution
-        - name: Horizon Pharma Plc
-        - name: Iron Mountain Inc.
-        - name: Lockheed Martin Company
-        - name: Merck & Co., Inc.
-        - name: New York Life Insurance Company
-        - name: NextEra Energy, Inc.
-        - name: Raytheon Company
-        - name: Shell Oil Company
-        - name: State Policy Network
+        - name: "Abbott Laboratories"
+        - name: "Abbvie Inc."
+        - name: "American Express Company"
+        - name: "AT&T"
+        - name: "Beer Institute"
+        - name: "Dow Chemical Company"
+        - name: "Federal Policy Group"
+        - name: "Goodyear Tire & Rubber Company"
+        - name: "Hoover Institution"
+        - name: "Horizon Pharma Plc"
+        - name: "Iron Mountain Inc."
+        - name: "Lockheed Martin Company"
+        - name: "Merck & Co., Inc."
+        - name: "New York Life Insurance Company"
+        - name: "NextEra Energy, Inc."
+        - name: "Raytheon Company"
+        - name: "Shell Oil Company"
+        - name: "State Policy Network"
   tickets:
     - name: VIP Ticket
       price: 2500
       benefits:
-        - Includes Premium Seating with Senior Hill Staffers
-        - Access to VIP, General, and Dessert Receptions
+        - "Includes Premium Seating with Senior Hill Staffers"
+        - "Access to VIP, General, and Dessert Receptions"
     - name: Regular Ticket
       price: 750
       benefits:
-      - Includes General Seating
-      - Access to General and Dessert Receptions
+      - "Includes General Seating"
+      - "Access to General and Dessert Receptions"
 hostcommittee:
   - name: Person One
     org: Super Megacorp
