@@ -16,6 +16,7 @@ const SponsorsContainer = styled.div`
 `;
 
 const PackagesContainer = SponsorsContainer.extend`
+  margin-bottom: 2rem;
   @media (min-width: 920px) {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -59,7 +60,7 @@ const Sponsors = props => (
                   <h4>{p.name}</h4>
                   <SponsorsList>
                     {p.sponsors.map((s, j) => (
-                      <li key={`package-sponsor-${j}`}>
+                      <li style={{ fontSize: '32px' }} key={`package-sponsor-${j}`}>
                         {s.link ? (
                           <a href={s.link} target="_blank">
                             {s.name}
