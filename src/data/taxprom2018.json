@@ -62,7 +62,8 @@
         ],
         "sponsors": [
           {
-            "name": null
+            "name": "Business Roundtable",
+            "link": "http://businessroundtable.org/"
           }
         ],
         "previousSponsors": [
@@ -85,7 +86,8 @@
         ],
         "sponsors": [
           {
-            "name": null
+            "name": "Intuit Inc.",
+            "link": "https://www.intuit.com/"
           }
         ],
         "previousSponsors": [
@@ -108,8 +110,8 @@
         ],
         "sponsors": [
           {
-            "name": null,
-            "link": null
+            "name": "H&R Block, Inc.",
+            "link": "https://www.hrblock.com/"
           }
         ],
         "previousSponsors": []
@@ -139,6 +141,22 @@
           {
             "name": "Aflac, Inc.",
             "link": "https://www.aflac.com/"
+          },
+          {
+            "name": "American Bankers Association",
+            "link": "https://www.aba.com/Pages/default.aspx"
+          },
+          {
+            "name": "The Coca-Cola Company",
+            "link": "https://www.coca-colacompany.com/"
+          },
+          {
+            "name": "Ernst and Young LLP",
+            "link": "https://www.ey.com/"
+          },
+          {
+            "name": "PMI Global Services Inc.",
+            "link": "https://www.pmi.com/"
           },
           {
             "name": "PricewaterhouseCoopers LLP",
@@ -189,16 +207,16 @@
         ],
         "sponsors": [
           {
+            "name": "3M Company",
+            "link": "https://www.3m.com/3M/en_US/company-us/"
+          },
+          {
             "name": "Allergan Plc",
             "link": "https://www.allergan.com/home"
           },
           {
             "name": "Altria Client Services LLC",
             "link": "http://www.altria.com/Pages/default.aspx"
-          },
-          {
-            "name": "McGuireWoods LLP",
-            "link": "https://www.mcguirewoods.com/"
           },
           {
             "name": "Nareit",
@@ -209,12 +227,12 @@
             "link": "https://www.pfizer.com/"
           },
           {
-            "name": "PMI Global Services Inc.",
-            "link": "https://www.pmi.com/"
-          },
-          {
             "name": "Praxair, Inc. ",
             "link": "http://www.praxair.com/"
+          },
+          {
+            "name": "Procter & Gamble Co.",
+            "link": "https://us.pg.com/"
           }
         ],
         "previousSponsors": [
@@ -280,12 +298,20 @@
         ],
         "sponsors": [
           {
+            "name": "Brownstein Hyatt Farber Schreck, LLP",
+            "link": "https://www.bhfs.com/"
+          },
+          {
             "name": "Deloitte Tax LLP",
             "link": "https://www2.deloitte.com/us/en.html"
           },
           {
             "name": "ExxonMobil Corporation",
             "link": "http://corporate.exxonmobil.com/"
+          },
+          {
+            "name": "KPMG, LLP",
+            "link": "https://home.kpmg.com/us/en/home.html"
           }
         ],
         "previousSponsors": [
@@ -364,13 +390,25 @@
             "name": "Abbott Laboratories"
           },
           {
+            "name": "Abbvie Inc."
+          },
+          {
             "name": "Amgen Inc."
+          },
+          {
+            "name": "AT&T"
           },
           {
             "name": "Federal Policy Group"
           },
           {
             "name": "HP Inc."
+          },
+          {
+            "name": "Iron Mountain Inc."
+          },
+          {
+            "name": "Lockheed Martin Corporation"
           },
           {
             "name": "Miller & Chevalier Chartered"

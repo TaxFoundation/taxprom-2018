@@ -47,12 +47,13 @@ const Sponsorships = props => {
       <BackgroundColorContainer bg="secondaryHighlight" color="primary">
         <SectionContainer>
           <h3>Sponsorships</h3>
-          <PackagesContainer>
+          {/* Packages Hidden Because All Bought */}
+          {/* <PackagesContainer>
             {props.sponsorships.packages.map(t => {
               let id = `package-${slugify(t.name)}`;
               return <Package key={id} id={id} package={t} />;
             })}
-          </PackagesContainer>
+          </PackagesContainer> */}
           <Tablescontainer>
             {props.sponsorships.tables.map(t => {
               let id = `table-${slugify(t.name)}`;

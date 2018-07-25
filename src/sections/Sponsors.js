@@ -58,8 +58,8 @@ const Sponsors = props => (
                 <SponsorsSection key={`package-${i}`}>
                   <h4>{p.name}</h4>
                   <SponsorsList>
-                    {p.sponsors.map((s, j) => {
-                      <li key={`package-${i}-sponsor-${j}`}>
+                    {p.sponsors.map((s, j) => (
+                      <li key={`package-sponsor-${j}`}>
                         {s.link ? (
                           <a href={s.link} target="_blank">
                             {s.name}
@@ -67,8 +67,8 @@ const Sponsors = props => (
                         ) : (
                           s.name
                         )}
-                      </li>;
-                    })}
+                      </li>
+                    ))}
                   </SponsorsList>
                 </SponsorsSection>
               );
