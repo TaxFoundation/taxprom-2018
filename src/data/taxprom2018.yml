@@ -60,7 +60,8 @@ sponsorships:
         - "Recognition by name from the podium during dinner"
         - "Opportunity to nominate Tax Prom King & Queen candidates"
       sponsors:
-        - name:
+        - name: "Business Roundtable"
+          link: "http://businessroundtable.org/"
       previousSponsors:
         - name: Business Roundtable
           link: http://businessroundtable.org/
@@ -74,7 +75,8 @@ sponsorships:
         - "Recognition by name from the podium during dinner"
         - "Opportunity to nominate Tax Prom King & Queen candidates"
       sponsors:
-        - name:
+         - name: "Intuit Inc."
+          link: "https://www.intuit.com/"
       previousSponsors:
         - name: "Anheuser-Busch Companies"
           link: "http://www.anheuser-busch.com/"
@@ -88,8 +90,8 @@ sponsorships:
         - "Recognition by name from the podium during dinner"
         - "Opportunity to nominate Tax Prom King & Queen candidates"
       sponsors:
-        - name:
-          link:
+        - name: "H&R Block, Inc."
+          link: "https://www.hrblock.com/"
       previousSponsors: []
   tables:
     - name: Platinum
