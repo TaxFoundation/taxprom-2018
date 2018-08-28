@@ -130,7 +130,7 @@
           "Logo recognition as a Platinum Sponsor in the event program provided to all guests",
           "10 tickets to the VIP Reception",
           "Half-page customized message to tax community in the event program provided to all guests",
-          "Event Website recognition linked to your website",
+          "Event website recognition linked to your website",
           "Listing or logo recognition on posters at VIP, general, and dessert receptions",
           "Opportunity to seat preferred key guests at your table ",
           "Listing or logo in repeating slideshow during event",
@@ -149,6 +149,10 @@
           {
             "name": "The Coca-Cola Company",
             "link": "https://www.coca-colacompany.com/"
+          },
+          {
+            "name": "Emerson",
+            "link": "https://www.emerson.com/en-us"
           },
           {
             "name": "Ernst and Young LLP",
@@ -199,7 +203,7 @@
           "Logo recognition as a Gold Sponsor in the event program provided to all guests",
           "4 tickets to the VIP Reception",
           "Quarter-page customized message to tax community in the event program provided to all guests",
-          "Event Website recognition linked to your website",
+          "Event website recognition linked to your website",
           "Listing or logo recognition on posters at VIP, general, and dessert receptions",
           "Opportunity to seat preferred key guests at your table ",
           "Listing or logo in repeating slideshow during event",
@@ -219,6 +223,10 @@
             "link": "http://www.altria.com/Pages/default.aspx"
           },
           {
+            "name": "Caterpillar Inc.",
+            "link": "https://www.caterpillar.com/"
+          },
+          {
             "name": "Nareit",
             "link": "https://www.reit.com/"
           },
@@ -233,6 +241,10 @@
           {
             "name": "Procter & Gamble Co.",
             "link": "https://us.pg.com/"
+          },
+          {
+            "name": "United Technologies Corporation",
+            "link": "http://www.utc.com/Pages/Home.aspx"
           }
         ],
         "previousSponsors": [
@@ -292,7 +304,7 @@
           "Logo recognition as a Silver Sponsor in the event program provided to all guests",
           "2 tickets to the VIP Reception",
           "50% off prices for a customized message to tax community in the event program provided to all guests",
-          "Event Website recognition linked to your website",
+          "Event website recognition linked to your website",
           "Listing on posters at general and dessert receptions",
           "Opportunity to seat key guests at your table"
         ],
@@ -383,7 +395,8 @@
         "benefits": [
           "Half-Table (4 tickets)",
           "Namebadge ribbon recognizing sponsorship level",
-          "Listing as Bronze Sponsor in the event programs provided to all guests"
+          "Listing as Bronze Sponsor in the event programs provided to all guests",
+          "Event website recognition"
         ],
         "sponsors": [
           {
@@ -397,6 +410,9 @@
           },
           {
             "name": "AT&T"
+          },
+          {
+            "name": "The Committee for a Responsible Budget"
           },
           {
             "name": "Federal Policy Group"
