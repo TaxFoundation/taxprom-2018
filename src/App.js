@@ -67,9 +67,9 @@ const sectionRoutes = [
     show: true,
   },
   {
-    name: 'Awards',
+    name: '2018 Distiguished Service Award',
     slug: 'awards',
-    show: data.showAwardsSection,
+    show: data.showAwardWinnerSection,
   },
   {
     name: 'Join Tax Prom',
@@ -120,7 +120,7 @@ class Sections extends Component {
         />
         <Details details={data.details} id={sectionRoutes[0].slug} />
         {data.video.showVideo ? <Video id="video" location={data.video.youtubeURL} /> : null}
-        {data.showAwardsSection ? <Awards id={sectionRoutes[1].slug} /> : null}
+        {data.showAwardWinnerSection ? <Awards id={sectionRoutes[1].slug} /> : null}
         <Sponsorships
           id={sectionRoutes[2].slug}
           sponsorships={data.sponsorships}

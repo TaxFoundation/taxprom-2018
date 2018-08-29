@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import BackgroundColorContainer from '../components/BackgroundColorContainer';
 import SectionContainer from '../components/SectionContainer';
 import Table from '../components/Table';
-import Package from '../components/Package';
+// import Package from '../components/Package';
 import Ticket from '../components/Ticket';
 import { slugify } from '../utilities/formatters';
 
@@ -15,11 +15,11 @@ const LevelsContainer = styled.div`
   padding-bottom: 1rem;
 `;
 
-const PackagesContainer = LevelsContainer.extend`
-  @media (min-width: 920px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-`;
+// const PackagesContainer = LevelsContainer.extend`
+//   @media (min-width: 920px) {
+//     grid-template-columns: repeat(3, 1fr);
+//   }
+// `;
 
 const Tablescontainer = LevelsContainer.extend`
   @media (min-width: 600px) {
