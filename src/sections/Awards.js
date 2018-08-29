@@ -1,26 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
-
-const AwardsContainer = styled.div`
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  grid-template-columns: 1fr;
-
-  h3 {
-    text-align: center;
-  }
-`;
+import BackgroundColorContainer from '../components/BackgroundColorContainer';
+import SectionContainer from '../components/SectionContainer';
 
 const Awards = () => (
-  <AwardsContainer>
-    <h3>2018 Distiguished Service Award</h3>
-    <div>
-      <p>Winner: Guy</p>
-      <p>Have a picture here.</p>
-    </div>
-  </AwardsContainer>
+  <BackgroundColorContainer bg="primary" color="white">
+    <SectionContainer>
+      <h3>2018 Distiguished Service Award</h3>
+      <div>
+        <p>Winner: Guy</p>
+        <p>Have a picture here.</p>
+      </div>
+    </SectionContainer>
+  </BackgroundColorContainer>
 );
 
 export default Awards;
