@@ -7,7 +7,11 @@ import mw from '../images/mark-weinberger.jpg';
 const AwardeeContainer = styled.div`
   display: grid;
   grid-gap: 2rem;
-  grid-template: auto / repeat(2, 1fr);
+  grid-template: auto / auto;
+
+  @media (min-width: 920px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 `;
 
 const Name = styled.div`
