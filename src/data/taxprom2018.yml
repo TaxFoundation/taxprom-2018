@@ -13,7 +13,7 @@ venueAddress: >
 # Use these shoWhatever variables to turn on and off certain parts of the site.
 # Setting it to 'true' turns it on, and 'false' turns it off.
 showCurrentSponsorsSection: true
-showAwardWinnerSection: false
+showAwardWinnerSection: true
 showHostCommittee: false
 video:
   showVideo: true
