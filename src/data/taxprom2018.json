@@ -7,7 +7,7 @@
   "venueName": "The National Building Museum",
   "venueAddress": "440 G Street NW Washington, DC 20001\n",
   "showCurrentSponsorsSection": true,
-  "showAwardWinnerSection": false,
+  "showAwardWinnerSection": true,
   "showHostCommittee": false,
   "video": {
     "showVideo": true,
