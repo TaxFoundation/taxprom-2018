@@ -33,7 +33,7 @@ const Awards = props => (
           <p>Bio goes here.</p>
         </div>
         <div>
-          <img src={mw} alt="Mark Weinberger" />
+          <img src={mw} alt="Mark Weinberger" style={{ width: '100%' }} />
         </div>
       </AwardeeContainer>
     </SectionContainer>
