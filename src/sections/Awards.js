@@ -20,8 +20,8 @@ const Name = styled.div`
   padding-bottom: 1rem;
 `;
 
-const Awards = () => (
-  <BackgroundColorContainer bg="primary" color="white">
+const Awards = props => (
+  <BackgroundColorContainer bg="primary" color="white" id={props.id}>
     <SectionContainer>
       <h3>2018 Distiguished Service Award</h3>
       <AwardeeContainer>
