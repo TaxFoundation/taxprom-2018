@@ -67,7 +67,7 @@ const sectionRoutes = [
     show: true,
   },
   {
-    name: '2018 Distiguished Service Award',
+    name: '2018 Distinguished Service Award',
     slug: 'awards',
     show: data.showAwardWinnerSection,
   },
