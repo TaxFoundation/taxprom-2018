@@ -91,6 +91,11 @@ const sectionRoutes = [
     slug: 'information',
     show: true,
   },
+  {
+    name: 'Tickets',
+    slug: 'tickets',
+    show: true
+  }
 ];
 
 class Sections extends Component {

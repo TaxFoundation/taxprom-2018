@@ -65,7 +65,7 @@ const Sponsorships = props => {
       <BackgroundColorContainer bg="primaryHighlight" color="white">
         <SectionContainer>
           <h3>Individual Tickets</h3>
-          <TicketsContainer>
+          <TicketsContainer id="tickets">
             {props.sponsorships.tickets.map(t => {
               let id = `ticket-${slugify(t.name)}`;
               return <Ticket key={id} id={id} ticket={t} />;
