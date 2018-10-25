@@ -155,8 +155,12 @@
             "link": "https://www.emerson.com/en-us"
           },
           {
-            "name": "Ernst and Young LLP",
+            "name": "EY",
             "link": "https://www.ey.com/"
+          },
+          {
+            "name": "PepsiCo",
+            "link": "https://www.pepsico.com/"
           },
           {
             "name": "PMI Global Services Inc.",
@@ -225,6 +229,10 @@
           {
             "name": "Caterpillar Inc.",
             "link": "https://www.caterpillar.com/"
+          },
+          {
+            "name": "FedEx Corporation",
+            "link": "https://www.fedex.com/en-us/home.html"
           },
           {
             "name": "Nareit",
@@ -310,20 +318,51 @@
         ],
         "sponsors": [
           {
+            "name": "Baker McKenzie",
+            "link": "https://www.bakermckenzie.com/en"
+          },
+          {
+            "name": "The Boeing Company",
+            "link": "https://www.boeing.com/"
+          },
+          {
             "name": "Brownstein Hyatt Farber Schreck, LLP",
             "link": "https://www.bhfs.com/"
           },
           {
-            "name": "Deloitte Tax LLP",
-            "link": "https://www2.deloitte.com/us/en.html"
+            "name": "Capitol Counsel LLC",
+            "link": "http://www.capitolcounsel.com/"
+          },
+          {
+            "name": "DCI Group",
+            "link": "https://www.dcigroup.com/"
+          },
+          {
+            "name": "Deloitte Tax LLP"
+          },
+          {
+            "name": "Distilled Spirits Council",
+            "link": "https://www.distilledspirits.org/"
           },
           {
             "name": "ExxonMobil Corporation",
             "link": "http://corporate.exxonmobil.com/"
           },
           {
+            "name": "Intel Corporation",
+            "link": "https://www.intel.com/content/www/us/en/homepage.html"
+          },
+          {
             "name": "KPMG, LLP",
             "link": "https://home.kpmg.com/us/en/home.html"
+          },
+          {
+            "name": "The Men and Women of Hunt Consolidated, Inc.",
+            "link": "http://www.huntconsolidated.com/"
+          },
+          {
+            "name": "Microsoft Corporation",
+            "link": "https://www.microsoft.com/en-us/"
           }
         ],
         "previousSponsors": [
@@ -418,6 +457,9 @@
             "name": "Federal Policy Group"
           },
           {
+            "name": "Horizon Pharma"
+          },
+          {
             "name": "HP Inc."
           },
           {
@@ -427,6 +469,9 @@
             "name": "Lockheed Martin Corporation"
           },
           {
+            "name": "MassMutual"
+          },
+          {
             "name": "Miller & Chevalier Chartered"
           },
           {
@@ -434,6 +479,9 @@
           },
           {
             "name": "Northwestern Mutual"
+          },
+          {
+            "name": "Raytheon Company"
           },
           {
             "name": "State Policy Network"
