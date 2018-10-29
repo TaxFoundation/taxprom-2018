@@ -96,7 +96,10 @@ const Awards = props => (
     <BackgroundColorContainer bg="secondary" color="white">
       <SectionContainer>
         <SecondaryAwardeeContainer>
-          <h4 style={{ gridArea: 'first-name' }}>Barbara Angus</h4>
+          <div style={{ gridArea: 'first-name' }}>
+            <h4>Barbara Angus</h4>
+            <p style={{ textAlign: 'center' }}>Chief Tax Counsel, House Committee on Ways and Means</p>
+          </div>
           <AwardeePhoto src={ba} alt="Barbara Angus" style={{ gridArea: 'first-photo' }} />
           <AwardeeText style={{ gridArea: 'first-bio' }}>
             <p>
@@ -110,7 +113,10 @@ const Awards = props => (
               Committee on Taxation, and as a U.S. representative on the OECD’s fiscal affairs committee.
             </p>
           </AwardeeText>
-          <h4 style={{ gridArea: 'second-name' }}>Stephen Entin</h4>
+          <div style={{ gridArea: 'second-name' }}>
+            <h4>Stephen Entin</h4>
+            <p style={{ textAlign: 'center' }}>Senior Fellow, Tax Foundation</p>
+          </div>
           <AwardeePhoto src={se} alt="Stephen Entin" style={{ gridArea: 'second-photo' }} />
           <AwardeeText style={{ gridArea: 'second-bio' }}>
             <p>
