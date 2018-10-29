@@ -235,6 +235,10 @@
             "link": "https://www.fedex.com/en-us/home.html"
           },
           {
+            "name": "Microsoft Corporation",
+            "link": "https://www.microsoft.com/en-us/"
+          },
+          {
             "name": "Nareit",
             "link": "https://www.reit.com/"
           },
@@ -318,6 +322,10 @@
         ],
         "sponsors": [
           {
+            "name": "Akin Gump Strauss Hauer & Feld LLP",
+            "link": "https://www.akingump.com/en/"
+          },
+          {
             "name": "Baker McKenzie",
             "link": "https://www.bakermckenzie.com/en"
           },
@@ -359,10 +367,6 @@
           {
             "name": "The Men and Women of Hunt Consolidated, Inc.",
             "link": "http://www.huntconsolidated.com/"
-          },
-          {
-            "name": "Microsoft Corporation",
-            "link": "https://www.microsoft.com/en-us/"
           }
         ],
         "previousSponsors": [
