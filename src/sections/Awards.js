@@ -130,9 +130,9 @@ const Awards = props => (
             </p>
             <p>
               Previously, he was President and Executive Director at the Institute for Research on the Economics of
-              Taxation, a staff economist with the Joint Economic Committee of Congress, and an advisor to the the
-              National Commission on Economic Growth and Tax Reform (the Kemp Commission). He assisted in the drafting
-              of the Kemp Commission’s report, and was the author of several of its support documents.
+              Taxation, a staff economist with the Joint Economic Committee of Congress, and an advisor to the National
+              Commission on Economic Growth and Tax Reform (the Kemp Commission). He assisted in the drafting of the
+              Kemp Commission’s report, and was the author of several of its support documents.
             </p>
           </AwardeeText>
         </SecondaryAwardeeContainer>
