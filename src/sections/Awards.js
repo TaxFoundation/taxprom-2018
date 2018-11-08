@@ -107,10 +107,10 @@ const Awards = props => (
               House of Representatives. She was appointed to this role by Chairman Brady in February 2016.
             </p>
             <p>
-              Prior to joining the staff of the Ways and Means Committee, Barbara was a Principal with EY and a member
-              of the National Tax Department. Based in Washington, D.C., she led EY’s Strategic International Tax Policy
-              Services practice. Barbara previously served in the Department of the Treasury and on the Congressional
-              Joint Committee on Taxation.
+              Prior to joining the staff of the Ways and Means Committee, Angus was a Principal with EY and a member of
+              the National Tax Department. Based in Washington, D.C., she led EY’s Strategic International Tax Policy
+              Services practice. Angus previously served in the Department of the Treasury, the Congressional Joint
+              Committee on Taxation, and as a U.S. representative on the OECD’s fiscal affairs committee.
             </p>
           </AwardeeText>
           <div style={{ gridArea: 'second-name' }}>
