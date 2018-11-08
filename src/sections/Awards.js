@@ -109,8 +109,8 @@ const Awards = props => (
             <p>
               Prior to joining the staff of the Ways and Means Committee, Barbara was a Principal with EY and a member
               of the National Tax Department. Based in Washington, D.C., she led EY’s Strategic International Tax Policy
-              Services practice. Barbara previously served in the Department of the Treasury, the Congressional Joint
-              Committee on Taxation, and as a U.S. representative on the OECD’s fiscal affairs committee.
+              Services practice. Barbara previously served in the Department of the Treasury and on the Congressional
+              Joint Committee on Taxation.
             </p>
           </AwardeeText>
           <div style={{ gridArea: 'second-name' }}>
